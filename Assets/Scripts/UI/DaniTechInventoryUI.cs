@@ -239,7 +239,7 @@ namespace EmeToDia.Gameplay
                 return;
             }
 
-            _titleText.text = "Field Bag Inventory";
+            _titleText.text = "Field Bag Inventory (" + DaniTechInventoryModel.InventorySlotCount.ToString() + " Slots)";
         }
 
         private void RefreshSlots()
@@ -295,6 +295,8 @@ namespace EmeToDia.Gameplay
             SetDetailText(
                 itemData.ItemType + "\n" +
                 itemData.Description + "\n" +
+                "Stack: " + selectedItem.Amount.ToString() + " / " + itemData.MaxStackCount.ToString() + "\n" +
+                "Condition: " + itemData.UseConditionDescription + "\n" +
                 "Effect: " + itemData.EffectType + " " + itemData.EffectValue.ToString("0.##") + "\n" +
                 "Cooldown: " + cooldownRemainingSeconds.ToString("0.0") + " / " + itemData.CooldownSeconds.ToString("0.0") + "s");
             RefreshMessage("Use button or T applies the selected item and updates player status.");

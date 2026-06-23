@@ -128,7 +128,7 @@ namespace EmeToDia.Gameplay
             }
 
             int ownedCount = 0;
-            string summaryText = "BAG  Tab/I\n";
+            string itemListText = "";
             for (int i = 0; i < DaniTechInventoryModel.InventorySlotCount; i++)
             {
                 DaniTechItemModel itemModel = _inventoryModel.GetItem(i);
@@ -140,21 +140,22 @@ namespace EmeToDia.Gameplay
                 ownedCount++;
                 if (ownedCount <= 4)
                 {
-                    summaryText += ownedCount.ToString() + ". " + GetInventoryDisplayText(itemModel) + "\n";
+                    itemListText += ownedCount.ToString() + ". " + GetInventoryDisplayText(itemModel) + "\n";
                 }
             }
 
             if (ownedCount <= 0)
             {
-                _inventorySummaryText.text = "BAG  Tab/I\nEmpty\nPick up items with E";
+                _inventorySummaryText.text = "BAG 0/" + DaniTechInventoryModel.InventorySlotCount.ToString() + "  Tab/I\nEmpty\nPick up items with E";
                 return;
             }
 
             if (ownedCount > 4)
             {
-                summaryText += "+ " + (ownedCount - 4).ToString() + " more";
+                itemListText += "+ " + (ownedCount - 4).ToString() + " more";
             }
 
+            string summaryText = "BAG " + ownedCount.ToString() + "/" + DaniTechInventoryModel.InventorySlotCount.ToString() + "  Tab/I\n" + itemListText;
             _inventorySummaryText.text = summaryText.TrimEnd();
         }
 

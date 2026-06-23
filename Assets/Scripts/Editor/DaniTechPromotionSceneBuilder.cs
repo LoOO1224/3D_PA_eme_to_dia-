@@ -661,7 +661,7 @@ namespace EmeToDia.Editor
             SetRect(statusText.rectTransform, new Vector2(0f, 1f), new Vector2(620f, 58f), new Vector2(24f, -190f));
             Text tooltipText = CreateText(hudRoot, "Text_Tooltip", "Tip: Aim at an item and press E to pick it up.", 21, TextAnchor.UpperLeft);
             SetRect(tooltipText.rectTransform, new Vector2(0f, 1f), new Vector2(620f, 38f), new Vector2(24f, -254f));
-            Text inventorySummaryText = CreateText(hudRoot, "Text_InventorySummary", "BAG  Tab/I\nEmpty\nPick up items with E", 22, TextAnchor.UpperLeft);
+            Text inventorySummaryText = CreateText(hudRoot, "Text_InventorySummary", "BAG 0/12  Tab/I\nEmpty\nPick up items with E", 22, TextAnchor.UpperLeft);
             SetRect(inventorySummaryText.rectTransform, new Vector2(0f, 1f), new Vector2(620f, 112f), new Vector2(24f, -302f));
             Text guideText = CreateText(hudRoot, "Text_Guide", "Right drag: look  /  Q,C: turn  /  Wheel: zoom  /  Tab/I: bag", 19, TextAnchor.LowerLeft);
             SetRect(guideText.rectTransform, new Vector2(0f, 0f), new Vector2(590f, 34f), new Vector2(24f, 16f));
@@ -695,7 +695,7 @@ namespace EmeToDia.Editor
 
         private static void BuildInventoryPanel(RectTransform inventoryRoot, DaniTechInventoryUI inventoryUI)
         {
-            Text titleText = CreateText(inventoryRoot, "Text_Title", "Field Bag Inventory", 40, TextAnchor.MiddleCenter);
+            Text titleText = CreateText(inventoryRoot, "Text_Title", "Field Bag Inventory (12 Slots)", 40, TextAnchor.MiddleCenter);
             SetRect(titleText.rectTransform, new Vector2(0.5f, 1f), new Vector2(1180f, 58f), new Vector2(0f, -44f));
 
             Text messageText = CreateText(inventoryRoot, "Text_Message", "", 23, TextAnchor.MiddleCenter);

@@ -133,6 +133,14 @@ namespace EmeToDia.Gameplay
             }
         }
 
+        public string UseConditionDescription
+        {
+            get
+            {
+                return GetUseConditionDescription();
+            }
+        }
+
         private DaniTechItemEffectType ParseEffectType()
         {
             DaniTechItemEffectType effectType;
@@ -153,6 +161,19 @@ namespace EmeToDia.Gameplay
             }
 
             return DaniTechItemUseConditionType.None;
+        }
+
+        private string GetUseConditionDescription()
+        {
+            switch (UseConditionType)
+            {
+                case DaniTechItemUseConditionType.HealthBelowMax:
+                    return "HP must be below maximum.";
+                case DaniTechItemUseConditionType.ShieldBelowMax:
+                    return "Shield must be below maximum.";
+            }
+
+            return "No special condition.";
         }
     }
 

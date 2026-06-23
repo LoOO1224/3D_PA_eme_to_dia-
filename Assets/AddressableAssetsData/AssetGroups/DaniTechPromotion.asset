@@ -522,6 +522,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a57de29d17a9374a9b0b07e93a2fc4d
+    m_Address: DaniTech/Terrain/TL_DaniTech_Mud.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7ad45bb942bcc3542a15ec58a853b23b
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/Bark_Extra.png
     m_ReadOnly: 0
@@ -919,6 +925,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfa3113366226c24aa6892d67c4946ee
+    m_Address: DaniTech/Terrain/TL_DaniTech_Rock.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bfcde19801e7cc745a69b9cf6214fd51
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteWithExpansionJoints.mat
     m_ReadOnly: 0
@@ -1040,6 +1052,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4e2bc026a4df1c448b67929c4bbdb5f
+    m_Address: DaniTech/Terrain/Terrain_DaniTech_HeroValley.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d644900a74ae54d4094552e2e58ceb44
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Billboard_Subsurface.png
     m_ReadOnly: 0
@@ -1140,6 +1158,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ec6629ca4edbba149a327dbe36755847
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Rocks/FHE_Rock_2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eff436c8482d76443b6c1754f83586f2
+    m_Address: DaniTech/Terrain/TL_DaniTech_Grass.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
