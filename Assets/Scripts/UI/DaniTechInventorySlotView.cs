@@ -111,17 +111,17 @@ namespace EmeToDia.Gameplay
 
             if (isSelected)
             {
-                _backgroundImage.color = new Color(0.18f, 0.36f, 0.47f, 0.96f);
+                _backgroundImage.color = new Color(0.48f, 0.30f, 0.12f, 0.98f);
                 return;
             }
 
             if (hasItem)
             {
-                _backgroundImage.color = new Color(0.18f, 0.24f, 0.28f, 0.94f);
+                _backgroundImage.color = new Color(0.28f, 0.18f, 0.09f, 0.96f);
                 return;
             }
 
-            _backgroundImage.color = new Color(0.08f, 0.10f, 0.12f, 0.82f);
+            _backgroundImage.color = new Color(0.15f, 0.09f, 0.05f, 0.84f);
         }
 
         private void SetText(Text targetText, string value)

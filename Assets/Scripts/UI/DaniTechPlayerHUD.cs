@@ -12,6 +12,7 @@ namespace EmeToDia.Gameplay
         [SerializeField] private Text _staminaText;
         [SerializeField] private Text _shieldText;
         [SerializeField] private Text _tooltipText;
+        [SerializeField] private Text _inventorySummaryText;
         [SerializeField] private Image _healthFillImage;
         [SerializeField] private Image _staminaFillImage;
         [SerializeField] private Image _shieldFillImage;
@@ -65,6 +66,7 @@ namespace EmeToDia.Gameplay
 
             RefreshBars();
             RefreshTexts();
+            RefreshInventorySummary();
         }
 
         private void RefreshBars()
@@ -77,7 +79,7 @@ namespace EmeToDia.Gameplay
         private void RefreshTexts()
         {
             DaniTechItemModel selectedItem = _inventoryModel.GetSelectedItem();
-            string selectedItemText = "선택 없음";
+            string selectedItemText = "None";
             if (selectedItem != null && selectedItem.IsEmpty == false && _gameDataManager != null)
             {
                 DaniTechItemData itemData = _gameDataManager.GetDaniTechItem(selectedItem.ItemId);
@@ -112,10 +114,64 @@ namespace EmeToDia.Gameplay
 
             if (_guideText != null)
             {
-                _guideText.text = "우클릭 드래그: 시점 / Q,C: 보조 회전 / 휠: 줌";
+                _guideText.text = "Right drag: look  /  Q,C: turn  /  Wheel: zoom  /  Tab/I: bag";
             }
 
             RefreshTooltipText();
+        }
+
+        private void RefreshInventorySummary()
+        {
+            if (_inventorySummaryText == null || _inventoryModel == null)
+            {
+                return;
+            }
+
+            int ownedCount = 0;
+            string summaryText = "BAG  Tab/I\n";
+            for (int i = 0; i < DaniTechInventoryModel.InventorySlotCount; i++)
+            {
+                DaniTechItemModel itemModel = _inventoryModel.GetItem(i);
+                if (itemModel == null || itemModel.IsEmpty)
+                {
+                    continue;
+                }
+
+                ownedCount++;
+                if (ownedCount <= 4)
+                {
+                    summaryText += ownedCount.ToString() + ". " + GetInventoryDisplayText(itemModel) + "\n";
+                }
+            }
+
+            if (ownedCount <= 0)
+            {
+                _inventorySummaryText.text = "BAG  Tab/I\nEmpty\nPick up items with E";
+                return;
+            }
+
+            if (ownedCount > 4)
+            {
+                summaryText += "+ " + (ownedCount - 4).ToString() + " more";
+            }
+
+            _inventorySummaryText.text = summaryText.TrimEnd();
+        }
+
+        private string GetInventoryDisplayText(DaniTechItemModel itemModel)
+        {
+            if (_gameDataManager == null)
+            {
+                return itemModel.ItemId + " x" + itemModel.Amount.ToString();
+            }
+
+            DaniTechItemData itemData = _gameDataManager.GetDaniTechItem(itemModel.ItemId);
+            if (itemData == null)
+            {
+                return itemModel.ItemId + " x" + itemModel.Amount.ToString();
+            }
+
+            return itemData.IconText + " " + itemData.DisplayName + " x" + itemModel.Amount.ToString();
         }
 
         private void RefreshTooltipText()
@@ -127,7 +183,7 @@ namespace EmeToDia.Gameplay
 
             if (string.IsNullOrEmpty(_interactionHintText))
             {
-                _tooltipText.text = "Tip: 아이템에 조준하면 E 획득 툴팁이 표시됩니다.";
+                _tooltipText.text = "Tip: Aim at an item and press E to pick it up.";
                 return;
             }
 

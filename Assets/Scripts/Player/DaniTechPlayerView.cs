@@ -12,6 +12,7 @@ namespace EmeToDia.Gameplay
         [SerializeField] private float _keyboardRotateSpeed = 95f;
         [SerializeField] private float _zoomSpeed = 4f;
         [SerializeField] private float _maxZoomDistance = 7f;
+        [SerializeField] private float _initialZoomDistance = 4.8f;
         [SerializeField] private float _firstPersonHideDistance = 0.25f;
         [SerializeField] private Vector3 _firstPersonCameraPosition = new Vector3(0f, 1.58f, 0f);
         [SerializeField] private Vector3 _thirdPersonCameraOffset = new Vector3(0f, 2.45f, -7f);
@@ -25,6 +26,7 @@ namespace EmeToDia.Gameplay
         {
             ResolveCameraIfNeeded();
             SetCursorVisible();
+            _zoomDistance = Mathf.Clamp(_initialZoomDistance, 0f, _maxZoomDistance);
             RefreshCameraPose();
             RefreshCharacterVisibility();
         }

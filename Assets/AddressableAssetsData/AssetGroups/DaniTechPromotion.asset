@@ -15,8 +15,21 @@ MonoBehaviour:
   m_GroupName: DaniTechPromotion
   m_GUID: 66ff45d15bf43414eaf8615c9a953972
   m_SerializeEntries:
-  - m_GUID: 05b1a3d66ae4ab64fb2c40f6f1372ef6
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Reaper Controller.controller
+  - m_GUID: 0297bfc4b5cb3c84fa04bbd3d5893937
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Rock_3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04196e4be0a054747b4f0bd8b01cca10
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_1/FHE_Bush_1_LOD2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 068bee26e4c162e4480e5871390247a0
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Grass_1/FHE_Grass_1_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -27,8 +40,27 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 09aecc01e6ce60343836a32b57cf4061
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_CLOTHE_LEGACY.mat
+  - m_GUID: 07c1601a95789bf479e188aec3039891
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Rocks/FHE_Rock_1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a14fe38c7afb3f49a133ee30de21907
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0be65d982eb824e48b7f55855e1639d8
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Rock_2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d6a04a12956af741a8fd61d20fb1265
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Grass_1/FHE_Grass_1_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -39,8 +71,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0e6b8cb019267174ab762fd9bd24b34e
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scythe2HitComboA.FBX
+  - m_GUID: 10a800aff923d324cb47b639fc386f0d
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Subsurface.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -57,32 +89,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 143758985ab61d34e96abd9ad278a407
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_LEGACY.tga
+  - m_GUID: 13ff02f5d24c9cb4c99ba5bd6c233ca8
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Billboard_Color.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 157240fffe80af64d8687d13c9bcd640
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_SPEC_GLOSS.tga
+  - m_GUID: 143594419e9ace0478cd7a1d13c86d8a
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_4_Albedo.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 16ec806bac971c14d9112bef046d4662
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@floatRight.FBX
+  - m_GUID: 18080374475b07a45a69e49c5d7d4a92
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/FHE_Bush_2_LOD0.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1798fed1517f4154b9bf7f788c72b2fe
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_BODY.mat
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - DaniTechPromotion
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1fcfe0f2485183e4ab1af558066e794c
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@death.FBX
+  - m_GUID: 20476cbaaaabd614a8675cf32aaf2d5f
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Bush_2.st
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -93,14 +119,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 24858477878f2f844ad57d6f2509c88e
-    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_A_em.tga
+  - m_GUID: 23252b5df62a2c546b563bfcd0b5265e
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/FHE_Tree_1_LOD0.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 267383ab377ca6b4eb4e6414742d01e0
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_AO.jpg
+  - m_GUID: 23bc92da958307944a1bd578e166d97f
+    m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/Weapons/StaffBlue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24858477878f2f844ad57d6f2509c88e
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_A_em.tga
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -117,14 +149,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2a3d397de9d27224ebd0b1d737ad7e7f
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scytheAttack3.FBX
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - DaniTechPromotion
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 2b520772e57c96a43a537a0ff7e9d8cb
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@floatBackwards.FBX
+  - m_GUID: 2a0862d89c83ee74e9616a594a99326d
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/FHE_Bush_2_LOD1.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -135,50 +161,62 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 323693a8c82cb594ea90486547e2fa38
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/Bark_LOD2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3353d032736191145bf8f4695b0a7fc5
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_Set_01.psd
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 35809907d98edca43a6a1649827af774
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_ILLUM.tga
+  - m_GUID: 34137fb5869423944b00bbf97b8d8543
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Rock_4.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 370429b351f0c6147b3b465917831b25
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_GEAR_LEGACY.mat
+  - m_GUID: 3635a6dadbfe9b841a2d9d90e184f016
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 39533daf89e587842b5cd04c929589c8
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@castSpellA.FBX
+  - m_GUID: 370ac4f703a53ff42a6ad9e942fdb6e1
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/Bark_LOD1.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3b1890dd9e71d7245864262513ce98cc
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_ILLUM_LEGACY.tga
+  - m_GUID: 376925155c8bbbf45932bf6db8813291
+    m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/ModularParts/Roads/Road.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3b9a474fb7b972948b47f1d9b84bc7c2
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_SPEC_GLOSS.tga
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - DaniTechPromotion
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3c45e624020bf984e8b358445eb50249
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@floatForward.FBX
+  - m_GUID: 3873e4e19034c0045a2c1a52bd82631c
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Billboard_Extra.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3d5fcefa347db7a44af83c6be1138c37
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgLG_D.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d8f3e4c4758e7640b2ac80783df813c
+    m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/Standard Assets/Prototyping/Models/FloorPrototype64x01x64.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e85c5efc56175d439d1717e22dda9e2
+    m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/ModularParts/Roads/RoadEdge_01.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -195,8 +233,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 430f0c35cc3493d4382df8be51ac3ab4
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_BODY_LEGACY.mat
+  - m_GUID: 458ede665d342d6408f039aa681eb785
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/Bark_LOD0.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -207,32 +245,38 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 465fd6bd851a7764c9bd9eabfab96311
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/PREFABS/REAPER_PBR.prefab
+  - m_GUID: 478e0c226ff56e04f851f0793ceccef6
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/Bark_Extra.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4c3a4514dff1d3b4c8fa8a6255b34f6d
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_BODY_NRM.jpg
+  - m_GUID: 4a6f840317e98f548910b86f3f1dc7fa
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Billboard_Color.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4dc58acddc110264492a8c132c87eca0
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@getHit.FBX
+  - m_GUID: 4d0cc01b11467ea4aa941b4771ce54b0
+    m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/FBX/Materials/MagesTexture2.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4f9ea03ec3171f646a2eed1803ce2256
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@castSpellB.FBX
+  - m_GUID: 4d5473110d5c8ea469bc55242552088b
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_1/Bark_LOD1.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 50e94635898b6a94c833b2ff3bbb6bdf
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_CLOTHE.mat
+  - m_GUID: 4d97c0c9a89e4df46a6b809c4cc22d07
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/FHE_Bush_2_Billboard_LOD3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e719194b1992a24ea8c61339a5cebaa
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_2_Albedo.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -243,8 +287,20 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 5573ba15999807e40953d87668e41809
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scythe2HitComboB.FBX
+  - m_GUID: 534b06f215c2f3547b60f6b425434783
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Subsurface.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 552c4041f0021844885fdee832eec89c
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/Bark_2_LOD1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55854fa769e90b242843505e95e930ed
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Billboard_Extra.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -267,8 +323,38 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a03810032f300f4a8f0b7873dc9a1af
+    m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/ModularParts/Roads/StoneChunks3.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a8267b85ed7d9a42a7fca894fe0875f
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/Bark_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a8d260795b60224b8120c4819db23a9
+    m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/Textures/MagesTexture2.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c2dcf0b5af0dd344b5e37d829979d4d
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Rocks/FHE_Rock_3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5d375a7e1eda8b644a2612caf9a922fa
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_GlassBlack.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5dd762a7971c10c4a954ed93f3f748a7
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Rocks/FHE_Rock_4.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -279,14 +365,69 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f12065b6133d104a856c669b2f0d415
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 601de3189bc3e2343a060a6510478c51
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Ground/FHE_Grass_1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 60535b08d14291b429dc245f31a35ac8
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Sml_B_01.FBX
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6101f534c9f706647aefeba332dfc681
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/Bark_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 612fc4dbac8b54048800432b6b792e02
+    m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/FBX/Materials/MagesTexture.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62ff85dd0ae260f48acb5127ad669c97
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Rocks_2/FHE_Rocks_2_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 641e7c9cbd9f5cb44bce6aee0ff4dfbf
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/Bark_2_LOD0.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 644169a48f02ae04aa26de46e0c7c7f4
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 655ec0d350659444b800ec10310aae11
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Bush_1.st
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 661051dc0a28ff343b7fc8751c23d602
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgSM_F.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66e6ff4fa526d7a4c9d479a625bb6da0
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Rock_2.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -303,8 +444,38 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68b29c3ff67bea8499a0eae81928f757
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Billboard_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69a7263751240be40a22141928bba9c1
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/FHE_Tree_1_LOD2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a34c1ea3c3ccae4f8b291e563234087
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Billboard_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6a44216be9a1fce47be02bf2d0d65cb8
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteGrey.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a6ce847d091e8049b47c06bd89939d8
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_2_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e12033db5ccf594b9b894053eb78dde
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Tree_1.st
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -315,20 +486,50 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 70361116fdbb18646b46bc35ab8538ed
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@idleNoScythe.FBX
+  - m_GUID: 732911a6b2f0dbc48a66b71ab1989957
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/Bark_LOD0.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 76db4f9b8245902448db08b69806958e
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GLASS.png
+  - m_GUID: 733321016244d7f4194a2c5d66849afd
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Billboard_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7441539e93261a24eb9f604c129dfa0b
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 74dec1d18a01e7946bfbd1239e03fffe
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_1/Bark_LOD2.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7713aacf6f688b444913803eda333c12
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Lrg_B_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 773c0936566326646830aebc6cefc8ae
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Rock_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ad45bb942bcc3542a15ec58a853b23b
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/Bark_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d074cfde9e92a04c9a29047ee51ada8
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/Bark_LOD1.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -345,14 +546,90 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80be2777e13cbbc449e0db12b44b6c65
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Mud_2/FHE_Mud_2_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8184315116b6ae84ba8de72fb9dcbcf6
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Terrain
+      Layers/FHE_Grass_1.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 819f0d35dce7cea44ad73600f78c46a4
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Mud_2/FHE_Mud_2_MetallicSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81bf12b32f4282946a31e5cc9a15b0f9
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Bush_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8304ef619d75db74ab489178b7bd824b
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Rock_1.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 831b012fa2c85b54dbc18b49f7b8d1fb
+    m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/ModularParts/Roads/StoneChunks1.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 84a9ca3c43f9fcb489db05ecc092d6a2
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Billboard_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 858431b0957ac37468a0d6d60f540cee
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Rocks_2/FHE_Rocks_2_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 859f23e002b758746acd95cababe1740
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_C_df.tga
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 87842b5508203de44a06f257e25d3acd
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_GEAR.mat
+  - m_GUID: 86dca4cbbd7833a46ad60040898d3024
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/Bark_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8762ba8343648d445aca225289b98427
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Bush_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8827b9c249f09e445a5d0a1a7d9e1569
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 894f049f58756534ba9a3faff9bf64fc
+    m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/MageBlue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89b53c5436efe3049bd2e3ce8d875a32
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -363,8 +640,45 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bd71f79e6f703f4c81f72f72904c9d9
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c58bc4f8b9ff0446aa18316d7088a2d
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/FHE_Tree_1_Billboard_LOD3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cbdad743ef83a54c814107055e139e6
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Mud_2/FHE_Mud_2_AlbedoSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e9242d856bec8049b98522b30c75fb0
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/Bark_2_LOD2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8eba6858c83f2f3438a2f7754c0ceae0
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8ebc2305dd2cddb45b91114eeab3468e
     m_Address: DaniTech/Items/PrismShield
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f14b178abed61340a869d7e4ed50641
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Ground/FHE_Mud_2.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -381,14 +695,14 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 93731d7ae589f1a4d9655264618df5fe
-    m_Address: DaniTech/Items/DiamondTonic
+  - m_GUID: 92d6186dbf05bfa43995c93d172c7d60
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Billboard_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 956a70794bacd44478d19e16eb03243b
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scytheAttack1.FBX
+  - m_GUID: 93731d7ae589f1a4d9655264618df5fe
+    m_Address: DaniTech/Items/DiamondTonic
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -399,20 +713,21 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 981d9aa1a946c814681ffcf50d92f4dc
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@floatLeft.FBX
+  - m_GUID: 97cd54edbaac2684895cc894d60773e9
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_1_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 99ae4801d38e45c4181cadd95f615d1d
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_GLASS.mat
+  - m_GUID: 9838c483843b27a458f9aef4fd6f1004
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Terrain
+      Layers/FHE_Mud_2.terrainlayer
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9b2d57da89ab20c42895e6d0dc9ead42
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_BODY.jpg
+  - m_GUID: 9b9240ee93cb95b46af27a34e129703b
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/Bark_LOD2.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -423,20 +738,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c5ffe9a5cb49ea4dacb30a3fb31f81c
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Billboard_Subsurface.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9d738919c3b219340bbf1b9ad10aeea5
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_B_df.tga
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9e5dbadcdd17c834498c6d2b9cda0f32
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE_SPEC_GLOSS.tga
+  - m_GUID: 9e4534e7e8999bf4ab34b7123164dedc
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Billboard_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9ecdb32c3fd4ddb418d9c89642f05bc1
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_MetalPaintedBlack.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fb8b76413faee64bb0b7081e0dfbfae
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Tree_2.st
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -459,32 +786,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a34208711cf473e4e8a4cb009200b0c1
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE_AO.jpg
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - DaniTechPromotion
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a3a8716b78d1cf24aa2852ab4142b22a
     m_Address: DaniTech/VFX/UseEffect
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a5cfa7cc6bc306144b7952dfb0430d47
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE.tga
+  - m_GUID: a40740069f3fbe04eb02eb242c10e811
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/FHE_Tree_2_LOD1.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a7c673a362d826f46869cac88c120d91
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_SCYTHE.mat
+  - m_GUID: a6f3b4a163751f24ba682bc2b9d8d4a8
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Billboard_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a864314109547504bb872929aad79db1
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR.jpg
+  - m_GUID: a7a52213ea7523646a89efdb648d0555
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Rock_4.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -495,8 +816,50 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a974d6228cce6044b9c639829187ca21
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_NRM.jpg
+  - m_GUID: b12718859f9384946a789d0de8445f74
+    m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/Props/StreetLight2.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b27562d03987c7c468637ec07bfd68c6
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_3_Albedo.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b31d18b4e9c5d614480b0630c5e60356
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3ba7540bf897004aa3c937ec9135a1d
+    m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/ModularParts/Roads/SideWalk.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b42e37d1d8ccfec49979b39ac911c4d8
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Billboard_Subsurface.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5115ce37e24a02469a7677b132a2f50
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/Bark_2_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5602a2d4b5dfed4db95058a2d3c28bc
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_1/FHE_Bush_1_LOD1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5e65dc6200741a48bd785c75b9d98c9
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/Bark_Color.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -507,14 +870,51 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bbe62d915e3938146b03798bf572bef2
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_ALBEDO.jpg
+  - m_GUID: b931b15713dc143438305a19015a9879
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Billboard_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb2a803d899e8ab4abfd792ac0abf854
+    m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/Textures/MagesTexture.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbbf7fd2ede05474eb78fcd5ec48668b
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Terrain
+      Layers/FHE_Rocks_2.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd7a346bcfc4759469368b35aa119cec
+    m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/FBX/Mages.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd906cbdf8887fe488eab137f3f53f3c
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Ground/FHE_Rocks_2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bdacaf05e9a196b4b9293944329f48cc
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_1_Albedo.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bdec45b32cf2c2e4fbafb03ee5c71734
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Materials/Crystal_A.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be331d82932bde94a88faefdea59b3d1
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_4_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -537,38 +937,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c26988892843a4d418252c95b0ae3ef7
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/FHE_Bush_2_LOD2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c28562467ce43b445bf49c8f875c43a2
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_FlatAsphaltRoof.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c50107d2b61ed974fb0324321ba1f04d
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scythe3HitCombo.FBX
+  - m_GUID: c34184578d7910148809e3475726ddc9
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Tree_2.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c59875bd18b1f1d49bcc3e081cf75996
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scytheAttack2.FBX
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - DaniTechPromotion
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c67ddd75ffac5b34db3f017d8b95e1d3
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@idle.FBX
+  - m_GUID: c43b1c723a15688478fd743bd815a435
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/Bark_Extra.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c7345da249fd3ac4a9326c612b7f6d8d
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_Set_01.psd
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - DaniTechPromotion
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c7e997c8ffb728f47b7f87597f794f46
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_BODY_AO.jpg
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -585,8 +979,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ca2e81e4ba44b17488d80bed9774f72e
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_SCYTHE_LEGACY.mat
+  - m_GUID: ca4a9f9b166503d46ba395db638ba2ab
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/Bark_2_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: caf14562da1a14d45b0db10817e31df5
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cccc1e02642e3c14695bfcfb50e33c31
+    m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/ModularParts/Roads/RoadEdge_02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cce3c4cec71660546b1e2f35823a88cd
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_1/Bark_LOD0.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -597,26 +1009,39 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: cf199a74b71abb4488ea6958cd6a02aa
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE_LEGACY.tga
+  - m_GUID: ce5c7c37fd27acc4e979d1327aa22a18
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/Bark_Color.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d069fa198ec2c154ca25fd0abf27c0e3
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_GLASS_LEGACY.mat
+  - m_GUID: cf11e487d39eef342b40228c7c7ae597
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_3_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d19c3280d821dc1489551827c400ff4a
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/PREFABS/REAPER_LEGACY.prefab
+  - m_GUID: cf91df773ac2f0d4e909b8cbde372f32
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Rocks_2/FHE_Rocks_2_AlbedoSmoothness.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d6837906b85a16144920ec59a74b1623
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_ILLUM.jpg
+  - m_GUID: d2ed079aae514ce4ba9437ac0a96adb4
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Rock_3.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4b845242e7af504baf9ba08cfcda7ed
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/FHE_Tree_1_LOD1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d644900a74ae54d4094552e2e58ceb44
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Billboard_Subsurface.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -627,26 +1052,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d90cae3781440d34ca049c133f665449
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_1/FHE_Bush_1_Billboard_LOD3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d914290144b10c043aa350f9156a94d3
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_TreeWalnutLeaf.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d98f0303034f3384e9c0225b9320147a
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_LEGACY.tga
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - DaniTechPromotion
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: da34aa5078429504b819faae8063829c
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER.FBX
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - DaniTechPromotion
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dc6d1589a6bb1024cb8d4ba871a5b1ac
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Med_A_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de7b9a42a929dc0499b07ab90927b041
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_1/FHE_Bush_1_LOD0.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -663,26 +1088,33 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e1c281d7739297340a90498ec5e7498d
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE_NRM.jpg
+  - m_GUID: e0cd9805ba0480b4bacb485ce830f5e7
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/Bark_2_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e294b0000f7bd0c49987fed2782a2c81
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_AO.jpg
+  - m_GUID: e4895334840fd1e4988630e952f28bda
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Tree_1.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e2aef8c1dfae0b64281cc4926cf27682
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_NRM.jpg
+  - m_GUID: e5d3753d96783a440a9a88704135cd6c
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Mud_2/FHE_Mud_2_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e5d66cac4e21a5e45b4578f26eddebd2
-    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_BODY_LEGACY.jpg
+  - m_GUID: e648081c3b2f2d347bfc56e8cc44c5fa
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/FHE_Tree_2_LOD0.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e717b1fd3786d3546a4338dde2bdf1d8
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Subsurface.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -693,8 +1125,21 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebf9906d57e34ff41b1e6e2b7d90258c
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Grass_1/FHE_Grass_1_AlbedoSmoothness.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ec0f734d1aa2f9d4b90c59ada4127f98
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Sml_A_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec6629ca4edbba149a327dbe36755847
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Rocks/FHE_Rock_2.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -717,14 +1162,39 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f4931e1b13010f04bb2d1fef659db166
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Rocks_2/FHE_Rocks_2_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f56dbdb53a6074b41b0fd439994de2d2
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Subsurface.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f578b74e1538075479c0bf8c1647e782
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgMD_F.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6000e6d25b5a1b45bb408c827f069aa
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Billboard_Subsurface.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f648433dfefd3844297f5ba1d4b466a8
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgLG_A.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f65c6ed40c84be34caae872bac9fb985
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/FHE_Tree_2_LOD2.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -741,6 +1211,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7b4379a8ce1d3c47a45a986d2c1dacf
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/Bark_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fbc0bcea73f747e4a814117c78ee4a88
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_LeavesBush.mat
     m_ReadOnly: 0
@@ -753,8 +1229,21 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fea40c505deb6a44593ceb462bf86b9b
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/FHE_Tree_2_Billboard_LOD3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ffd755690d6744f4c93df004a9d33b1d
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgLG_E.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ffe8ceff28329124fa33bb2399489fa6
+    m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
+      Ground/Grass_1/FHE_Grass_1_MetallicSmoothness.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion

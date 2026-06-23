@@ -95,7 +95,7 @@ namespace EmeToDia.Gameplay
         public void BeginDragSlot(DaniTechInventorySlotView slotView)
         {
             _draggingSlotView = slotView;
-            RefreshMessage("드롭 영역에 놓으면 선택 아이템을 1개 버립니다.");
+            RefreshMessage("Drag to the drop area to remove one selected item.");
         }
 
         public void EndDragSlot()
@@ -239,7 +239,7 @@ namespace EmeToDia.Gameplay
                 return;
             }
 
-            _titleText.text = "Diamond Promotion Inventory";
+            _titleText.text = "Field Bag Inventory";
         }
 
         private void RefreshSlots()
@@ -276,9 +276,9 @@ namespace EmeToDia.Gameplay
             DaniTechItemModel selectedItem = _inventoryModel.GetSelectedItem();
             if (selectedItem == null || selectedItem.IsEmpty)
             {
-                SetSelectedText("선택 아이템 없음");
-                SetDetailText("월드 아이템에 가까이 가서 E로 획득하세요.");
-                RefreshMessage("Tab/I: 열기/닫기, T: 사용, G: 버리기, R: 정렬");
+                SetSelectedText("No item selected");
+                SetDetailText("Move close to a world item and press E. Pickups appear in this bag and in the HUD BAG panel.");
+                RefreshMessage("Tab/I: open or close, T: use, G: drop, R: sort");
                 return;
             }
 
@@ -286,7 +286,7 @@ namespace EmeToDia.Gameplay
             if (itemData == null)
             {
                 SetSelectedText(selectedItem.ItemId);
-                SetDetailText("아이템 데이터가 없습니다.");
+                SetDetailText("Item data is missing.");
                 return;
             }
 
@@ -295,9 +295,9 @@ namespace EmeToDia.Gameplay
             SetDetailText(
                 itemData.ItemType + "\n" +
                 itemData.Description + "\n" +
-                "효과: " + itemData.EffectType + " " + itemData.EffectValue.ToString("0.##") + "\n" +
-                "쿨타임: " + cooldownRemainingSeconds.ToString("0.0") + " / " + itemData.CooldownSeconds.ToString("0.0") + "초");
-            RefreshMessage("선택 후 사용 버튼 또는 T 키로 상태 변화를 확인하세요.");
+                "Effect: " + itemData.EffectType + " " + itemData.EffectValue.ToString("0.##") + "\n" +
+                "Cooldown: " + cooldownRemainingSeconds.ToString("0.0") + " / " + itemData.CooldownSeconds.ToString("0.0") + "s");
+            RefreshMessage("Use button or T applies the selected item and updates player status.");
         }
 
         private void RefreshMessage(string message)

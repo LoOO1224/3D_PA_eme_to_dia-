@@ -1,4 +1,5 @@
 using EmeToDia.Gameplay;
+using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEditor.AddressableAssets;
@@ -8,6 +9,7 @@ using UnityEditor.AddressableAssets.Settings.GroupSchemas;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -19,6 +21,7 @@ namespace EmeToDia.Editor
     {
         private const string ScenePath = "Assets/Eme_to_Dia_Promotion.unity";
         private const string MaterialFolderPath = "Assets/DaniTech/Materials";
+        private const string TerrainFolderPath = "Assets/DaniTech/Terrain";
         private const string PrefabFolderPath = "Assets/DaniTech/Prefabs";
         private const string ItemPrefabFolderPath = PrefabFolderPath + "/Items";
         private const string UiPrefabFolderPath = PrefabFolderPath + "/UI";
@@ -26,10 +29,14 @@ namespace EmeToDia.Editor
         private const string AddressableGroupName = "DaniTechPromotion";
         private const string BrooklynSourceRoot = "D:/3D_Basic_Assets/0_배경/Kitbash3D Brooklyn-004/Kitbash3D Brooklyn-004/Kitbash3D Brooklyn/Kitbash3D Brooklyn Unity BuiltIn/KB3D_Brooklyn_UnityBuiltIn/Assets/KB3D/Brooklyn";
         private const string AsteroidCrystalPackageRoot = "D:/3D_Basic_Assets/3_프롭/Asteroid Crystal Set 1.unitypackage";
-        private const string ReaperPackageRoot = "D:/3D_Basic_Assets/1_캐릭터/Heroic Reaper Fantasy Boss 1.01.unitypackage";
+        private const string MagePackageRoot = "D:/3D_Basic_Assets/1_캐릭터/Stylized Mages - 8 colour variations Low Poly v1.4.unitypackage";
+        private const string TownConstructorPackageRoot = "D:/3D_Basic_Assets/0_배경/drive-download-20260617T045914Z-3-001/Town Constructor 2.unitypackage";
+        private const string ForestHousePackageRoot = "D:/3D_Basic_Assets/0_배경/drive-download-20260617T045914Z-3-004/Forest House Environment v1.0.unitypackage";
         private const string BrooklynImportedFolderPath = ExternalFolderPath + "/KB3D_Brooklyn";
         private const string AsteroidImportedFolderPath = ExternalFolderPath + "/Asteroid_Crystal_Set_01";
-        private const string ReaperImportedFolderPath = ExternalFolderPath + "/HEROIC FANTASY BOSSES PACK 1";
+        private const string MageImportedFolderPath = ExternalFolderPath + "/Stylized_Mages";
+        private const string TownImportedFolderPath = ExternalFolderPath + "/TownConstructor2";
+        private const string ForestHouseImportedFolderPath = ExternalFolderPath + "/ForestHouseEnvironment";
 
         private const string EmeraldItemPrefabPath = ItemPrefabFolderPath + "/PF_DaniTech_Item_EmeraldCore.prefab";
         private const string DiamondItemPrefabPath = ItemPrefabFolderPath + "/PF_DaniTech_Item_DiamondTonic.prefab";
@@ -44,7 +51,34 @@ namespace EmeToDia.Editor
         private const string CrystalSmallCAssetPath = AsteroidImportedFolderPath + "/Models/Crystal_Sml_C_01.FBX";
         private const string AsteroidSmallAAssetPath = AsteroidImportedFolderPath + "/Models/Asteroid_Sml_A_01.FBX";
         private const string AsteroidSmallBAssetPath = AsteroidImportedFolderPath + "/Models/Asteroid_Sml_B_01.FBX";
-        private const string PlayerCharacterPrefabPath = ReaperImportedFolderPath + "/REAPER/PREFABS/REAPER_PBR.prefab";
+        private const string PlayerCharacterPrefabPath = MageImportedFolderPath + "/Models/Characters/Fantasy/Mages/MageBlue.prefab";
+        private const string TownFloorAssetPath = TownImportedFolderPath + "/19ThTownPack/Standard Assets/Prototyping/Models/FloorPrototype64x01x64.fbx";
+        private const string TownRoadAssetPath = TownImportedFolderPath + "/19ThTownPack/ModularParts/Roads/Road.fbx";
+        private const string TownSideWalkAssetPath = TownImportedFolderPath + "/19ThTownPack/ModularParts/Roads/SideWalk.fbx";
+        private const string TownRoadEdgeAAssetPath = TownImportedFolderPath + "/19ThTownPack/ModularParts/Roads/RoadEdge_01.fbx";
+        private const string TownRoadEdgeBAssetPath = TownImportedFolderPath + "/19ThTownPack/ModularParts/Roads/RoadEdge_02.fbx";
+        private const string TownStoneChunksAAssetPath = TownImportedFolderPath + "/19ThTownPack/ModularParts/Roads/StoneChunks1.FBX";
+        private const string TownStoneChunksBAssetPath = TownImportedFolderPath + "/19ThTownPack/ModularParts/Roads/StoneChunks3.FBX";
+        private const string TownStreetLightAssetPath = TownImportedFolderPath + "/19ThTownPack/Props/StreetLight2.FBX";
+        private const string ForestGrassAlbedoPath = ForestHouseImportedFolderPath + "/Forest House Environment/Textures/Terrain Ground/Grass_1/FHE_Grass_1_AlbedoSmoothness.png";
+        private const string ForestGrassNormalPath = ForestHouseImportedFolderPath + "/Forest House Environment/Textures/Terrain Ground/Grass_1/FHE_Grass_1_Normal.png";
+        private const string ForestMudAlbedoPath = ForestHouseImportedFolderPath + "/Forest House Environment/Textures/Terrain Ground/Mud_2/FHE_Mud_2_AlbedoSmoothness.png";
+        private const string ForestMudNormalPath = ForestHouseImportedFolderPath + "/Forest House Environment/Textures/Terrain Ground/Mud_2/FHE_Mud_2_Normal.png";
+        private const string ForestRockAlbedoPath = ForestHouseImportedFolderPath + "/Forest House Environment/Textures/Terrain Ground/Rocks_2/FHE_Rocks_2_AlbedoSmoothness.png";
+        private const string ForestRockNormalPath = ForestHouseImportedFolderPath + "/Forest House Environment/Textures/Terrain Ground/Rocks_2/FHE_Rocks_2_Normal.png";
+        private const string ForestTreeOnePrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Tree_1.prefab";
+        private const string ForestTreeTwoPrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Tree_2.prefab";
+        private const string ForestBushOnePrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Bush_1.prefab";
+        private const string ForestBushTwoPrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Bush_2.prefab";
+        private const string ForestRockOnePrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Rock_1.prefab";
+        private const string ForestRockTwoPrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Rock_2.prefab";
+        private const string ForestRockThreePrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Rock_3.prefab";
+        private const string ForestRockFourPrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Rock_4.prefab";
+        private const string TerrainDataPath = TerrainFolderPath + "/Terrain_DaniTech_HeroValley.asset";
+        private const string GrassTerrainLayerPath = TerrainFolderPath + "/TL_DaniTech_Grass.asset";
+        private const string MudTerrainLayerPath = TerrainFolderPath + "/TL_DaniTech_Mud.asset";
+        private const string RockTerrainLayerPath = TerrainFolderPath + "/TL_DaniTech_Rock.asset";
+        private const string SkyboxMaterialPath = MaterialFolderPath + "/MAT_DaniTech_TwilightSky.mat";
 
         [MenuItem("EmeToDia/Rebuild Promotion Scene")]
         public static void RebuildPromotionScene()
@@ -85,6 +119,7 @@ namespace EmeToDia.Editor
         {
             EnsureFolder("Assets", "DaniTech");
             EnsureFolder("Assets/DaniTech", "Materials");
+            EnsureFolder("Assets/DaniTech", "Terrain");
             EnsureFolder("Assets/DaniTech", "Prefabs");
             EnsureFolder(PrefabFolderPath, "Items");
             EnsureFolder(PrefabFolderPath, "UI");
@@ -92,7 +127,9 @@ namespace EmeToDia.Editor
             EnsureFolder("Assets/ThirdParty", "DaniTechImported");
             EnsureFolder(ExternalFolderPath, "KB3D_Brooklyn");
             EnsureFolder(ExternalFolderPath, "Asteroid_Crystal_Set_01");
-            EnsureFolder(ExternalFolderPath, "HEROIC FANTASY BOSSES PACK 1");
+            EnsureFolder(ExternalFolderPath, "Stylized_Mages");
+            EnsureFolder(ExternalFolderPath, "TownConstructor2");
+            EnsureFolder(ExternalFolderPath, "ForestHouseEnvironment");
         }
 
         private static void ImportExternalAssets()
@@ -110,11 +147,170 @@ namespace EmeToDia.Editor
             CopyExternalAsset("KB3D_BRK_RooftopProp_A.fbx");
             CopyExternalAsset("KB3D_BRK_FireScape_A.fbx");
             ImportUnityPackageFolder(AsteroidCrystalPackageRoot, ExternalFolderPath);
-            ImportUnityPackageFolder(ReaperPackageRoot, ExternalFolderPath);
+            ImportUnityPackageAssets(MagePackageRoot, MageImportedFolderPath, GetMageImportPaths());
+            ImportUnityPackageAssets(TownConstructorPackageRoot, TownImportedFolderPath, GetTownConstructorImportPaths());
+            ImportUnityPackageAssets(ForestHousePackageRoot, ForestHouseImportedFolderPath, GetForestHouseImportPaths());
             AssetDatabase.Refresh();
             AssetDatabase.ImportAsset(BrooklynImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
             AssetDatabase.ImportAsset(AsteroidImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
-            AssetDatabase.ImportAsset(ReaperImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
+            AssetDatabase.ImportAsset(MageImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
+            AssetDatabase.ImportAsset(TownImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
+            AssetDatabase.ImportAsset(ForestHouseImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
+            ConfigureForestTextureImporters();
+        }
+
+        private static string[] GetMageImportPaths()
+        {
+            return new[]
+            {
+                "Assets/Models/Characters/Fantasy/Mages/MageBlue.prefab",
+                "Assets/Models/Characters/Fantasy/Mages/Weapons/StaffBlue.prefab",
+                "Assets/Models/Characters/Fantasy/Mages/Textures/MagesTexture.png",
+                "Assets/Models/Characters/Fantasy/Mages/Textures/MagesTexture2.png",
+                "Assets/Models/Characters/Fantasy/Mages/FBX/Mages.fbx",
+                "Assets/Models/Characters/Fantasy/Mages/FBX/Materials/MagesTexture.mat",
+                "Assets/Models/Characters/Fantasy/Mages/FBX/Materials/MagesTexture2.mat"
+            };
+        }
+
+        private static string[] GetTownConstructorImportPaths()
+        {
+            return new[]
+            {
+                "Assets/19ThTownPack/Standard Assets/Prototyping/Models/FloorPrototype64x01x64.fbx",
+                "Assets/19ThTownPack/ModularParts/Roads/Road.fbx",
+                "Assets/19ThTownPack/ModularParts/Roads/SideWalk.fbx",
+                "Assets/19ThTownPack/ModularParts/Roads/RoadEdge_01.fbx",
+                "Assets/19ThTownPack/ModularParts/Roads/RoadEdge_02.fbx",
+                "Assets/19ThTownPack/ModularParts/Roads/StoneChunks1.FBX",
+                "Assets/19ThTownPack/ModularParts/Roads/StoneChunks3.FBX",
+                "Assets/19ThTownPack/Props/StreetLight2.FBX"
+            };
+        }
+
+        private static string[] GetForestHouseImportPaths()
+        {
+            List<string> assetPaths = new List<string>();
+            CollectUnityPackagePaths(
+                ForestHousePackageRoot,
+                assetPaths,
+                IsForestHouseTerrainAsset);
+            CollectUnityPackagePaths(
+                ForestHousePackageRoot,
+                assetPaths,
+                IsForestHouseRockAsset);
+            CollectUnityPackagePaths(
+                ForestHousePackageRoot,
+                assetPaths,
+                IsForestHouseTreeAsset);
+            return assetPaths.ToArray();
+        }
+
+        private static void CollectUnityPackagePaths(string packageFolderPath, List<string> assetPaths, System.Predicate<string> selector)
+        {
+            if (Directory.Exists(packageFolderPath) == false)
+            {
+                return;
+            }
+
+            string[] packageEntryPaths = Directory.GetDirectories(packageFolderPath);
+            for (int i = 0; i < packageEntryPaths.Length; i++)
+            {
+                string pathnamePath = Path.Combine(packageEntryPaths[i], "pathname");
+                if (File.Exists(pathnamePath) == false)
+                {
+                    continue;
+                }
+
+                string[] packagePathLines = File.ReadAllLines(pathnamePath);
+                if (packagePathLines.Length <= 0)
+                {
+                    continue;
+                }
+
+                string packageAssetPath = packagePathLines[0].Trim().Replace("\\", "/");
+                if (selector(packageAssetPath) && assetPaths.Contains(packageAssetPath) == false)
+                {
+                    assetPaths.Add(packageAssetPath);
+                }
+            }
+        }
+
+        private static bool IsForestHouseTerrainAsset(string assetPath)
+        {
+            if (assetPath.StartsWith("Assets/Forest House Environment/Textures/Terrain Ground/Grass_1/"))
+            {
+                return true;
+            }
+
+            if (assetPath.StartsWith("Assets/Forest House Environment/Textures/Terrain Ground/Mud_2/"))
+            {
+                return true;
+            }
+
+            if (assetPath.StartsWith("Assets/Forest House Environment/Textures/Terrain Ground/Rocks_2/"))
+            {
+                return true;
+            }
+
+            if (assetPath == "Assets/Forest House Environment/Materials/Ground/FHE_Grass_1.mat")
+            {
+                return true;
+            }
+
+            if (assetPath == "Assets/Forest House Environment/Materials/Ground/FHE_Mud_2.mat")
+            {
+                return true;
+            }
+
+            if (assetPath == "Assets/Forest House Environment/Materials/Ground/FHE_Rocks_2.mat")
+            {
+                return true;
+            }
+
+            return assetPath == "Assets/Forest House Environment/Terrain Layers/FHE_Grass_1.terrainlayer"
+                || assetPath == "Assets/Forest House Environment/Terrain Layers/FHE_Mud_2.terrainlayer"
+                || assetPath == "Assets/Forest House Environment/Terrain Layers/FHE_Rocks_2.terrainlayer";
+        }
+
+        private static bool IsForestHouseRockAsset(string assetPath)
+        {
+            bool isRockPath = assetPath.Contains("/Materials/Rocks/")
+                || assetPath.Contains("/Textures/Rocks/")
+                || assetPath.Contains("/Models/")
+                || assetPath.Contains("/Prefabs/");
+
+            if (isRockPath == false)
+            {
+                return false;
+            }
+
+            return assetPath.Contains("FHE_Rock_1")
+                || assetPath.Contains("FHE_Rock_2")
+                || assetPath.Contains("FHE_Rock_3")
+                || assetPath.Contains("FHE_Rock_4");
+        }
+
+        private static bool IsForestHouseTreeAsset(string assetPath)
+        {
+            bool isTreePath = assetPath.Contains("/Materials/Trees/")
+                || assetPath.Contains("/Textures/Trees/")
+                || assetPath.Contains("/Models/")
+                || assetPath.Contains("/Prefabs/");
+
+            if (isTreePath == false)
+            {
+                return false;
+            }
+
+            return assetPath.Contains("FHE_Tree_1")
+                || assetPath.Contains("FHE_Tree_2")
+                || assetPath.Contains("FHE_Bush_1")
+                || assetPath.Contains("FHE_Bush_2")
+                || assetPath.Contains("/Tree_1/")
+                || assetPath.Contains("/Tree_2/")
+                || assetPath.Contains("/Bush_1/")
+                || assetPath.Contains("/Bush_2/");
         }
 
         private static void CopyExternalAsset(string fileName)
@@ -161,6 +357,38 @@ namespace EmeToDia.Editor
             for (int i = 0; i < packageEntryPaths.Length; i++)
             {
                 ImportUnityPackageEntry(packageEntryPaths[i], targetRootPath);
+            }
+        }
+
+        private static void ImportUnityPackageAssets(string packageFolderPath, string targetRootPath, string[] packageAssetPaths)
+        {
+            if (Directory.Exists(packageFolderPath) == false)
+            {
+                Debug.LogWarning("DaniTechPromotionSceneBuilder: package folder was not found. " + packageFolderPath);
+                return;
+            }
+
+            HashSet<string> packageAssetPathSet = new HashSet<string>(packageAssetPaths);
+            string[] packageEntryPaths = Directory.GetDirectories(packageFolderPath);
+            for (int i = 0; i < packageEntryPaths.Length; i++)
+            {
+                string pathnamePath = Path.Combine(packageEntryPaths[i], "pathname");
+                if (File.Exists(pathnamePath) == false)
+                {
+                    continue;
+                }
+
+                string[] packagePathLines = File.ReadAllLines(pathnamePath);
+                if (packagePathLines.Length <= 0)
+                {
+                    continue;
+                }
+
+                string packageAssetPath = packagePathLines[0].Trim().Replace("\\", "/");
+                if (packageAssetPathSet.Contains(packageAssetPath))
+                {
+                    ImportUnityPackageEntry(packageEntryPaths[i], targetRootPath);
+                }
             }
         }
 
@@ -249,6 +477,32 @@ namespace EmeToDia.Editor
             File.Copy(sourcePath, targetFullPath, true);
         }
 
+        private static void ConfigureForestTextureImporters()
+        {
+            ConfigureTextureImporter(ForestGrassAlbedoPath, TextureImporterType.Default, true);
+            ConfigureTextureImporter(ForestGrassNormalPath, TextureImporterType.NormalMap, false);
+            ConfigureTextureImporter(ForestMudAlbedoPath, TextureImporterType.Default, true);
+            ConfigureTextureImporter(ForestMudNormalPath, TextureImporterType.NormalMap, false);
+            ConfigureTextureImporter(ForestRockAlbedoPath, TextureImporterType.Default, true);
+            ConfigureTextureImporter(ForestRockNormalPath, TextureImporterType.NormalMap, false);
+            AssetDatabase.Refresh();
+        }
+
+        private static void ConfigureTextureImporter(string texturePath, TextureImporterType textureType, bool isReadable)
+        {
+            TextureImporter importer = AssetImporter.GetAtPath(texturePath) as TextureImporter;
+            if (importer == null)
+            {
+                return;
+            }
+
+            importer.textureType = textureType;
+            importer.isReadable = isReadable;
+            importer.mipmapEnabled = true;
+            importer.wrapMode = TextureWrapMode.Repeat;
+            importer.SaveAndReimport();
+        }
+
         private static void CreateMaterials()
         {
             GetOrCreateMaterial("MAT_DaniTech_Ground", new Color(0.09f, 0.13f, 0.16f, 1f), 0f);
@@ -266,8 +520,16 @@ namespace EmeToDia.Editor
             GetOrCreateMaterial("MAT_DaniTech_Bronze", new Color(0.42f, 0.27f, 0.13f, 1f), 0.03f);
             GetOrCreateMaterial("MAT_DaniTech_CrystalCyan", new Color(0.15f, 0.72f, 0.88f, 1f), 0.32f);
             GetOrCreateMaterial("MAT_DaniTech_CrystalViolet", new Color(0.42f, 0.26f, 0.72f, 1f), 0.26f);
-            GetOrCreateMaterial("MAT_DaniTech_ReaperCloth", new Color(0.04f, 0.045f, 0.055f, 1f), 0.02f);
-            GetOrCreateMaterial("MAT_DaniTech_ReaperTrim", new Color(0.46f, 0.58f, 0.64f, 1f), 0.08f);
+            GetOrCreateMaterial("MAT_DaniTech_HeroBlue", new Color(0.08f, 0.26f, 0.55f, 1f), 0.05f);
+            GetOrCreateMaterial("MAT_DaniTech_HeroGold", new Color(0.92f, 0.66f, 0.20f, 1f), 0.08f);
+            GetOrCreateMaterial("MAT_DaniTech_HeroSkin", new Color(0.82f, 0.58f, 0.42f, 1f), 0f);
+            GetOrCreateMaterial("MAT_DaniTech_Leather", new Color(0.28f, 0.16f, 0.08f, 1f), 0f);
+            GetOrCreateMaterial("MAT_DaniTech_LeatherDark", new Color(0.15f, 0.08f, 0.04f, 1f), 0f);
+            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestGrass", ForestGrassAlbedoPath, ForestGrassNormalPath, new Color(0.62f, 0.78f, 0.48f, 1f), 0.22f);
+            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestMud", ForestMudAlbedoPath, ForestMudNormalPath, new Color(0.42f, 0.29f, 0.18f, 1f), 0.12f);
+            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestRock", ForestRockAlbedoPath, ForestRockNormalPath, new Color(0.48f, 0.52f, 0.56f, 1f), 0.2f);
+            GetOrCreateMaterial("MAT_DaniTech_ForestFoliage", new Color(0.20f, 0.43f, 0.25f, 1f), 0f);
+            GetOrCreateMaterial("MAT_DaniTech_ForestBark", new Color(0.27f, 0.17f, 0.10f, 1f), 0f);
         }
 
         private static void CreateItemPrefabs()
@@ -378,16 +640,16 @@ namespace EmeToDia.Editor
 
             canvasObject.AddComponent<GraphicRaycaster>();
 
-            RectTransform hudRoot = CreatePanel(canvasObject.transform, "Panel_PlayerHUD", new Color(0.02f, 0.03f, 0.04f, 0.86f));
-            SetRect(hudRoot, new Vector2(0f, 1f), new Vector2(650f, 330f), new Vector2(22f, -22f));
+            RectTransform hudRoot = CreatePanel(canvasObject.transform, "Panel_PlayerHUD", new Color(0.03f, 0.035f, 0.04f, 0.88f));
+            SetRect(hudRoot, new Vector2(0f, 1f), new Vector2(680f, 440f), new Vector2(22f, -22f));
             DaniTechPlayerHUD playerHUD = hudRoot.gameObject.AddComponent<DaniTechPlayerHUD>();
-            Text titleText = CreateText(hudRoot, "Text_HudTitle", "DIAMOND STATUS", 24, TextAnchor.MiddleLeft);
+            Text titleText = CreateText(hudRoot, "Text_HudTitle", "PLAYER STATUS", 26, TextAnchor.MiddleLeft);
             SetRect(titleText.rectTransform, new Vector2(0f, 1f), new Vector2(360f, 34f), new Vector2(24f, -18f));
-            Text healthText = CreateText(hudRoot, "Text_HP", "HP 62 / 100", 24, TextAnchor.MiddleLeft);
+            Text healthText = CreateText(hudRoot, "Text_HP", "HP 62 / 100", 25, TextAnchor.MiddleLeft);
             SetRect(healthText.rectTransform, new Vector2(0f, 1f), new Vector2(160f, 32f), new Vector2(24f, -64f));
-            Text staminaText = CreateText(hudRoot, "Text_Stamina", "STM 70 / 100", 24, TextAnchor.MiddleLeft);
+            Text staminaText = CreateText(hudRoot, "Text_Stamina", "STM 70 / 100", 25, TextAnchor.MiddleLeft);
             SetRect(staminaText.rectTransform, new Vector2(0f, 1f), new Vector2(160f, 32f), new Vector2(24f, -106f));
-            Text shieldText = CreateText(hudRoot, "Text_Shield", "SHD 0 / 60", 24, TextAnchor.MiddleLeft);
+            Text shieldText = CreateText(hudRoot, "Text_Shield", "SHD 0 / 60", 25, TextAnchor.MiddleLeft);
             SetRect(shieldText.rectTransform, new Vector2(0f, 1f), new Vector2(160f, 32f), new Vector2(24f, -148f));
             Image healthFill = CreateBar(hudRoot, "Bar_HP", new Vector2(200f, -70f), new Vector2(400f, 22f), new Color(0.90f, 0.12f, 0.14f, 1f));
             Image staminaFill = CreateBar(hudRoot, "Bar_Stamina", new Vector2(200f, -112f), new Vector2(400f, 22f), new Color(0.16f, 0.72f, 0.30f, 1f));
@@ -395,11 +657,13 @@ namespace EmeToDia.Editor
             healthFill.fillAmount = 0.62f;
             staminaFill.fillAmount = 0.7f;
             shieldFill.fillAmount = 0f;
-            Text statusText = CreateText(hudRoot, "Text_Status", "Selected: 없음\nSpeed x1.00 (0.0s)", 22, TextAnchor.UpperLeft);
-            SetRect(statusText.rectTransform, new Vector2(0f, 1f), new Vector2(590f, 54f), new Vector2(24f, -190f));
-            Text tooltipText = CreateText(hudRoot, "Text_Tooltip", "Tip: 아이템에 조준하면 E 획득 툴팁이 표시됩니다.", 21, TextAnchor.UpperLeft);
-            SetRect(tooltipText.rectTransform, new Vector2(0f, 1f), new Vector2(590f, 34f), new Vector2(24f, -250f));
-            Text guideText = CreateText(hudRoot, "Text_Guide", "우클릭 드래그: 시점 / Q,C: 보조 회전 / 휠: 줌", 19, TextAnchor.LowerLeft);
+            Text statusText = CreateText(hudRoot, "Text_Status", "Selected: None\nSpeed x1.00 (0.0s)", 23, TextAnchor.UpperLeft);
+            SetRect(statusText.rectTransform, new Vector2(0f, 1f), new Vector2(620f, 58f), new Vector2(24f, -190f));
+            Text tooltipText = CreateText(hudRoot, "Text_Tooltip", "Tip: Aim at an item and press E to pick it up.", 21, TextAnchor.UpperLeft);
+            SetRect(tooltipText.rectTransform, new Vector2(0f, 1f), new Vector2(620f, 38f), new Vector2(24f, -254f));
+            Text inventorySummaryText = CreateText(hudRoot, "Text_InventorySummary", "BAG  Tab/I\nEmpty\nPick up items with E", 22, TextAnchor.UpperLeft);
+            SetRect(inventorySummaryText.rectTransform, new Vector2(0f, 1f), new Vector2(620f, 112f), new Vector2(24f, -302f));
+            Text guideText = CreateText(hudRoot, "Text_Guide", "Right drag: look  /  Q,C: turn  /  Wheel: zoom  /  Tab/I: bag", 19, TextAnchor.LowerLeft);
             SetRect(guideText.rectTransform, new Vector2(0f, 0f), new Vector2(590f, 34f), new Vector2(24f, 16f));
             SetObjectReference(playerHUD, "_statusText", statusText);
             SetObjectReference(playerHUD, "_guideText", guideText);
@@ -407,6 +671,7 @@ namespace EmeToDia.Editor
             SetObjectReference(playerHUD, "_staminaText", staminaText);
             SetObjectReference(playerHUD, "_shieldText", shieldText);
             SetObjectReference(playerHUD, "_tooltipText", tooltipText);
+            SetObjectReference(playerHUD, "_inventorySummaryText", inventorySummaryText);
             SetObjectReference(playerHUD, "_healthFillImage", healthFill);
             SetObjectReference(playerHUD, "_staminaFillImage", staminaFill);
             SetObjectReference(playerHUD, "_shieldFillImage", shieldFill);
@@ -418,7 +683,7 @@ namespace EmeToDia.Editor
             SetStretch(logText.rectTransform, new Vector2(22f, 18f), new Vector2(-22f, -18f));
             SetObjectReference(feedbackLogView, "_logText", logText);
 
-            RectTransform inventoryRoot = CreatePanel(canvasObject.transform, "Panel_InventoryRoot", new Color(0.025f, 0.035f, 0.045f, 0.96f));
+            RectTransform inventoryRoot = CreatePanel(canvasObject.transform, "Panel_InventoryRoot", new Color(0.18f, 0.10f, 0.055f, 0.97f));
             SetRect(inventoryRoot, new Vector2(0.5f, 0.5f), new Vector2(1320f, 820f), Vector2.zero);
             DaniTechInventoryUI inventoryUI = inventoryRoot.gameObject.AddComponent<DaniTechInventoryUI>();
             BuildInventoryPanel(inventoryRoot, inventoryUI);
@@ -430,13 +695,13 @@ namespace EmeToDia.Editor
 
         private static void BuildInventoryPanel(RectTransform inventoryRoot, DaniTechInventoryUI inventoryUI)
         {
-            Text titleText = CreateText(inventoryRoot, "Text_Title", "Diamond Promotion Inventory", 38, TextAnchor.MiddleCenter);
+            Text titleText = CreateText(inventoryRoot, "Text_Title", "Field Bag Inventory", 40, TextAnchor.MiddleCenter);
             SetRect(titleText.rectTransform, new Vector2(0.5f, 1f), new Vector2(1180f, 58f), new Vector2(0f, -44f));
 
-            Text messageText = CreateText(inventoryRoot, "Text_Message", "", 22, TextAnchor.MiddleCenter);
+            Text messageText = CreateText(inventoryRoot, "Text_Message", "", 23, TextAnchor.MiddleCenter);
             SetRect(messageText.rectTransform, new Vector2(0.5f, 0f), new Vector2(1140f, 44f), new Vector2(0f, 38f));
 
-            RectTransform slotPanel = CreatePanel(inventoryRoot, "Panel_Slots", new Color(0.07f, 0.09f, 0.11f, 0.92f));
+            RectTransform slotPanel = CreatePanel(inventoryRoot, "Panel_Slots", new Color(0.24f, 0.15f, 0.08f, 0.94f));
             SetRect(slotPanel, new Vector2(0f, 0.5f), new Vector2(760f, 560f), new Vector2(50f, -16f));
             GridLayoutGroup grid = slotPanel.gameObject.AddComponent<GridLayoutGroup>();
             grid.cellSize = new Vector2(170f, 130f);
@@ -451,26 +716,26 @@ namespace EmeToDia.Editor
                 slotViews[i] = CreateSlot(slotPanel, i);
             }
 
-            RectTransform detailPanel = CreatePanel(inventoryRoot, "Panel_Detail", new Color(0.07f, 0.08f, 0.10f, 0.94f));
+            RectTransform detailPanel = CreatePanel(inventoryRoot, "Panel_Detail", new Color(0.22f, 0.13f, 0.07f, 0.96f));
             SetRect(detailPanel, new Vector2(1f, 0.55f), new Vector2(440f, 500f), new Vector2(-50f, -18f));
-            Text selectedText = CreateText(detailPanel, "Text_Selected", "", 26, TextAnchor.UpperLeft);
+            Text selectedText = CreateText(detailPanel, "Text_Selected", "", 28, TextAnchor.UpperLeft);
             SetRect(selectedText.rectTransform, new Vector2(0f, 1f), new Vector2(392f, 84f), new Vector2(24f, -24f));
-            Text detailText = CreateText(detailPanel, "Text_Detail", "", 21, TextAnchor.UpperLeft);
+            Text detailText = CreateText(detailPanel, "Text_Detail", "", 22, TextAnchor.UpperLeft);
             SetRect(detailText.rectTransform, new Vector2(0f, 1f), new Vector2(392f, 270f), new Vector2(24f, -124f));
 
-            Button useButton = CreateButton(detailPanel, "Button_Use", "사용", new Vector2(24f, 48f), new Vector2(116f, 54f), new Color(0.12f, 0.36f, 0.25f, 1f));
-            Button dropButton = CreateButton(detailPanel, "Button_Drop", "버리기", new Vector2(158f, 48f), new Vector2(116f, 54f), new Color(0.42f, 0.16f, 0.15f, 1f));
-            Button closeButton = CreateButton(detailPanel, "Button_Close", "닫기", new Vector2(292f, 48f), new Vector2(116f, 54f), new Color(0.18f, 0.20f, 0.23f, 1f));
+            Button useButton = CreateButton(detailPanel, "Button_Use", "Use", new Vector2(24f, 48f), new Vector2(116f, 54f), new Color(0.20f, 0.43f, 0.25f, 1f));
+            Button dropButton = CreateButton(detailPanel, "Button_Drop", "Drop", new Vector2(158f, 48f), new Vector2(116f, 54f), new Color(0.48f, 0.20f, 0.12f, 1f));
+            Button closeButton = CreateButton(detailPanel, "Button_Close", "Close", new Vector2(292f, 48f), new Vector2(116f, 54f), new Color(0.31f, 0.21f, 0.13f, 1f));
 
-            RectTransform sortPanel = CreatePanel(inventoryRoot, "Panel_Sort", new Color(0.05f, 0.06f, 0.075f, 0.88f));
+            RectTransform sortPanel = CreatePanel(inventoryRoot, "Panel_Sort", new Color(0.13f, 0.075f, 0.04f, 0.9f));
             SetRect(sortPanel, new Vector2(0.5f, 0f), new Vector2(790f, 84f), new Vector2(-188f, 122f));
-            Button sortNameButton = CreateButton(sortPanel, "Button_SortName", "이름", new Vector2(20f, 15f), new Vector2(130f, 54f), new Color(0.18f, 0.22f, 0.26f, 1f));
-            Button sortTypeButton = CreateButton(sortPanel, "Button_SortType", "타입", new Vector2(168f, 15f), new Vector2(130f, 54f), new Color(0.18f, 0.22f, 0.26f, 1f));
-            Button sortSequenceButton = CreateButton(sortPanel, "Button_SortSequence", "획득순", new Vector2(316f, 15f), new Vector2(146f, 54f), new Color(0.18f, 0.22f, 0.26f, 1f));
+            Button sortNameButton = CreateButton(sortPanel, "Button_SortName", "Name", new Vector2(20f, 15f), new Vector2(130f, 54f), new Color(0.35f, 0.23f, 0.13f, 1f));
+            Button sortTypeButton = CreateButton(sortPanel, "Button_SortType", "Type", new Vector2(168f, 15f), new Vector2(130f, 54f), new Color(0.35f, 0.23f, 0.13f, 1f));
+            Button sortSequenceButton = CreateButton(sortPanel, "Button_SortSequence", "Recent", new Vector2(316f, 15f), new Vector2(146f, 54f), new Color(0.35f, 0.23f, 0.13f, 1f));
 
-            RectTransform dropTargetRoot = CreatePanel(sortPanel, "Panel_DropTarget", new Color(0.36f, 0.12f, 0.12f, 0.9f));
+            RectTransform dropTargetRoot = CreatePanel(sortPanel, "Panel_DropTarget", new Color(0.42f, 0.16f, 0.10f, 0.92f));
             SetRect(dropTargetRoot, new Vector2(1f, 0.5f), new Vector2(230f, 54f), new Vector2(-20f, 0f));
-            Text dropTargetText = CreateText(dropTargetRoot, "Text_DropTarget", "Drop / 버리기", 20, TextAnchor.MiddleCenter);
+            Text dropTargetText = CreateText(dropTargetRoot, "Text_DropTarget", "Drag Here To Drop", 20, TextAnchor.MiddleCenter);
             SetStretch(dropTargetText.rectTransform, Vector2.zero, Vector2.zero);
             DaniTechInventoryDropTarget dropTarget = dropTargetRoot.gameObject.AddComponent<DaniTechInventoryDropTarget>();
             SetObjectReference(dropTarget, "_backgroundImage", dropTargetRoot.GetComponent<Image>());
@@ -492,11 +757,11 @@ namespace EmeToDia.Editor
 
         private static DaniTechInventorySlotView CreateSlot(RectTransform parent, int slotIndex)
         {
-            RectTransform slotRoot = CreatePanel(parent, "Slot_Item_" + slotIndex.ToString("00"), new Color(0.08f, 0.10f, 0.12f, 0.82f));
+            RectTransform slotRoot = CreatePanel(parent, "Slot_Item_" + slotIndex.ToString("00"), new Color(0.16f, 0.095f, 0.055f, 0.86f));
             Button button = slotRoot.gameObject.AddComponent<Button>();
-            Text iconText = CreateText(slotRoot, "Text_Icon", "", 30, TextAnchor.MiddleCenter);
+            Text iconText = CreateText(slotRoot, "Text_Icon", "", 32, TextAnchor.MiddleCenter);
             SetRect(iconText.rectTransform, new Vector2(0.5f, 1f), new Vector2(136f, 38f), new Vector2(0f, -18f));
-            Text nameText = CreateText(slotRoot, "Text_Name", "", 17, TextAnchor.MiddleCenter);
+            Text nameText = CreateText(slotRoot, "Text_Name", "", 18, TextAnchor.MiddleCenter);
             SetRect(nameText.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(148f, 46f), new Vector2(0f, -2f));
             Text amountText = CreateText(slotRoot, "Text_Amount", "", 18, TextAnchor.LowerRight);
             SetRect(amountText.rectTransform, new Vector2(1f, 0f), new Vector2(72f, 28f), new Vector2(-10f, 10f));
@@ -530,6 +795,7 @@ namespace EmeToDia.Editor
                     typeof(ContentUpdateGroupSchema));
             }
 
+            ClearAddressableGroup(settings, group);
             RegisterAddressable(settings, group, EmeraldItemPrefabPath, "DaniTech/Items/EmeraldCore");
             RegisterAddressable(settings, group, DiamondItemPrefabPath, "DaniTech/Items/DiamondTonic");
             RegisterAddressable(settings, group, ShieldItemPrefabPath, "DaniTech/Items/PrismShield");
@@ -538,8 +804,20 @@ namespace EmeToDia.Editor
             RegisterAddressable(settings, group, UseEffectPrefabPath, "DaniTech/VFX/UseEffect");
             RegisterAddressableFolderAssets(settings, group, BrooklynImportedFolderPath, "DaniTech/Imported/KB3D_Brooklyn");
             RegisterAddressableFolderAssets(settings, group, AsteroidImportedFolderPath, "DaniTech/Imported/Asteroid_Crystal_Set_01");
-            RegisterAddressableFolderAssets(settings, group, ReaperImportedFolderPath, "DaniTech/Imported/Heroic_Reaper");
+            RegisterAddressableFolderAssets(settings, group, MageImportedFolderPath, "DaniTech/Imported/Stylized_Mages");
+            RegisterAddressableFolderAssets(settings, group, TownImportedFolderPath, "DaniTech/Imported/TownConstructor2");
+            RegisterAddressableFolderAssets(settings, group, ForestHouseImportedFolderPath, "DaniTech/Imported/ForestHouseEnvironment");
+            RegisterAddressableFolderAssets(settings, group, TerrainFolderPath, "DaniTech/Terrain");
             settings.SetDirty(AddressableAssetSettings.ModificationEvent.BatchModification, null, true);
+        }
+
+        private static void ClearAddressableGroup(AddressableAssetSettings settings, AddressableAssetGroup group)
+        {
+            List<AddressableAssetEntry> entries = new List<AddressableAssetEntry>(group.entries);
+            for (int i = 0; i < entries.Count; i++)
+            {
+                settings.RemoveAssetEntry(entries[i].guid);
+            }
         }
 
         private static int GetDataBuilderIndex<T>(AddressableAssetSettings settings) where T : ScriptableObject
@@ -592,31 +870,39 @@ namespace EmeToDia.Editor
             GameObject sunObject = CreateEmpty("DirectionalLight_Sun", lightRoot.transform, new Vector3(0f, 8f, 0f));
             Light sun = sunObject.AddComponent<Light>();
             sun.type = LightType.Directional;
-            sun.color = new Color(0.92f, 0.96f, 1f, 1f);
+            sun.color = new Color(0.82f, 0.90f, 1f, 1f);
             sun.intensity = 1.05f;
-            sunObject.transform.rotation = Quaternion.Euler(52f, -38f, 0f);
+            sunObject.transform.rotation = Quaternion.Euler(36f, -38f, 0f);
 
-            CreatePointLight(lightRoot.transform, "PointLight_DiamondGate", new Vector3(0f, 12f, 22f), new Color(0.28f, 0.78f, 1f, 1f), 1.8f, 42f);
-            RenderSettings.ambientLight = new Color(0.13f, 0.15f, 0.17f, 1f);
+            CreatePointLight(lightRoot.transform, "PointLight_HeroGate", new Vector3(0f, 12f, 22f), new Color(0.48f, 0.82f, 1f, 1f), 1.45f, 46f);
+            CreatePointLight(lightRoot.transform, "PointLight_WarmFill", new Vector3(-24f, 10f, -18f), new Color(1f, 0.66f, 0.42f, 1f), 0.55f, 62f);
+            RenderSettings.skybox = GetOrCreateSkyboxMaterial();
+            RenderSettings.ambientMode = AmbientMode.Trilight;
+            RenderSettings.ambientSkyColor = new Color(0.62f, 0.73f, 0.92f, 1f);
+            RenderSettings.ambientEquatorColor = new Color(0.54f, 0.63f, 0.76f, 1f);
+            RenderSettings.ambientGroundColor = new Color(0.30f, 0.37f, 0.43f, 1f);
             RenderSettings.fog = true;
-            RenderSettings.fogColor = new Color(0.44f, 0.54f, 0.62f, 1f);
+            RenderSettings.fogColor = new Color(0.62f, 0.75f, 0.88f, 1f);
             RenderSettings.fogMode = FogMode.Linear;
-            RenderSettings.fogStartDistance = 95f;
-            RenderSettings.fogEndDistance = 260f;
+            RenderSettings.fogStartDistance = 85f;
+            RenderSettings.fogEndDistance = 360f;
         }
 
         private static void CreateEnvironment(Scene scene)
         {
-            GameObject environmentRoot = CreateRoot(scene, "Environment_DiamondDistrict");
+            GameObject environmentRoot = CreateRoot(scene, "Environment_HeroPlaza");
             Material groundMaterial = LoadMaterial("MAT_DaniTech_Asphalt");
             Material pathMaterial = LoadMaterial("MAT_DaniTech_Concrete");
             Material diamondMaterial = LoadMaterial("MAT_DaniTech_CrystalCyan");
             Material lightMaterial = LoadMaterial("MAT_DaniTech_Light");
 
-            CreatePrimitive(PrimitiveType.Cube, "Ground_MainPlaza_240", environmentRoot.transform, new Vector3(0f, -0.08f, 0f), new Vector3(240f, 0.16f, 240f), groundMaterial);
-            CreatePrimitive(PrimitiveType.Cube, "Ground_DiamondPath_North", environmentRoot.transform, new Vector3(0f, 0.02f, 40f), new Vector3(18f, 0.08f, 112f), pathMaterial);
-            CreatePrimitive(PrimitiveType.Cube, "Ground_DiamondPath_East", environmentRoot.transform, new Vector3(40f, 0.03f, 0f), new Vector3(112f, 0.08f, 18f), pathMaterial);
-            CreatePrimitive(PrimitiveType.Cube, "Ground_DiamondPath_West", environmentRoot.transform, new Vector3(-40f, 0.03f, 0f), new Vector3(112f, 0.08f, 18f), pathMaterial);
+            CreateTerrainGround(environmentRoot.transform);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_North", environmentRoot.transform, new Vector3(0f, 0.02f, 40f), new Vector3(18f, 0.08f, 112f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_East", environmentRoot.transform, new Vector3(40f, 0.03f, 0f), new Vector3(112f, 0.08f, 18f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_West", environmentRoot.transform, new Vector3(-40f, 0.03f, 0f), new Vector3(112f, 0.08f, 18f), pathMaterial);
+
+            CreateTownFloorTiles(environmentRoot.transform, groundMaterial);
+            CreateTownRoadNetwork(environmentRoot.transform, pathMaterial, LoadMaterial("MAT_DaniTech_Bronze"));
 
             CreateExternalModel("KB3D_BRK_BldgLG_C.fbx", environmentRoot.transform, new Vector3(-82f, 0f, 48f), Quaternion.Euler(0f, 28f, 0f), new Vector3(0.28f, 0.28f, 0.28f));
             CreateExternalModel("KB3D_BRK_BldgLG_E.fbx", environmentRoot.transform, new Vector3(86f, 0f, 52f), Quaternion.Euler(0f, -34f, 0f), new Vector3(0.31f, 0.31f, 0.31f));
@@ -628,6 +914,7 @@ namespace EmeToDia.Editor
             CreateExternalModel("KB3D_BRK_WaterTower_A.fbx", environmentRoot.transform, new Vector3(-48f, 0f, -82f), Quaternion.Euler(0f, 12f, 0f), new Vector3(0.34f, 0.34f, 0.34f));
             CreateExternalModel("KB3D_BRK_RooftopProp_A.fbx", environmentRoot.transform, new Vector3(50f, 0.1f, -84f), Quaternion.identity, new Vector3(0.48f, 0.48f, 0.48f));
             CreateExternalModel("KB3D_BRK_FireScape_A.fbx", environmentRoot.transform, new Vector3(-54f, 0.2f, 18f), Quaternion.Euler(0f, 78f, 0f), new Vector3(0.38f, 0.38f, 0.38f));
+            CreateForestBackdrop(environmentRoot.transform);
 
             for (int i = 0; i < 6; i++)
             {
@@ -661,6 +948,324 @@ namespace EmeToDia.Editor
                 }
 
                 CreatePointLight(environmentRoot.transform, "PointLight_Gem_" + i.ToString("00"), position + Vector3.up * 8f, lightMaterial.color, 2.1f, 18f);
+            }
+        }
+
+        private static void CreateTerrainGround(Transform environmentRoot)
+        {
+            TerrainData terrainData = CreateHeroTerrainData();
+            GameObject terrainObject = Terrain.CreateTerrainGameObject(terrainData);
+            terrainObject.name = "Terrain_HeroValley_260";
+            terrainObject.transform.SetParent(environmentRoot);
+            terrainObject.transform.localPosition = new Vector3(-130f, -0.65f, -130f);
+            terrainObject.transform.localRotation = Quaternion.identity;
+            terrainObject.transform.localScale = Vector3.one;
+            terrainObject.isStatic = true;
+
+            Terrain terrain = terrainObject.GetComponent<Terrain>();
+            if (terrain != null)
+            {
+                terrain.materialTemplate = null;
+                terrain.heightmapPixelError = 3f;
+                terrain.basemapDistance = 1200f;
+                terrain.treeDistance = 420f;
+            }
+        }
+
+        private static TerrainData CreateHeroTerrainData()
+        {
+            TerrainData terrainData = AssetDatabase.LoadAssetAtPath<TerrainData>(TerrainDataPath);
+            if (terrainData == null)
+            {
+                terrainData = new TerrainData();
+                AssetDatabase.CreateAsset(terrainData, TerrainDataPath);
+            }
+
+            terrainData.heightmapResolution = 257;
+            terrainData.alphamapResolution = 192;
+            terrainData.size = new Vector3(260f, 12f, 260f);
+            terrainData.terrainLayers = CreateHeroTerrainLayers();
+            terrainData.SetHeights(0, 0, CreateHeroTerrainHeights(terrainData.heightmapResolution));
+            terrainData.SetAlphamaps(0, 0, CreateHeroTerrainAlphamaps(terrainData.alphamapResolution));
+            EditorUtility.SetDirty(terrainData);
+            return terrainData;
+        }
+
+        private static TerrainLayer[] CreateHeroTerrainLayers()
+        {
+            TerrainLayer grassLayer = GetOrCreateTerrainLayer(
+                GrassTerrainLayerPath,
+                ForestGrassAlbedoPath,
+                ForestGrassNormalPath,
+                new Vector2(9f, 9f),
+                0f,
+                0.24f);
+            TerrainLayer mudLayer = GetOrCreateTerrainLayer(
+                MudTerrainLayerPath,
+                ForestMudAlbedoPath,
+                ForestMudNormalPath,
+                new Vector2(10f, 10f),
+                0f,
+                0.16f);
+            TerrainLayer rockLayer = GetOrCreateTerrainLayer(
+                RockTerrainLayerPath,
+                ForestRockAlbedoPath,
+                ForestRockNormalPath,
+                new Vector2(13f, 13f),
+                0f,
+                0.22f);
+            return new[] { grassLayer, mudLayer, rockLayer };
+        }
+
+        private static TerrainLayer GetOrCreateTerrainLayer(
+            string layerPath,
+            string diffuseTexturePath,
+            string normalTexturePath,
+            Vector2 tileSize,
+            float metallic,
+            float smoothness)
+        {
+            TerrainLayer terrainLayer = AssetDatabase.LoadAssetAtPath<TerrainLayer>(layerPath);
+            if (terrainLayer == null)
+            {
+                terrainLayer = new TerrainLayer();
+                AssetDatabase.CreateAsset(terrainLayer, layerPath);
+            }
+
+            terrainLayer.diffuseTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(diffuseTexturePath);
+            terrainLayer.normalMapTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(normalTexturePath);
+            terrainLayer.tileSize = tileSize;
+            terrainLayer.metallic = metallic;
+            terrainLayer.smoothness = smoothness;
+            EditorUtility.SetDirty(terrainLayer);
+            return terrainLayer;
+        }
+
+        private static float[,] CreateHeroTerrainHeights(int resolution)
+        {
+            float[,] heights = new float[resolution, resolution];
+            for (int z = 0; z < resolution; z++)
+            {
+                for (int x = 0; x < resolution; x++)
+                {
+                    float worldX = Mathf.Lerp(-130f, 130f, x / (resolution - 1f));
+                    float worldZ = Mathf.Lerp(-130f, 130f, z / (resolution - 1f));
+                    heights[z, x] = GetHeroTerrainNormalizedHeight(worldX, worldZ);
+                }
+            }
+
+            return heights;
+        }
+
+        private static float[,,] CreateHeroTerrainAlphamaps(int resolution)
+        {
+            float[,,] alphamaps = new float[resolution, resolution, 3];
+            for (int z = 0; z < resolution; z++)
+            {
+                for (int x = 0; x < resolution; x++)
+                {
+                    float worldX = Mathf.Lerp(-130f, 130f, x / (resolution - 1f));
+                    float worldZ = Mathf.Lerp(-130f, 130f, z / (resolution - 1f));
+                    float distance = new Vector2(worldX, worldZ).magnitude;
+                    float pathMask = Mathf.Max(
+                        1f - Mathf.InverseLerp(14f, 32f, Mathf.Abs(worldX)),
+                        1f - Mathf.InverseLerp(14f, 32f, Mathf.Abs(worldZ)));
+                    float edgeMask = Mathf.InverseLerp(70f, 132f, distance);
+                    float noise = Mathf.PerlinNoise(worldX * 0.036f + 18.6f, worldZ * 0.036f + 3.2f);
+                    float mud = Mathf.Clamp01(pathMask * 0.50f + noise * 0.18f);
+                    float rock = Mathf.Clamp01(edgeMask * 0.64f + Mathf.Max(0f, noise - 0.62f) * 0.74f);
+                    float grass = Mathf.Clamp01(1f - mud * 0.55f - rock * 0.70f);
+                    float total = grass + mud + rock;
+
+                    alphamaps[z, x, 0] = grass / total;
+                    alphamaps[z, x, 1] = mud / total;
+                    alphamaps[z, x, 2] = rock / total;
+                }
+            }
+
+            return alphamaps;
+        }
+
+        private static float GetHeroTerrainNormalizedHeight(float worldX, float worldZ)
+        {
+            float distance = new Vector2(worldX, worldZ).magnitude;
+            float crossRoadMask = Mathf.Max(
+                1f - Mathf.InverseLerp(14f, 44f, Mathf.Abs(worldX)),
+                1f - Mathf.InverseLerp(14f, 44f, Mathf.Abs(worldZ)));
+            float plazaMask = 1f - Mathf.InverseLerp(24f, 62f, distance);
+            float flatMask = Mathf.Clamp01(Mathf.Max(crossRoadMask, plazaMask));
+            float edgeRise = Mathf.InverseLerp(62f, 130f, distance) * 0.075f;
+            float lowNoise = Mathf.PerlinNoise(worldX * 0.020f + 5.4f, worldZ * 0.020f + 33.7f) * 0.036f;
+            float highNoise = Mathf.PerlinNoise(worldX * 0.062f + 91.2f, worldZ * 0.062f + 12.4f) * 0.018f;
+            return Mathf.Clamp01((edgeRise + lowNoise + highNoise) * (1f - flatMask * 0.88f) + 0.012f);
+        }
+
+        private static float GetHeroTerrainWorldHeight(float worldX, float worldZ)
+        {
+            return -0.65f + GetHeroTerrainNormalizedHeight(worldX, worldZ) * 12f;
+        }
+
+        private static void CreateForestBackdrop(Transform environmentRoot)
+        {
+            string[] treeAssetPaths =
+            {
+                ForestTreeOnePrefabPath,
+                ForestTreeTwoPrefabPath,
+                ForestBushOnePrefabPath,
+                ForestBushTwoPrefabPath
+            };
+
+            for (int i = 0; i < 44; i++)
+            {
+                float angle = i * 8.2f + (i % 5) * 3.1f;
+                float radius = 92f + (i % 4) * 10f;
+                Vector3 position = GetRingPosition(angle, radius);
+                position.y = GetHeroTerrainWorldHeight(position.x, position.z) - 0.05f;
+                string assetPath = treeAssetPaths[i % treeAssetPaths.Length];
+                float scale = assetPath.Contains("Bush") ? 5.2f + (i % 3) * 1.1f : 8.5f + (i % 5) * 1.35f;
+                CreateForestAsset(
+                    assetPath,
+                    "Asset_ForestBackdrop_" + i.ToString("00"),
+                    environmentRoot,
+                    position,
+                    Quaternion.Euler(0f, angle + 180f, 0f),
+                    Vector3.one * scale,
+                    true);
+            }
+
+            string[] rockAssetPaths =
+            {
+                ForestRockOnePrefabPath,
+                ForestRockTwoPrefabPath,
+                ForestRockThreePrefabPath,
+                ForestRockFourPrefabPath
+            };
+
+            for (int i = 0; i < 28; i++)
+            {
+                float angle = i * 12.85f + 6f;
+                float radius = 68f + (i % 5) * 11f;
+                Vector3 position = GetRingPosition(angle, radius);
+                position.y = GetHeroTerrainWorldHeight(position.x, position.z) + 0.08f;
+                CreateForestAsset(
+                    rockAssetPaths[i % rockAssetPaths.Length],
+                    "Asset_ForestRock_" + i.ToString("00"),
+                    environmentRoot,
+                    position,
+                    Quaternion.Euler(0f, angle * 0.6f, 0f),
+                    Vector3.one * (3.6f + (i % 4) * 0.8f),
+                    false);
+            }
+        }
+
+        private static Vector3 GetRingPosition(float angle, float radius)
+        {
+            Quaternion rotation = Quaternion.Euler(0f, angle, 0f);
+            return rotation * new Vector3(0f, 0f, radius);
+        }
+
+        private static void CreateForestAsset(
+            string assetPath,
+            string objectName,
+            Transform parent,
+            Vector3 position,
+            Quaternion rotation,
+            Vector3 scale,
+            bool isTree)
+        {
+            GameObject assetObject = CreateImportedSceneAsset(
+                assetPath,
+                objectName,
+                parent,
+                position,
+                rotation,
+                scale);
+            if (assetObject != null)
+            {
+                ApplyFallbackMaterialToRenderers(
+                    assetObject,
+                    isTree ? LoadMaterial("MAT_DaniTech_ForestFoliage") : LoadMaterial("MAT_DaniTech_ForestRock"));
+                return;
+            }
+
+            if (isTree)
+            {
+                CreateFallbackTree(objectName, parent, position, rotation, scale);
+                return;
+            }
+
+            CreatePrimitive(PrimitiveType.Sphere, "Fallback_" + objectName, parent, position, scale, LoadMaterial("MAT_DaniTech_ForestRock"));
+        }
+
+        private static void CreateFallbackTree(string objectName, Transform parent, Vector3 position, Quaternion rotation, Vector3 scale)
+        {
+            GameObject treeRoot = CreateEmpty("Fallback_" + objectName, parent, position);
+            treeRoot.transform.localRotation = rotation;
+            treeRoot.transform.localScale = scale;
+            CreatePrimitive(PrimitiveType.Cylinder, "Trunk", treeRoot.transform, new Vector3(0f, 0.38f, 0f), new Vector3(0.12f, 0.82f, 0.12f), LoadMaterial("MAT_DaniTech_ForestBark"));
+            CreatePrimitive(PrimitiveType.Sphere, "Canopy", treeRoot.transform, new Vector3(0f, 1.05f, 0f), new Vector3(0.58f, 0.72f, 0.58f), LoadMaterial("MAT_DaniTech_ForestFoliage"));
+        }
+
+        private static void CreateTownFloorTiles(Transform environmentRoot, Material groundMaterial)
+        {
+            Vector3[] floorPositions =
+            {
+                new Vector3(-64f, 0.06f, -64f),
+                new Vector3(64f, 0.06f, -64f),
+                new Vector3(-64f, 0.06f, 64f),
+                new Vector3(64f, 0.06f, 64f)
+            };
+
+            for (int i = 0; i < floorPositions.Length; i++)
+            {
+                CreateImportedSceneAsset(
+                    TownFloorAssetPath,
+                    "Asset_TownFloor_" + i.ToString("00"),
+                    environmentRoot,
+                    floorPositions[i],
+                    Quaternion.identity,
+                    new Vector3(2.1f, 1f, 2.1f),
+                    groundMaterial,
+                    LoadMaterial("MAT_DaniTech_Concrete"));
+            }
+        }
+
+        private static void CreateTownRoadNetwork(Transform environmentRoot, Material pathMaterial, Material edgeMaterial)
+        {
+            for (int i = -5; i <= 5; i++)
+            {
+                float offset = i * 18f;
+                CreateImportedSceneAsset(TownRoadAssetPath, "Asset_Road_North_" + i.ToString("00"), environmentRoot, new Vector3(0f, 0.12f, offset), Quaternion.identity, new Vector3(2.9f, 1f, 2.9f), pathMaterial);
+                CreateImportedSceneAsset(TownRoadAssetPath, "Asset_Road_East_" + i.ToString("00"), environmentRoot, new Vector3(offset, 0.13f, 0f), Quaternion.Euler(0f, 90f, 0f), new Vector3(2.9f, 1f, 2.9f), pathMaterial);
+
+                CreateImportedSceneAsset(TownSideWalkAssetPath, "Asset_SideWalk_Left_" + i.ToString("00"), environmentRoot, new Vector3(-12f, 0.16f, offset), Quaternion.identity, new Vector3(2.45f, 1f, 2.45f), edgeMaterial);
+                CreateImportedSceneAsset(TownSideWalkAssetPath, "Asset_SideWalk_Right_" + i.ToString("00"), environmentRoot, new Vector3(12f, 0.16f, offset), Quaternion.Euler(0f, 180f, 0f), new Vector3(2.45f, 1f, 2.45f), edgeMaterial);
+            }
+
+            CreateImportedSceneAsset(TownRoadEdgeAAssetPath, "Asset_RoadEdge_West", environmentRoot, new Vector3(-58f, 0.18f, 0f), Quaternion.Euler(0f, 90f, 0f), new Vector3(5.5f, 1f, 5.5f), edgeMaterial);
+            CreateImportedSceneAsset(TownRoadEdgeBAssetPath, "Asset_RoadEdge_East", environmentRoot, new Vector3(58f, 0.18f, 0f), Quaternion.Euler(0f, -90f, 0f), new Vector3(5.5f, 1f, 5.5f), edgeMaterial);
+            CreateImportedSceneAsset(TownStoneChunksAAssetPath, "Asset_StoneChunks_West", environmentRoot, new Vector3(-34f, 0.2f, -32f), Quaternion.Euler(0f, 18f, 0f), new Vector3(2.8f, 2.8f, 2.8f), LoadMaterial("MAT_DaniTech_DarkMetal"), pathMaterial);
+            CreateImportedSceneAsset(TownStoneChunksBAssetPath, "Asset_StoneChunks_East", environmentRoot, new Vector3(35f, 0.2f, 30f), Quaternion.Euler(0f, -28f, 0f), new Vector3(2.6f, 2.6f, 2.6f), LoadMaterial("MAT_DaniTech_DarkMetal"), pathMaterial);
+
+            Vector3[] lightPositions =
+            {
+                new Vector3(-18f, 0.18f, -48f),
+                new Vector3(18f, 0.18f, -48f),
+                new Vector3(-18f, 0.18f, 48f),
+                new Vector3(18f, 0.18f, 48f)
+            };
+
+            for (int i = 0; i < lightPositions.Length; i++)
+            {
+                CreateImportedSceneAsset(
+                    TownStreetLightAssetPath,
+                    "Asset_StreetLight_" + i.ToString("00"),
+                    environmentRoot,
+                    lightPositions[i],
+                    Quaternion.Euler(0f, i < 2 ? 0f : 180f, 0f),
+                    new Vector3(2.2f, 2.2f, 2.2f),
+                    LoadMaterial("MAT_DaniTech_DarkMetal"),
+                    LoadMaterial("MAT_DaniTech_Light"));
             }
         }
 
@@ -701,22 +1306,23 @@ namespace EmeToDia.Editor
                 visualObject = PrefabUtility.InstantiatePrefab(characterPrefab, parent) as GameObject;
                 if (visualObject != null)
                 {
-                    visualObject.name = "Visual_PlayerCharacter_Reaper";
+                    visualObject.name = "Visual_PlayerCharacter_HeroMage";
                     visualObject.transform.localPosition = Vector3.zero;
                     visualObject.transform.localRotation = Quaternion.identity;
                     visualObject.transform.localScale = Vector3.one;
                     ScaleToHeight(visualObject, 1.85f);
                     ApplyMaterialPaletteToRenderers(
                         visualObject,
-                        LoadMaterial("MAT_DaniTech_ReaperCloth"),
-                        LoadMaterial("MAT_DaniTech_DarkMetal"),
-                        LoadMaterial("MAT_DaniTech_ReaperTrim"));
+                        LoadMaterial("MAT_DaniTech_HeroBlue"),
+                        LoadMaterial("MAT_DaniTech_HeroGold"),
+                        LoadMaterial("MAT_DaniTech_HeroSkin"),
+                        LoadMaterial("MAT_DaniTech_DarkMetal"));
                     visualObject.SetActive(false);
                     return visualObject.transform;
                 }
             }
 
-            visualObject = CreatePrimitive(PrimitiveType.Capsule, "Fallback_PlayerCharacter", parent, new Vector3(0f, 0.9f, 0f), new Vector3(0.65f, 0.9f, 0.65f), LoadMaterial("MAT_DaniTech_Diamond"));
+            visualObject = CreatePrimitive(PrimitiveType.Capsule, "Fallback_PlayerCharacter", parent, new Vector3(0f, 0.9f, 0f), new Vector3(0.65f, 0.9f, 0.65f), LoadMaterial("MAT_DaniTech_HeroBlue"));
             visualObject.SetActive(false);
             return visualObject.transform;
         }
@@ -825,6 +1431,74 @@ namespace EmeToDia.Editor
             return material;
         }
 
+        private static Material GetOrCreateTexturedMaterial(
+            string materialName,
+            string albedoTexturePath,
+            string normalTexturePath,
+            Color fallbackColor,
+            float smoothness)
+        {
+            Material material = GetOrCreateMaterial(materialName, fallbackColor, 0f);
+            Texture2D albedoTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(albedoTexturePath);
+            Texture2D normalTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(normalTexturePath);
+
+            if (albedoTexture != null)
+            {
+                material.mainTexture = albedoTexture;
+                material.SetTexture("_MainTex", albedoTexture);
+                material.SetTextureScale("_MainTex", new Vector2(0.22f, 0.22f));
+            }
+
+            if (normalTexture != null)
+            {
+                material.EnableKeyword("_NORMALMAP");
+                material.SetTexture("_BumpMap", normalTexture);
+                material.SetFloat("_BumpScale", 0.72f);
+            }
+
+            if (material.HasProperty("_Glossiness"))
+            {
+                material.SetFloat("_Glossiness", smoothness);
+            }
+
+            EditorUtility.SetDirty(material);
+            return material;
+        }
+
+        private static Material GetOrCreateSkyboxMaterial()
+        {
+            Material material = AssetDatabase.LoadAssetAtPath<Material>(SkyboxMaterialPath);
+            if (material == null)
+            {
+                Shader shader = Shader.Find("Skybox/Procedural");
+                material = new Material(shader);
+                AssetDatabase.CreateAsset(material, SkyboxMaterialPath);
+            }
+
+            if (material.HasProperty("_SkyTint"))
+            {
+                material.SetColor("_SkyTint", new Color(0.52f, 0.68f, 0.96f, 1f));
+            }
+
+            if (material.HasProperty("_GroundColor"))
+            {
+                material.SetColor("_GroundColor", new Color(0.50f, 0.63f, 0.74f, 1f));
+            }
+
+            if (material.HasProperty("_Exposure"))
+            {
+                material.SetFloat("_Exposure", 1.18f);
+            }
+
+            if (material.HasProperty("_AtmosphereThickness"))
+            {
+                material.SetFloat("_AtmosphereThickness", 1.46f);
+            }
+
+            EditorUtility.SetDirty(material);
+            return material;
+        }
+
         private static Material LoadMaterial(string materialName)
         {
             return AssetDatabase.LoadAssetAtPath<Material>(MaterialFolderPath + "/" + materialName + ".mat");
@@ -893,6 +1567,35 @@ namespace EmeToDia.Editor
                 LoadMaterial("MAT_DaniTech_Window"),
                 LoadMaterial("MAT_DaniTech_Bronze"),
                 LoadMaterial("MAT_DaniTech_DarkMetal"));
+        }
+
+        private static GameObject CreateImportedSceneAsset(
+            string assetPath,
+            string objectName,
+            Transform parent,
+            Vector3 position,
+            Quaternion rotation,
+            Vector3 scale,
+            params Material[] materials)
+        {
+            GameObject modelPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(assetPath);
+            if (modelPrefab == null)
+            {
+                return null;
+            }
+
+            GameObject modelObject = PrefabUtility.InstantiatePrefab(modelPrefab, parent) as GameObject;
+            if (modelObject == null)
+            {
+                return null;
+            }
+
+            modelObject.name = objectName;
+            modelObject.transform.localPosition = position;
+            modelObject.transform.localRotation = rotation;
+            modelObject.transform.localScale = scale;
+            ApplyMaterialPaletteToRenderers(modelObject, materials);
+            return modelObject;
         }
 
         private static bool CreateImportedAssetVisual(

@@ -54,7 +54,7 @@ namespace EmeToDia.Gameplay
 
             ConnectViews();
             SpawnInitialItems();
-            Log("E 키로 월드 아이템을 획득하고 Tab으로 인벤토리를 여세요.");
+            Log("Press E to pick up field items. Check the HUD BAG panel or press Tab/I to open the bag.");
             _isInitialized = true;
         }
 
@@ -69,7 +69,7 @@ namespace EmeToDia.Gameplay
             DaniTechItemData itemData = gameDataManager.GetDaniTechItem(itemPickup.ItemId);
             if (itemData == null)
             {
-                Log("알 수 없는 아이템입니다: " + itemPickup.ItemId);
+                Log("Unknown item: " + itemPickup.ItemId);
                 return false;
             }
 
@@ -77,12 +77,12 @@ namespace EmeToDia.Gameplay
             bool isAdded = _gameManager.DaniTechInventoryModel.TryAddItem(itemData, itemPickup.Amount, out addedAmount);
             if (isAdded == false)
             {
-                Log("인벤토리 슬롯이 가득 차서 " + itemData.DisplayName + "을 획득하지 못했습니다.");
+                Log("The bag is full. Could not pick up " + itemData.DisplayName + ".");
                 return false;
             }
 
             itemPickup.Collect();
-            Log(itemData.DisplayName + " x" + addedAmount + " 획득. 인벤토리에 추가되었습니다.");
+            Log(itemData.DisplayName + " x" + addedAmount + " added to the bag. It is visible in HUD BAG and Tab/I inventory.");
             return true;
         }
 
@@ -129,7 +129,7 @@ namespace EmeToDia.Gameplay
             bool isDropped = _gameManager.DaniTechInventoryModel.TryDropSelectedItem(out itemId, out amount);
             if (isDropped == false)
             {
-                Log("버릴 선택 아이템이 없습니다.");
+                Log("No selected item to drop.");
                 return;
             }
 
@@ -140,7 +140,7 @@ namespace EmeToDia.Gameplay
             }
 
             string displayName = itemData == null ? itemId : itemData.DisplayName;
-            Log(displayName + " 1개를 버렸습니다. 수량 감소가 반영되었습니다.");
+            Log("Dropped one " + displayName + ". The bag amount was updated.");
         }
 
         public void SortInventoryByName()
@@ -151,7 +151,7 @@ namespace EmeToDia.Gameplay
             }
 
             _gameManager.DaniTechInventoryModel.SortByName(_gameManager.GetGameDataManager());
-            Log("인벤토리를 이름 기준으로 정렬했습니다.");
+            Log("Sorted the bag by name.");
         }
 
         public void SortInventoryByType()
@@ -162,7 +162,7 @@ namespace EmeToDia.Gameplay
             }
 
             _gameManager.DaniTechInventoryModel.SortByType(_gameManager.GetGameDataManager());
-            Log("인벤토리를 타입 기준으로 정렬했습니다.");
+            Log("Sorted the bag by type.");
         }
 
         public void SortInventoryByAcquiredSequence()
@@ -173,7 +173,7 @@ namespace EmeToDia.Gameplay
             }
 
             _gameManager.DaniTechInventoryModel.SortByAcquiredSequence();
-            Log("인벤토리를 획득 순서 기준으로 정렬했습니다.");
+            Log("Sorted the bag by pickup order.");
         }
 
         public DaniTechItemData GetItemData(string itemId)
