@@ -10,6 +10,7 @@ namespace EmeToDia.Gameplay
         [SerializeField] private DaniTechPlayerHUD _playerHUD;
         [SerializeField] private DaniTechFeedbackLogView _feedbackLogView;
         [SerializeField] private DaniTechAddressableItemSpawner _itemSpawner;
+        [SerializeField] private DaniTechPlayerInteraction _playerInteraction;
 
         private GameManager _gameManager;
         private int _sortModeIndex;
@@ -21,6 +22,11 @@ namespace EmeToDia.Gameplay
             {
                 return _isInitialized;
             }
+        }
+
+        private void OnDestroy()
+        {
+            DisconnectInteractionHint();
         }
 
         private void Update()
@@ -211,6 +217,8 @@ namespace EmeToDia.Gameplay
                     _gameManager.GetGameDataManager());
             }
 
+            ConnectInteractionHint();
+
             if (_feedbackLogView != null)
             {
                 _feedbackLogView.Clear();
@@ -313,6 +321,27 @@ namespace EmeToDia.Gameplay
             }
 
             Debug.Log("[DaniTechPromotion] " + message);
+        }
+
+        private void ConnectInteractionHint()
+        {
+            DisconnectInteractionHint();
+            if (_playerInteraction == null || _playerHUD == null)
+            {
+                return;
+            }
+
+            _playerInteraction.OnInteractionHintChanged += _playerHUD.SetTooltip;
+        }
+
+        private void DisconnectInteractionHint()
+        {
+            if (_playerInteraction == null || _playerHUD == null)
+            {
+                return;
+            }
+
+            _playerInteraction.OnInteractionHintChanged -= _playerHUD.SetTooltip;
         }
     }
 }

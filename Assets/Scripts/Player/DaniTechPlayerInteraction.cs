@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace EmeToDia.Gameplay
@@ -11,6 +12,10 @@ namespace EmeToDia.Gameplay
         [SerializeField] private KeyCode _interactionKey = KeyCode.E;
         [SerializeField] private Transform _cameraTransform;
 
+        private string _currentHintText;
+
+        public event Action<string> OnInteractionHintChanged;
+
         private void Start()
         {
             ConnectCameraIfNeeded();
@@ -18,6 +23,7 @@ namespace EmeToDia.Gameplay
 
         private void Update()
         {
+            RefreshInteractionHint();
             ReadInteractionInput();
         }
 
@@ -42,6 +48,43 @@ namespace EmeToDia.Gameplay
             if (Input.GetKeyDown(_interactionKey))
             {
                 TryInteract();
+            }
+        }
+
+        private void RefreshInteractionHint()
+        {
+            IInteractable interactable = GetInteractableFromRay();
+            string hintText = string.Empty;
+            if (interactable != null && interactable.CanInteract(gameObject))
+            {
+                hintText = GetHintText(interactable);
+            }
+
+            SetHintText(hintText);
+        }
+
+        private string GetHintText(IInteractable interactable)
+        {
+            DaniTechItemPickup itemPickup = interactable as DaniTechItemPickup;
+            if (itemPickup != null)
+            {
+                return itemPickup.GetInteractionText();
+            }
+
+            return "E 상호작용";
+        }
+
+        private void SetHintText(string hintText)
+        {
+            if (_currentHintText == hintText)
+            {
+                return;
+            }
+
+            _currentHintText = hintText;
+            if (OnInteractionHintChanged != null)
+            {
+                OnInteractionHintChanged.Invoke(_currentHintText);
             }
         }
 

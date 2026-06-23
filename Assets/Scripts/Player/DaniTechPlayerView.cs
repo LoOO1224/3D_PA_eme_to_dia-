@@ -8,7 +8,8 @@ namespace EmeToDia.Gameplay
     {
         [SerializeField] private Transform _cameraTransform;
         [SerializeField] private Transform _characterVisualRoot;
-        [SerializeField] private float _mouseSensitivity = 240f;
+        [SerializeField] private float _mouseSensitivity = 0.18f;
+        [SerializeField] private float _keyboardRotateSpeed = 95f;
         [SerializeField] private float _zoomSpeed = 4f;
         [SerializeField] private float _maxZoomDistance = 7f;
         [SerializeField] private float _firstPersonHideDistance = 0.25f;
@@ -17,6 +18,8 @@ namespace EmeToDia.Gameplay
 
         private float _xRotation;
         private float _zoomDistance;
+        private Vector3 _lastMousePosition;
+        private bool _isMouseRotating;
 
         private void Start()
         {
@@ -74,17 +77,57 @@ namespace EmeToDia.Gameplay
                 return;
             }
 
-            if (Input.GetMouseButton(1) == false)
+            RotateByMouseDrag();
+            RotateByKeyboard();
+        }
+
+        private void RotateByMouseDrag()
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                _isMouseRotating = true;
+                _lastMousePosition = Input.mousePosition;
+            }
+
+            if (Input.GetMouseButtonUp(1))
+            {
+                _isMouseRotating = false;
+            }
+
+            if (_isMouseRotating == false)
             {
                 return;
             }
 
-            float mouseX = Input.GetAxis("Mouse X") * _mouseSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * _mouseSensitivity * Time.deltaTime;
+            Vector3 mouseDelta = Input.mousePosition - _lastMousePosition;
+            _lastMousePosition = Input.mousePosition;
+            ApplyLook(mouseDelta.x * _mouseSensitivity, mouseDelta.y * _mouseSensitivity);
+        }
 
-            _xRotation -= mouseY;
+        private void RotateByKeyboard()
+        {
+            float yaw = 0f;
+            if (Input.GetKey(KeyCode.Q))
+            {
+                yaw -= _keyboardRotateSpeed * Time.deltaTime;
+            }
+
+            if (Input.GetKey(KeyCode.C))
+            {
+                yaw += _keyboardRotateSpeed * Time.deltaTime;
+            }
+
+            if (Mathf.Abs(yaw) > 0.001f)
+            {
+                ApplyLook(yaw, 0f);
+            }
+        }
+
+        private void ApplyLook(float yawDelta, float pitchDelta)
+        {
+            _xRotation -= pitchDelta;
             _xRotation = Mathf.Clamp(_xRotation, -50f, 50f);
-            transform.Rotate(Vector3.up * mouseX);
+            transform.Rotate(Vector3.up * yawDelta);
         }
 
         private void RefreshCameraPose()

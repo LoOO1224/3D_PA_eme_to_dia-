@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 60535b08d14291b429dc245f31a35ac8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 189511869e4783346956b5d004a39b64, type: 2}
     - target: {fileID: 919132149155446097, guid: 60535b08d14291b429dc245f31a35ac8, type: 3}
       propertyPath: m_Name
       value: Visual_ImportedCrystal
@@ -458,6 +462,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ec0f734d1aa2f9d4b90c59ada4127f98, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7ed2b2d072908434aafb9eb2a77c8e00, type: 2}
     - target: {fileID: 919132149155446097, guid: ec0f734d1aa2f9d4b90c59ada4127f98, type: 3}
       propertyPath: m_Name
       value: Visual_ImportedStoneBase

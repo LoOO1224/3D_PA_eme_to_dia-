@@ -8,6 +8,10 @@ namespace EmeToDia.Gameplay
     {
         [SerializeField] private Text _statusText;
         [SerializeField] private Text _guideText;
+        [SerializeField] private Text _healthText;
+        [SerializeField] private Text _staminaText;
+        [SerializeField] private Text _shieldText;
+        [SerializeField] private Text _tooltipText;
         [SerializeField] private Image _healthFillImage;
         [SerializeField] private Image _staminaFillImage;
         [SerializeField] private Image _shieldFillImage;
@@ -15,6 +19,7 @@ namespace EmeToDia.Gameplay
         private DaniTechPlayerModel _playerModel;
         private DaniTechInventoryModel _inventoryModel;
         private GameDataManager _gameDataManager;
+        private string _interactionHintText;
 
         private void OnDestroy()
         {
@@ -30,6 +35,7 @@ namespace EmeToDia.Gameplay
             _playerModel = playerModel;
             _inventoryModel = inventoryModel;
             _gameDataManager = gameDataManager;
+            _interactionHintText = string.Empty;
 
             if (_playerModel != null)
             {
@@ -42,6 +48,12 @@ namespace EmeToDia.Gameplay
             }
 
             RefreshUI();
+        }
+
+        public void SetTooltip(string tooltipText)
+        {
+            _interactionHintText = tooltipText;
+            RefreshTooltipText();
         }
 
         public void RefreshUI()
@@ -78,17 +90,48 @@ namespace EmeToDia.Gameplay
             if (_statusText != null)
             {
                 _statusText.text =
-                    "HP " + _playerModel.Health.ToString("0") + " / " + _playerModel.MaxHealth.ToString("0") + "\n" +
-                    "Stamina " + _playerModel.Stamina.ToString("0") + " / " + _playerModel.MaxStamina.ToString("0") + "\n" +
-                    "Shield " + _playerModel.Shield.ToString("0") + " / 60\n" +
-                    "Speed x" + _playerModel.MoveSpeedMultiplier.ToString("0.00") + " (" + _playerModel.SpeedBoostRemainingSeconds.ToString("0.0") + "s)\n" +
-                    "Selected: " + selectedItemText;
+                    "Selected: " + selectedItemText + "\n" +
+                    "Speed x" + _playerModel.MoveSpeedMultiplier.ToString("0.00") +
+                    " (" + _playerModel.SpeedBoostRemainingSeconds.ToString("0.0") + "s)";
+            }
+
+            if (_healthText != null)
+            {
+                _healthText.text = "HP " + _playerModel.Health.ToString("0") + " / " + _playerModel.MaxHealth.ToString("0");
+            }
+
+            if (_staminaText != null)
+            {
+                _staminaText.text = "STM " + _playerModel.Stamina.ToString("0") + " / " + _playerModel.MaxStamina.ToString("0");
+            }
+
+            if (_shieldText != null)
+            {
+                _shieldText.text = "SHD " + _playerModel.Shield.ToString("0") + " / 60";
             }
 
             if (_guideText != null)
             {
-                _guideText.text = "WASD 이동 / 우클릭 드래그 시점 / 휠 줌 / E 획득 / Tab 인벤토리 / T 사용 / G 버리기";
+                _guideText.text = "우클릭 드래그: 시점 / Q,C: 보조 회전 / 휠: 줌";
             }
+
+            RefreshTooltipText();
+        }
+
+        private void RefreshTooltipText()
+        {
+            if (_tooltipText == null)
+            {
+                return;
+            }
+
+            if (string.IsNullOrEmpty(_interactionHintText))
+            {
+                _tooltipText.text = "Tip: 아이템에 조준하면 E 획득 툴팁이 표시됩니다.";
+                return;
+            }
+
+            _tooltipText.text = _interactionHintText;
         }
 
         private void DisconnectModels()

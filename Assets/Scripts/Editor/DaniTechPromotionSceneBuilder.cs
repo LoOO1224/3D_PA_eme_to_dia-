@@ -259,6 +259,15 @@ namespace EmeToDia.Editor
             GetOrCreateMaterial("MAT_DaniTech_Swift", new Color(1f, 0.62f, 0.18f, 1f), 0.25f);
             GetOrCreateMaterial("MAT_DaniTech_DarkMetal", new Color(0.08f, 0.09f, 0.11f, 1f), 0.05f);
             GetOrCreateMaterial("MAT_DaniTech_Light", new Color(1f, 0.84f, 0.36f, 1f), 0.7f);
+            GetOrCreateMaterial("MAT_DaniTech_Asphalt", new Color(0.055f, 0.06f, 0.065f, 1f), 0f);
+            GetOrCreateMaterial("MAT_DaniTech_Concrete", new Color(0.31f, 0.33f, 0.32f, 1f), 0f);
+            GetOrCreateMaterial("MAT_DaniTech_Brick", new Color(0.30f, 0.17f, 0.13f, 1f), 0f);
+            GetOrCreateMaterial("MAT_DaniTech_Window", new Color(0.08f, 0.20f, 0.25f, 1f), 0.12f);
+            GetOrCreateMaterial("MAT_DaniTech_Bronze", new Color(0.42f, 0.27f, 0.13f, 1f), 0.03f);
+            GetOrCreateMaterial("MAT_DaniTech_CrystalCyan", new Color(0.15f, 0.72f, 0.88f, 1f), 0.32f);
+            GetOrCreateMaterial("MAT_DaniTech_CrystalViolet", new Color(0.42f, 0.26f, 0.72f, 1f), 0.26f);
+            GetOrCreateMaterial("MAT_DaniTech_ReaperCloth", new Color(0.04f, 0.045f, 0.055f, 1f), 0.02f);
+            GetOrCreateMaterial("MAT_DaniTech_ReaperTrim", new Color(0.46f, 0.58f, 0.64f, 1f), 0.08f);
         }
 
         private static void CreateItemPrefabs()
@@ -369,18 +378,35 @@ namespace EmeToDia.Editor
 
             canvasObject.AddComponent<GraphicRaycaster>();
 
-            RectTransform hudRoot = CreatePanel(canvasObject.transform, "Panel_PlayerHUD", new Color(0.03f, 0.05f, 0.07f, 0.82f));
-            SetRect(hudRoot, new Vector2(0f, 1f), new Vector2(590f, 300f), new Vector2(22f, -22f));
+            RectTransform hudRoot = CreatePanel(canvasObject.transform, "Panel_PlayerHUD", new Color(0.02f, 0.03f, 0.04f, 0.86f));
+            SetRect(hudRoot, new Vector2(0f, 1f), new Vector2(650f, 330f), new Vector2(22f, -22f));
             DaniTechPlayerHUD playerHUD = hudRoot.gameObject.AddComponent<DaniTechPlayerHUD>();
-            Text statusText = CreateText(hudRoot, "Text_Status", "", 24, TextAnchor.UpperLeft);
-            SetRect(statusText.rectTransform, new Vector2(0f, 1f), new Vector2(542f, 158f), new Vector2(24f, -22f));
-            Text guideText = CreateText(hudRoot, "Text_Guide", "", 20, TextAnchor.LowerLeft);
-            SetRect(guideText.rectTransform, new Vector2(0f, 0f), new Vector2(542f, 48f), new Vector2(24f, 18f));
-            Image healthFill = CreateBar(hudRoot, "Bar_HP", new Vector2(24f, -192f), new Vector2(542f, 14f), new Color(0.9f, 0.14f, 0.16f, 1f));
-            Image staminaFill = CreateBar(hudRoot, "Bar_Stamina", new Vector2(24f, -220f), new Vector2(542f, 14f), new Color(0.2f, 0.82f, 0.36f, 1f));
-            Image shieldFill = CreateBar(hudRoot, "Bar_Shield", new Vector2(24f, -248f), new Vector2(542f, 14f), new Color(0.18f, 0.48f, 0.95f, 1f));
+            Text titleText = CreateText(hudRoot, "Text_HudTitle", "DIAMOND STATUS", 24, TextAnchor.MiddleLeft);
+            SetRect(titleText.rectTransform, new Vector2(0f, 1f), new Vector2(360f, 34f), new Vector2(24f, -18f));
+            Text healthText = CreateText(hudRoot, "Text_HP", "HP 62 / 100", 24, TextAnchor.MiddleLeft);
+            SetRect(healthText.rectTransform, new Vector2(0f, 1f), new Vector2(160f, 32f), new Vector2(24f, -64f));
+            Text staminaText = CreateText(hudRoot, "Text_Stamina", "STM 70 / 100", 24, TextAnchor.MiddleLeft);
+            SetRect(staminaText.rectTransform, new Vector2(0f, 1f), new Vector2(160f, 32f), new Vector2(24f, -106f));
+            Text shieldText = CreateText(hudRoot, "Text_Shield", "SHD 0 / 60", 24, TextAnchor.MiddleLeft);
+            SetRect(shieldText.rectTransform, new Vector2(0f, 1f), new Vector2(160f, 32f), new Vector2(24f, -148f));
+            Image healthFill = CreateBar(hudRoot, "Bar_HP", new Vector2(200f, -70f), new Vector2(400f, 22f), new Color(0.90f, 0.12f, 0.14f, 1f));
+            Image staminaFill = CreateBar(hudRoot, "Bar_Stamina", new Vector2(200f, -112f), new Vector2(400f, 22f), new Color(0.16f, 0.72f, 0.30f, 1f));
+            Image shieldFill = CreateBar(hudRoot, "Bar_Shield", new Vector2(200f, -154f), new Vector2(400f, 22f), new Color(0.14f, 0.42f, 0.86f, 1f));
+            healthFill.fillAmount = 0.62f;
+            staminaFill.fillAmount = 0.7f;
+            shieldFill.fillAmount = 0f;
+            Text statusText = CreateText(hudRoot, "Text_Status", "Selected: 없음\nSpeed x1.00 (0.0s)", 22, TextAnchor.UpperLeft);
+            SetRect(statusText.rectTransform, new Vector2(0f, 1f), new Vector2(590f, 54f), new Vector2(24f, -190f));
+            Text tooltipText = CreateText(hudRoot, "Text_Tooltip", "Tip: 아이템에 조준하면 E 획득 툴팁이 표시됩니다.", 21, TextAnchor.UpperLeft);
+            SetRect(tooltipText.rectTransform, new Vector2(0f, 1f), new Vector2(590f, 34f), new Vector2(24f, -250f));
+            Text guideText = CreateText(hudRoot, "Text_Guide", "우클릭 드래그: 시점 / Q,C: 보조 회전 / 휠: 줌", 19, TextAnchor.LowerLeft);
+            SetRect(guideText.rectTransform, new Vector2(0f, 0f), new Vector2(590f, 34f), new Vector2(24f, 16f));
             SetObjectReference(playerHUD, "_statusText", statusText);
             SetObjectReference(playerHUD, "_guideText", guideText);
+            SetObjectReference(playerHUD, "_healthText", healthText);
+            SetObjectReference(playerHUD, "_staminaText", staminaText);
+            SetObjectReference(playerHUD, "_shieldText", shieldText);
+            SetObjectReference(playerHUD, "_tooltipText", tooltipText);
             SetObjectReference(playerHUD, "_healthFillImage", healthFill);
             SetObjectReference(playerHUD, "_staminaFillImage", staminaFill);
             SetObjectReference(playerHUD, "_shieldFillImage", shieldFill);
@@ -566,14 +592,14 @@ namespace EmeToDia.Editor
             GameObject sunObject = CreateEmpty("DirectionalLight_Sun", lightRoot.transform, new Vector3(0f, 8f, 0f));
             Light sun = sunObject.AddComponent<Light>();
             sun.type = LightType.Directional;
-            sun.color = new Color(1f, 0.92f, 0.82f, 1f);
-            sun.intensity = 1.75f;
+            sun.color = new Color(0.92f, 0.96f, 1f, 1f);
+            sun.intensity = 1.05f;
             sunObject.transform.rotation = Quaternion.Euler(52f, -38f, 0f);
 
-            CreatePointLight(lightRoot.transform, "PointLight_DiamondGate", new Vector3(0f, 12f, 22f), new Color(0.42f, 0.92f, 1f, 1f), 4.2f, 48f);
-            RenderSettings.ambientLight = new Color(0.25f, 0.28f, 0.32f, 1f);
+            CreatePointLight(lightRoot.transform, "PointLight_DiamondGate", new Vector3(0f, 12f, 22f), new Color(0.28f, 0.78f, 1f, 1f), 1.8f, 42f);
+            RenderSettings.ambientLight = new Color(0.13f, 0.15f, 0.17f, 1f);
             RenderSettings.fog = true;
-            RenderSettings.fogColor = new Color(0.62f, 0.75f, 0.86f, 1f);
+            RenderSettings.fogColor = new Color(0.44f, 0.54f, 0.62f, 1f);
             RenderSettings.fogMode = FogMode.Linear;
             RenderSettings.fogStartDistance = 95f;
             RenderSettings.fogEndDistance = 260f;
@@ -582,9 +608,9 @@ namespace EmeToDia.Editor
         private static void CreateEnvironment(Scene scene)
         {
             GameObject environmentRoot = CreateRoot(scene, "Environment_DiamondDistrict");
-            Material groundMaterial = LoadBrooklynMaterial("KB3D_BRK_FlatAsphaltRoof") ?? LoadMaterial("MAT_DaniTech_Ground");
-            Material pathMaterial = LoadBrooklynMaterial("KB3D_BRK_ConcreteWithExpansionJoints") ?? LoadMaterial("MAT_DaniTech_Path");
-            Material diamondMaterial = LoadMaterial("MAT_DaniTech_Diamond");
+            Material groundMaterial = LoadMaterial("MAT_DaniTech_Asphalt");
+            Material pathMaterial = LoadMaterial("MAT_DaniTech_Concrete");
+            Material diamondMaterial = LoadMaterial("MAT_DaniTech_CrystalCyan");
             Material lightMaterial = LoadMaterial("MAT_DaniTech_Light");
 
             CreatePrimitive(PrimitiveType.Cube, "Ground_MainPlaza_240", environmentRoot.transform, new Vector3(0f, -0.08f, 0f), new Vector3(240f, 0.16f, 240f), groundMaterial);
@@ -614,7 +640,7 @@ namespace EmeToDia.Editor
                     position + Vector3.up * 4.8f,
                     Quaternion.Euler(0f, angle, 0f),
                     7.2f,
-                    diamondMaterial);
+                    i % 2 == 0 ? LoadMaterial("MAT_DaniTech_CrystalCyan") : LoadMaterial("MAT_DaniTech_CrystalViolet"));
                 bool hasBaseAsset = CreateImportedAssetVisual(
                     i % 2 == 0 ? AsteroidSmallAAssetPath : AsteroidSmallBAssetPath,
                     "Asset_Pillar_Base_" + i.ToString("00"),
@@ -680,7 +706,11 @@ namespace EmeToDia.Editor
                     visualObject.transform.localRotation = Quaternion.identity;
                     visualObject.transform.localScale = Vector3.one;
                     ScaleToHeight(visualObject, 1.85f);
-                    ApplyFallbackMaterialToRenderers(visualObject, LoadMaterial("MAT_DaniTech_DarkMetal"));
+                    ApplyMaterialPaletteToRenderers(
+                        visualObject,
+                        LoadMaterial("MAT_DaniTech_ReaperCloth"),
+                        LoadMaterial("MAT_DaniTech_DarkMetal"),
+                        LoadMaterial("MAT_DaniTech_ReaperTrim"));
                     visualObject.SetActive(false);
                     return visualObject.transform;
                 }
@@ -707,6 +737,7 @@ namespace EmeToDia.Editor
             SetObjectReference(gameManager, "_gameDataManager", dataManager);
             SetObjectReference(gameManager, "_promotionManager", promotionManager);
             SetObjectReference(promotionManager, "_itemSpawner", spawner);
+            SetObjectReference(promotionManager, "_playerInteraction", playerObject.GetComponent<DaniTechPlayerInteraction>());
             SetObjectReference(spawner, "_itemRoot", itemRoot.transform);
             SetObjectReference(spawner, "_dropAnchor", playerObject.transform);
             SetObjectReference(spawner, "_useEffectPrefab", AssetDatabase.LoadAssetAtPath<GameObject>(UseEffectPrefabPath));
@@ -774,10 +805,20 @@ namespace EmeToDia.Editor
             }
 
             material.color = color;
+            if (material.HasProperty("_Color"))
+            {
+                material.SetColor("_Color", color);
+            }
+
             if (emission > 0f)
             {
                 material.EnableKeyword("_EMISSION");
                 material.SetColor("_EmissionColor", color * emission);
+            }
+            else
+            {
+                material.DisableKeyword("_EMISSION");
+                material.SetColor("_EmissionColor", Color.black);
             }
 
             EditorUtility.SetDirty(material);
@@ -845,7 +886,13 @@ namespace EmeToDia.Editor
             modelObject.transform.localPosition = position;
             modelObject.transform.localRotation = rotation;
             modelObject.transform.localScale = scale;
-            ApplyFallbackMaterialToRenderers(modelObject, LoadBrooklynMaterial("KB3D_BRK_BrickWallStandard") ?? LoadMaterial("MAT_DaniTech_DarkMetal"));
+            ApplyMaterialPaletteToRenderers(
+                modelObject,
+                LoadMaterial("MAT_DaniTech_Brick"),
+                LoadMaterial("MAT_DaniTech_Concrete"),
+                LoadMaterial("MAT_DaniTech_Window"),
+                LoadMaterial("MAT_DaniTech_Bronze"),
+                LoadMaterial("MAT_DaniTech_DarkMetal"));
         }
 
         private static bool CreateImportedAssetVisual(
@@ -874,8 +921,47 @@ namespace EmeToDia.Editor
             modelObject.transform.localRotation = rotation;
             modelObject.transform.localScale = Vector3.one;
             ScaleToHeight(modelObject, targetHeight);
-            ApplyFallbackMaterialToRenderers(modelObject, fallbackMaterial);
+            ApplyMaterialToRenderers(modelObject, fallbackMaterial);
             return true;
+        }
+
+        private static void ApplyMaterialToRenderers(GameObject targetObject, Material material)
+        {
+            if (targetObject == null || material == null)
+            {
+                return;
+            }
+
+            ApplyMaterialPaletteToRenderers(targetObject, material);
+        }
+
+        private static void ApplyMaterialPaletteToRenderers(GameObject targetObject, params Material[] materials)
+        {
+            if (targetObject == null || materials == null || materials.Length <= 0)
+            {
+                return;
+            }
+
+            Renderer[] renderers = targetObject.GetComponentsInChildren<Renderer>();
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                Material[] sharedMaterials = renderers[i].sharedMaterials;
+                if (sharedMaterials == null || sharedMaterials.Length <= 0)
+                {
+                    continue;
+                }
+
+                for (int j = 0; j < sharedMaterials.Length; j++)
+                {
+                    Material material = materials[(i + j) % materials.Length];
+                    if (material != null)
+                    {
+                        sharedMaterials[j] = material;
+                    }
+                }
+
+                renderers[i].sharedMaterials = sharedMaterials;
+            }
         }
 
         private static void ApplyFallbackMaterialToRenderers(GameObject targetObject, Material material)

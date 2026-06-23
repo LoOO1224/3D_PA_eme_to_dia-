@@ -41,6 +41,11 @@ namespace EmeToDia.Gameplay
             RefreshView();
         }
 
+        public string GetInteractionText()
+        {
+            return "E 획득: " + GetDisplayName() + " x" + Amount;
+        }
+
         public bool CanInteract(GameObject gameObjectInteractor)
         {
             return _isCollected == false && string.IsNullOrEmpty(_itemId) == false;
@@ -91,6 +96,12 @@ namespace EmeToDia.Gameplay
                 return;
             }
 
+            string displayName = GetDisplayName();
+            _itemView.SetLabel(displayName + " x" + Amount);
+        }
+
+        private string GetDisplayName()
+        {
             string displayName = _itemId;
             if (GameManager.Inst != null && GameManager.Inst.GetGameDataManager() != null)
             {
@@ -101,7 +112,7 @@ namespace EmeToDia.Gameplay
                 }
             }
 
-            _itemView.SetLabel(displayName + " x" + Amount);
+            return displayName;
         }
     }
 }
