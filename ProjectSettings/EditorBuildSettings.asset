@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Eme_to_Dia_Promotion.unity
+    guid: 5458b666814a21345a2080a956a1ab2b
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 648631ba503947b49b54d861e4f78e3e, type: 2}
   m_UseUCBPForAssetBundles: 0

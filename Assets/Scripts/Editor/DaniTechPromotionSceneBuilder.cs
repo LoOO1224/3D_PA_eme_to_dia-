@@ -43,6 +43,7 @@ namespace EmeToDia.Editor
             CreateUiPrefab();
             RegisterAddressables();
             RebuildScene();
+            RegisterSceneForPlay();
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
             Debug.Log("DaniTechPromotionSceneBuilder: Eme_to_Dia_Promotion scene setup finished.");
@@ -301,6 +302,7 @@ namespace EmeToDia.Editor
         private static void RegisterAddressables()
         {
             AddressableAssetSettings settings = AddressableAssetSettingsDefaultObject.GetSettings(true);
+            settings.ActivePlayerDataBuilderIndex = 0;
             AddressableAssetGroup group = settings.FindGroup(AddressableGroupName);
             if (group == null)
             {
@@ -321,6 +323,18 @@ namespace EmeToDia.Editor
             RegisterAddressable(settings, group, UiPrefabPath, "DaniTech/UI/PromotionUI");
             RegisterAddressable(settings, group, UseEffectPrefabPath, "DaniTech/VFX/UseEffect");
             settings.SetDirty(AddressableAssetSettings.ModificationEvent.BatchModification, null, true);
+        }
+
+        private static void RegisterSceneForPlay()
+        {
+            EditorBuildSettingsScene scene = new EditorBuildSettingsScene(ScenePath, true);
+            string sceneGuid = AssetDatabase.AssetPathToGUID(ScenePath);
+            if (string.IsNullOrEmpty(sceneGuid) == false)
+            {
+                scene.guid = new GUID(sceneGuid);
+            }
+
+            EditorBuildSettings.scenes = new[] { scene };
         }
 
         private static void RebuildScene()
