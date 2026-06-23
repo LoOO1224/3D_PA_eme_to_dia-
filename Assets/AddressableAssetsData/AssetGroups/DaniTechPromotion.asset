@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: DaniTechPromotion
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: DaniTechPromotion
+  m_GUID: 66ff45d15bf43414eaf8615c9a953972
+  m_SerializeEntries:
+  - m_GUID: 58bec5c5b597bb541bd64d32ca07fb9d
+    m_Address: DaniTech/Items/SwiftSigil
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ebc2305dd2cddb45b91114eeab3468e
+    m_Address: DaniTech/Items/PrismShield
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 93731d7ae589f1a4d9655264618df5fe
+    m_Address: DaniTech/Items/DiamondTonic
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2e8dfd11e1a9594eb264958e20e3e48
+    m_Address: DaniTech/Items/EmeraldCore
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3a8716b78d1cf24aa2852ab4142b22a
+    m_Address: DaniTech/VFX/UseEffect
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6cb1ccc34b807a438616273e874f4c6
+    m_Address: DaniTech/UI/PromotionUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 2c5f3f03f4efcf44f8aa3ba2b517f8fa, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 77e1568a78cdc2049b19e8cf1dd43063, type: 2}
+    - {fileID: 11400000, guid: 755175d14c3bd6a4684e9d93d4e156cb, type: 2}
