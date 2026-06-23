@@ -351,15 +351,8 @@ namespace EmeToDia.Gameplay
 
         private void SetCursorState(bool isVisible)
         {
-            if (isVisible)
-            {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                return;
-            }
-
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

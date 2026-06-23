@@ -2,6 +2,7 @@ using EmeToDia.Gameplay;
 using System.IO;
 using UnityEditor;
 using UnityEditor.AddressableAssets;
+using UnityEditor.AddressableAssets.Build.DataBuilders;
 using UnityEditor.AddressableAssets.Settings;
 using UnityEditor.AddressableAssets.Settings.GroupSchemas;
 using UnityEditor.SceneManagement;
@@ -24,6 +25,11 @@ namespace EmeToDia.Editor
         private const string ExternalFolderPath = "Assets/ThirdParty/DaniTechImported";
         private const string AddressableGroupName = "DaniTechPromotion";
         private const string BrooklynSourceRoot = "D:/3D_Basic_Assets/0_배경/Kitbash3D Brooklyn-004/Kitbash3D Brooklyn-004/Kitbash3D Brooklyn/Kitbash3D Brooklyn Unity BuiltIn/KB3D_Brooklyn_UnityBuiltIn/Assets/KB3D/Brooklyn";
+        private const string AsteroidCrystalPackageRoot = "D:/3D_Basic_Assets/3_프롭/Asteroid Crystal Set 1.unitypackage";
+        private const string ReaperPackageRoot = "D:/3D_Basic_Assets/1_캐릭터/Heroic Reaper Fantasy Boss 1.01.unitypackage";
+        private const string BrooklynImportedFolderPath = ExternalFolderPath + "/KB3D_Brooklyn";
+        private const string AsteroidImportedFolderPath = ExternalFolderPath + "/Asteroid_Crystal_Set_01";
+        private const string ReaperImportedFolderPath = ExternalFolderPath + "/HEROIC FANTASY BOSSES PACK 1";
 
         private const string EmeraldItemPrefabPath = ItemPrefabFolderPath + "/PF_DaniTech_Item_EmeraldCore.prefab";
         private const string DiamondItemPrefabPath = ItemPrefabFolderPath + "/PF_DaniTech_Item_DiamondTonic.prefab";
@@ -31,6 +37,14 @@ namespace EmeToDia.Editor
         private const string SwiftItemPrefabPath = ItemPrefabFolderPath + "/PF_DaniTech_Item_SwiftSigil.prefab";
         private const string UiPrefabPath = UiPrefabFolderPath + "/PF_DaniTechPromotionUI.prefab";
         private const string UseEffectPrefabPath = PrefabFolderPath + "/PF_DaniTech_UseEffect.prefab";
+        private const string CrystalLargeAssetPath = AsteroidImportedFolderPath + "/Models/Crystal_Lrg_A_01.FBX";
+        private const string CrystalMediumAssetPath = AsteroidImportedFolderPath + "/Models/Crystal_Med_A_01.FBX";
+        private const string CrystalSmallAAssetPath = AsteroidImportedFolderPath + "/Models/Crystal_Sml_A_01.FBX";
+        private const string CrystalSmallBAssetPath = AsteroidImportedFolderPath + "/Models/Crystal_Sml_B_01.FBX";
+        private const string CrystalSmallCAssetPath = AsteroidImportedFolderPath + "/Models/Crystal_Sml_C_01.FBX";
+        private const string AsteroidSmallAAssetPath = AsteroidImportedFolderPath + "/Models/Asteroid_Sml_A_01.FBX";
+        private const string AsteroidSmallBAssetPath = AsteroidImportedFolderPath + "/Models/Asteroid_Sml_B_01.FBX";
+        private const string PlayerCharacterPrefabPath = ReaperImportedFolderPath + "/REAPER/PREFABS/REAPER_PBR.prefab";
 
         [MenuItem("EmeToDia/Rebuild Promotion Scene")]
         public static void RebuildPromotionScene()
@@ -49,6 +63,24 @@ namespace EmeToDia.Editor
             Debug.Log("DaniTechPromotionSceneBuilder: Eme_to_Dia_Promotion scene setup finished.");
         }
 
+        [InitializeOnLoadMethod]
+        private static void SetFastAddressablesPlayMode()
+        {
+            AddressableAssetSettings settings = AddressableAssetSettingsDefaultObject.GetSettings(false);
+            if (settings == null)
+            {
+                return;
+            }
+
+            int fastModeIndex = GetDataBuilderIndex<BuildScriptFastMode>(settings);
+            if (fastModeIndex < 0 || settings.ActivePlayModeDataBuilderIndex == fastModeIndex)
+            {
+                return;
+            }
+
+            settings.ActivePlayModeDataBuilderIndex = fastModeIndex;
+        }
+
         private static void EnsureFolders()
         {
             EnsureFolder("Assets", "DaniTech");
@@ -59,16 +91,30 @@ namespace EmeToDia.Editor
             EnsureFolder("Assets", "ThirdParty");
             EnsureFolder("Assets/ThirdParty", "DaniTechImported");
             EnsureFolder(ExternalFolderPath, "KB3D_Brooklyn");
+            EnsureFolder(ExternalFolderPath, "Asteroid_Crystal_Set_01");
+            EnsureFolder(ExternalFolderPath, "HEROIC FANTASY BOSSES PACK 1");
         }
 
         private static void ImportExternalAssets()
         {
+            CopyExternalFolder(BrooklynSourceRoot + "/Materials", BrooklynImportedFolderPath + "/Materials");
             CopyExternalAsset("KB3D_BRK_BldgLG_C.fbx");
+            CopyExternalAsset("KB3D_BRK_BldgLG_A.fbx");
+            CopyExternalAsset("KB3D_BRK_BldgLG_D.fbx");
+            CopyExternalAsset("KB3D_BRK_BldgLG_E.fbx");
             CopyExternalAsset("KB3D_BRK_BldgMD_F.fbx");
+            CopyExternalAsset("KB3D_BRK_BldgSM_F.fbx");
+            CopyExternalAsset("KB3D_BRK_BldgSM_I.fbx");
             CopyExternalAsset("KB3D_BRK_WaterTower_A.fbx");
             CopyExternalAsset("KB3D_BRK_Lamp_A.fbx");
             CopyExternalAsset("KB3D_BRK_RooftopProp_A.fbx");
+            CopyExternalAsset("KB3D_BRK_FireScape_A.fbx");
+            ImportUnityPackageFolder(AsteroidCrystalPackageRoot, ExternalFolderPath);
+            ImportUnityPackageFolder(ReaperPackageRoot, ExternalFolderPath);
             AssetDatabase.Refresh();
+            AssetDatabase.ImportAsset(BrooklynImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
+            AssetDatabase.ImportAsset(AsteroidImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
+            AssetDatabase.ImportAsset(ReaperImportedFolderPath, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ImportRecursive);
         }
 
         private static void CopyExternalAsset(string fileName)
@@ -80,16 +126,127 @@ namespace EmeToDia.Editor
                 return;
             }
 
-            string targetAssetPath = ExternalFolderPath + "/KB3D_Brooklyn/" + fileName;
-            string targetFullPath = Path.GetFullPath(targetAssetPath);
-            Directory.CreateDirectory(Path.GetDirectoryName(targetFullPath));
+            string targetAssetPath = BrooklynImportedFolderPath + "/" + fileName;
+            CopyProjectFile(sourcePath, targetAssetPath);
+            CopyProjectFile(sourcePath + ".meta", targetAssetPath + ".meta");
+            AssetDatabase.ImportAsset(targetAssetPath, ImportAssetOptions.ForceUpdate);
+        }
 
-            if (File.Exists(targetFullPath) == false)
+        private static void CopyExternalFolder(string sourceFolderPath, string targetAssetFolderPath)
+        {
+            if (Directory.Exists(sourceFolderPath) == false)
             {
-                FileUtil.CopyFileOrDirectory(sourcePath, targetFullPath);
+                Debug.LogWarning("DaniTechPromotionSceneBuilder: external folder was not found. " + sourceFolderPath);
+                return;
             }
 
-            AssetDatabase.ImportAsset(targetAssetPath, ImportAssetOptions.ForceUpdate);
+            string[] sourceFilePaths = Directory.GetFiles(sourceFolderPath, "*", SearchOption.AllDirectories);
+            for (int i = 0; i < sourceFilePaths.Length; i++)
+            {
+                string relativePath = sourceFilePaths[i].Substring(sourceFolderPath.Length).TrimStart(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+                string targetAssetPath = (targetAssetFolderPath + "/" + relativePath).Replace("\\", "/");
+                CopyProjectFile(sourceFilePaths[i], targetAssetPath);
+            }
+        }
+
+        private static void ImportUnityPackageFolder(string packageFolderPath, string targetRootPath)
+        {
+            if (Directory.Exists(packageFolderPath) == false)
+            {
+                Debug.LogWarning("DaniTechPromotionSceneBuilder: package folder was not found. " + packageFolderPath);
+                return;
+            }
+
+            string[] packageEntryPaths = Directory.GetDirectories(packageFolderPath);
+            for (int i = 0; i < packageEntryPaths.Length; i++)
+            {
+                ImportUnityPackageEntry(packageEntryPaths[i], targetRootPath);
+            }
+        }
+
+        private static void ImportUnityPackageEntry(string packageEntryPath, string targetRootPath)
+        {
+            string pathnamePath = Path.Combine(packageEntryPath, "pathname");
+            if (File.Exists(pathnamePath) == false)
+            {
+                return;
+            }
+
+            string[] packagePathLines = File.ReadAllLines(pathnamePath);
+            if (packagePathLines.Length <= 0)
+            {
+                return;
+            }
+
+            string packageAssetPath = packagePathLines[0].Trim().Replace("\\", "/");
+            if (packageAssetPath.StartsWith("Assets/") == false)
+            {
+                return;
+            }
+
+            string relativeAssetPath = packageAssetPath.Substring("Assets/".Length);
+            string targetAssetPath = targetRootPath + "/" + relativeAssetPath;
+            string sourceAssetPath = Path.Combine(packageEntryPath, "asset");
+            string sourceMetaPath = Path.Combine(packageEntryPath, "metaData");
+
+            if (File.Exists(sourceAssetPath))
+            {
+                CopyProjectFile(sourceAssetPath, targetAssetPath);
+            }
+            else
+            {
+                Directory.CreateDirectory(Path.GetFullPath(targetAssetPath));
+            }
+
+            CopyUnityPackageMetaIfValid(sourceMetaPath, targetAssetPath + ".meta");
+        }
+
+        private static void CopyUnityPackageMetaIfValid(string sourceMetaPath, string targetMetaAssetPath)
+        {
+            if (File.Exists(sourceMetaPath) == false)
+            {
+                return;
+            }
+
+            if (IsUnityMetaFile(sourceMetaPath))
+            {
+                CopyProjectFile(sourceMetaPath, targetMetaAssetPath);
+                return;
+            }
+
+            string targetMetaFullPath = Path.GetFullPath(targetMetaAssetPath);
+            if (File.Exists(targetMetaFullPath))
+            {
+                File.Delete(targetMetaFullPath);
+            }
+        }
+
+        private static bool IsUnityMetaFile(string sourceMetaPath)
+        {
+            byte[] headerBuffer = new byte[32];
+            using (FileStream stream = File.OpenRead(sourceMetaPath))
+            {
+                int readLength = stream.Read(headerBuffer, 0, headerBuffer.Length);
+                if (readLength <= 0)
+                {
+                    return false;
+                }
+
+                string headerText = System.Text.Encoding.UTF8.GetString(headerBuffer, 0, readLength);
+                return headerText.StartsWith("fileFormatVersion:");
+            }
+        }
+
+        private static void CopyProjectFile(string sourcePath, string targetAssetPath)
+        {
+            if (File.Exists(sourcePath) == false)
+            {
+                return;
+            }
+
+            string targetFullPath = Path.GetFullPath(targetAssetPath);
+            Directory.CreateDirectory(Path.GetDirectoryName(targetFullPath));
+            File.Copy(sourcePath, targetFullPath, true);
         }
 
         private static void CreateMaterials()
@@ -106,21 +263,52 @@ namespace EmeToDia.Editor
 
         private static void CreateItemPrefabs()
         {
-            CreateCrystalItemPrefab(EmeraldItemPrefabPath, "emerald_core", "에메랄드 코어", "MAT_DaniTech_Emerald");
-            CreateCrystalItemPrefab(DiamondItemPrefabPath, "diamond_tonic", "다이아 회복제", "MAT_DaniTech_Diamond");
-            CreateCrystalItemPrefab(ShieldItemPrefabPath, "prism_shield", "프리즘 보호막", "MAT_DaniTech_Shield");
-            CreateCrystalItemPrefab(SwiftItemPrefabPath, "swift_sigil", "신속의 인장", "MAT_DaniTech_Swift");
+            CreateCrystalItemPrefab(EmeraldItemPrefabPath, "emerald_core", "에메랄드 코어", "MAT_DaniTech_Emerald", CrystalLargeAssetPath, AsteroidSmallAAssetPath);
+            CreateCrystalItemPrefab(DiamondItemPrefabPath, "diamond_tonic", "다이아 회복제", "MAT_DaniTech_Diamond", CrystalMediumAssetPath, AsteroidSmallBAssetPath);
+            CreateCrystalItemPrefab(ShieldItemPrefabPath, "prism_shield", "프리즘 보호막", "MAT_DaniTech_Shield", CrystalSmallBAssetPath, AsteroidSmallAAssetPath);
+            CreateCrystalItemPrefab(SwiftItemPrefabPath, "swift_sigil", "신속의 인장", "MAT_DaniTech_Swift", CrystalSmallCAssetPath, AsteroidSmallBAssetPath);
         }
 
-        private static void CreateCrystalItemPrefab(string prefabPath, string itemId, string label, string materialName)
+        private static void CreateCrystalItemPrefab(
+            string prefabPath,
+            string itemId,
+            string label,
+            string materialName,
+            string crystalAssetPath,
+            string baseAssetPath)
         {
             GameObject rootObject = new GameObject(Path.GetFileNameWithoutExtension(prefabPath));
             rootObject.transform.localScale = Vector3.one;
 
             GameObject visualRoot = CreateEmpty("VisualRoot", rootObject.transform, Vector3.zero);
             Material itemMaterial = LoadMaterial(materialName);
-            CreateDiamond("Visual_Gem_Core", visualRoot.transform, Vector3.zero, new Vector3(0.65f, 0.92f, 0.65f), itemMaterial);
-            CreatePrimitive(PrimitiveType.Cylinder, "Visual_Gem_Base", visualRoot.transform, new Vector3(0f, -0.55f, 0f), new Vector3(0.72f, 0.12f, 0.72f), LoadMaterial("MAT_DaniTech_DarkMetal"));
+            bool hasCrystalAsset = CreateImportedAssetVisual(
+                crystalAssetPath,
+                "Visual_ImportedCrystal",
+                visualRoot.transform,
+                Vector3.zero,
+                Quaternion.identity,
+                1.35f,
+                itemMaterial);
+
+            bool hasBaseAsset = CreateImportedAssetVisual(
+                baseAssetPath,
+                "Visual_ImportedStoneBase",
+                visualRoot.transform,
+                new Vector3(0f, -0.58f, 0f),
+                Quaternion.identity,
+                0.34f,
+                LoadMaterial("MAT_DaniTech_DarkMetal"));
+
+            if (hasCrystalAsset == false)
+            {
+                CreateDiamond("Fallback_Gem_Core", visualRoot.transform, Vector3.zero, new Vector3(0.65f, 0.92f, 0.65f), itemMaterial);
+            }
+
+            if (hasBaseAsset == false)
+            {
+                CreatePrimitive(PrimitiveType.Cylinder, "Fallback_Gem_Base", visualRoot.transform, new Vector3(0f, -0.55f, 0f), new Vector3(0.72f, 0.12f, 0.72f), LoadMaterial("MAT_DaniTech_DarkMetal"));
+            }
 
             GameObject lightObject = CreateEmpty("Light_ItemGlow", rootObject.transform, new Vector3(0f, 0.35f, 0f));
             Light light = lightObject.AddComponent<Light>();
@@ -182,15 +370,15 @@ namespace EmeToDia.Editor
             canvasObject.AddComponent<GraphicRaycaster>();
 
             RectTransform hudRoot = CreatePanel(canvasObject.transform, "Panel_PlayerHUD", new Color(0.03f, 0.05f, 0.07f, 0.82f));
-            SetRect(hudRoot, new Vector2(0f, 1f), new Vector2(430f, 190f), new Vector2(22f, -22f));
+            SetRect(hudRoot, new Vector2(0f, 1f), new Vector2(590f, 300f), new Vector2(22f, -22f));
             DaniTechPlayerHUD playerHUD = hudRoot.gameObject.AddComponent<DaniTechPlayerHUD>();
-            Text statusText = CreateText(hudRoot, "Text_Status", "", 20, TextAnchor.UpperLeft);
-            SetRect(statusText.rectTransform, new Vector2(0f, 1f), new Vector2(386f, 120f), new Vector2(22f, -18f));
-            Text guideText = CreateText(hudRoot, "Text_Guide", "", 16, TextAnchor.LowerLeft);
-            SetRect(guideText.rectTransform, new Vector2(0f, 0f), new Vector2(386f, 34f), new Vector2(22f, 16f));
-            Image healthFill = CreateBar(hudRoot, "Bar_HP", new Vector2(22f, -142f), new Color(0.9f, 0.14f, 0.16f, 1f));
-            Image staminaFill = CreateBar(hudRoot, "Bar_Stamina", new Vector2(22f, -160f), new Color(0.2f, 0.82f, 0.36f, 1f));
-            Image shieldFill = CreateBar(hudRoot, "Bar_Shield", new Vector2(22f, -178f), new Color(0.18f, 0.48f, 0.95f, 1f));
+            Text statusText = CreateText(hudRoot, "Text_Status", "", 24, TextAnchor.UpperLeft);
+            SetRect(statusText.rectTransform, new Vector2(0f, 1f), new Vector2(542f, 158f), new Vector2(24f, -22f));
+            Text guideText = CreateText(hudRoot, "Text_Guide", "", 20, TextAnchor.LowerLeft);
+            SetRect(guideText.rectTransform, new Vector2(0f, 0f), new Vector2(542f, 48f), new Vector2(24f, 18f));
+            Image healthFill = CreateBar(hudRoot, "Bar_HP", new Vector2(24f, -192f), new Vector2(542f, 14f), new Color(0.9f, 0.14f, 0.16f, 1f));
+            Image staminaFill = CreateBar(hudRoot, "Bar_Stamina", new Vector2(24f, -220f), new Vector2(542f, 14f), new Color(0.2f, 0.82f, 0.36f, 1f));
+            Image shieldFill = CreateBar(hudRoot, "Bar_Shield", new Vector2(24f, -248f), new Vector2(542f, 14f), new Color(0.18f, 0.48f, 0.95f, 1f));
             SetObjectReference(playerHUD, "_statusText", statusText);
             SetObjectReference(playerHUD, "_guideText", guideText);
             SetObjectReference(playerHUD, "_healthFillImage", healthFill);
@@ -198,14 +386,14 @@ namespace EmeToDia.Editor
             SetObjectReference(playerHUD, "_shieldFillImage", shieldFill);
 
             RectTransform logRoot = CreatePanel(canvasObject.transform, "Panel_FeedbackLog", new Color(0.04f, 0.04f, 0.05f, 0.75f));
-            SetRect(logRoot, new Vector2(0f, 0f), new Vector2(650f, 160f), new Vector2(22f, 22f));
+            SetRect(logRoot, new Vector2(0f, 0f), new Vector2(840f, 190f), new Vector2(22f, 22f));
             DaniTechFeedbackLogView feedbackLogView = logRoot.gameObject.AddComponent<DaniTechFeedbackLogView>();
-            Text logText = CreateText(logRoot, "Text_Log", "", 18, TextAnchor.LowerLeft);
-            SetStretch(logText.rectTransform, new Vector2(18f, 14f), new Vector2(-18f, -14f));
+            Text logText = CreateText(logRoot, "Text_Log", "", 20, TextAnchor.LowerLeft);
+            SetStretch(logText.rectTransform, new Vector2(22f, 18f), new Vector2(-22f, -18f));
             SetObjectReference(feedbackLogView, "_logText", logText);
 
             RectTransform inventoryRoot = CreatePanel(canvasObject.transform, "Panel_InventoryRoot", new Color(0.025f, 0.035f, 0.045f, 0.96f));
-            SetRect(inventoryRoot, new Vector2(0.5f, 0.5f), new Vector2(980f, 620f), Vector2.zero);
+            SetRect(inventoryRoot, new Vector2(0.5f, 0.5f), new Vector2(1320f, 820f), Vector2.zero);
             DaniTechInventoryUI inventoryUI = inventoryRoot.gameObject.AddComponent<DaniTechInventoryUI>();
             BuildInventoryPanel(inventoryRoot, inventoryUI);
 
@@ -216,18 +404,18 @@ namespace EmeToDia.Editor
 
         private static void BuildInventoryPanel(RectTransform inventoryRoot, DaniTechInventoryUI inventoryUI)
         {
-            Text titleText = CreateText(inventoryRoot, "Text_Title", "Diamond Promotion Inventory", 30, TextAnchor.MiddleCenter);
-            SetRect(titleText.rectTransform, new Vector2(0.5f, 1f), new Vector2(880f, 46f), new Vector2(0f, -34f));
+            Text titleText = CreateText(inventoryRoot, "Text_Title", "Diamond Promotion Inventory", 38, TextAnchor.MiddleCenter);
+            SetRect(titleText.rectTransform, new Vector2(0.5f, 1f), new Vector2(1180f, 58f), new Vector2(0f, -44f));
 
-            Text messageText = CreateText(inventoryRoot, "Text_Message", "", 18, TextAnchor.MiddleCenter);
-            SetRect(messageText.rectTransform, new Vector2(0.5f, 0f), new Vector2(850f, 34f), new Vector2(0f, 30f));
+            Text messageText = CreateText(inventoryRoot, "Text_Message", "", 22, TextAnchor.MiddleCenter);
+            SetRect(messageText.rectTransform, new Vector2(0.5f, 0f), new Vector2(1140f, 44f), new Vector2(0f, 38f));
 
             RectTransform slotPanel = CreatePanel(inventoryRoot, "Panel_Slots", new Color(0.07f, 0.09f, 0.11f, 0.92f));
-            SetRect(slotPanel, new Vector2(0f, 0.5f), new Vector2(560f, 420f), new Vector2(42f, -4f));
+            SetRect(slotPanel, new Vector2(0f, 0.5f), new Vector2(760f, 560f), new Vector2(50f, -16f));
             GridLayoutGroup grid = slotPanel.gameObject.AddComponent<GridLayoutGroup>();
-            grid.cellSize = new Vector2(126f, 92f);
-            grid.spacing = new Vector2(10f, 10f);
-            grid.padding = new RectOffset(18, 18, 18, 18);
+            grid.cellSize = new Vector2(170f, 130f);
+            grid.spacing = new Vector2(16f, 16f);
+            grid.padding = new RectOffset(24, 24, 24, 24);
             grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
             grid.constraintCount = 4;
 
@@ -238,25 +426,25 @@ namespace EmeToDia.Editor
             }
 
             RectTransform detailPanel = CreatePanel(inventoryRoot, "Panel_Detail", new Color(0.07f, 0.08f, 0.10f, 0.94f));
-            SetRect(detailPanel, new Vector2(1f, 0.55f), new Vector2(330f, 360f), new Vector2(-42f, -8f));
-            Text selectedText = CreateText(detailPanel, "Text_Selected", "", 22, TextAnchor.UpperLeft);
-            SetRect(selectedText.rectTransform, new Vector2(0f, 1f), new Vector2(292f, 64f), new Vector2(18f, -18f));
-            Text detailText = CreateText(detailPanel, "Text_Detail", "", 17, TextAnchor.UpperLeft);
-            SetRect(detailText.rectTransform, new Vector2(0f, 1f), new Vector2(292f, 188f), new Vector2(18f, -90f));
+            SetRect(detailPanel, new Vector2(1f, 0.55f), new Vector2(440f, 500f), new Vector2(-50f, -18f));
+            Text selectedText = CreateText(detailPanel, "Text_Selected", "", 26, TextAnchor.UpperLeft);
+            SetRect(selectedText.rectTransform, new Vector2(0f, 1f), new Vector2(392f, 84f), new Vector2(24f, -24f));
+            Text detailText = CreateText(detailPanel, "Text_Detail", "", 21, TextAnchor.UpperLeft);
+            SetRect(detailText.rectTransform, new Vector2(0f, 1f), new Vector2(392f, 270f), new Vector2(24f, -124f));
 
-            Button useButton = CreateButton(detailPanel, "Button_Use", "사용", new Vector2(18f, 40f), new Vector2(90f, 44f), new Color(0.12f, 0.36f, 0.25f, 1f));
-            Button dropButton = CreateButton(detailPanel, "Button_Drop", "버리기", new Vector2(120f, 40f), new Vector2(90f, 44f), new Color(0.42f, 0.16f, 0.15f, 1f));
-            Button closeButton = CreateButton(detailPanel, "Button_Close", "닫기", new Vector2(222f, 40f), new Vector2(90f, 44f), new Color(0.18f, 0.20f, 0.23f, 1f));
+            Button useButton = CreateButton(detailPanel, "Button_Use", "사용", new Vector2(24f, 48f), new Vector2(116f, 54f), new Color(0.12f, 0.36f, 0.25f, 1f));
+            Button dropButton = CreateButton(detailPanel, "Button_Drop", "버리기", new Vector2(158f, 48f), new Vector2(116f, 54f), new Color(0.42f, 0.16f, 0.15f, 1f));
+            Button closeButton = CreateButton(detailPanel, "Button_Close", "닫기", new Vector2(292f, 48f), new Vector2(116f, 54f), new Color(0.18f, 0.20f, 0.23f, 1f));
 
             RectTransform sortPanel = CreatePanel(inventoryRoot, "Panel_Sort", new Color(0.05f, 0.06f, 0.075f, 0.88f));
-            SetRect(sortPanel, new Vector2(0.5f, 0f), new Vector2(610f, 68f), new Vector2(-150f, 98f));
-            Button sortNameButton = CreateButton(sortPanel, "Button_SortName", "이름", new Vector2(18f, 12f), new Vector2(110f, 44f), new Color(0.18f, 0.22f, 0.26f, 1f));
-            Button sortTypeButton = CreateButton(sortPanel, "Button_SortType", "타입", new Vector2(142f, 12f), new Vector2(110f, 44f), new Color(0.18f, 0.22f, 0.26f, 1f));
-            Button sortSequenceButton = CreateButton(sortPanel, "Button_SortSequence", "획득순", new Vector2(266f, 12f), new Vector2(122f, 44f), new Color(0.18f, 0.22f, 0.26f, 1f));
+            SetRect(sortPanel, new Vector2(0.5f, 0f), new Vector2(790f, 84f), new Vector2(-188f, 122f));
+            Button sortNameButton = CreateButton(sortPanel, "Button_SortName", "이름", new Vector2(20f, 15f), new Vector2(130f, 54f), new Color(0.18f, 0.22f, 0.26f, 1f));
+            Button sortTypeButton = CreateButton(sortPanel, "Button_SortType", "타입", new Vector2(168f, 15f), new Vector2(130f, 54f), new Color(0.18f, 0.22f, 0.26f, 1f));
+            Button sortSequenceButton = CreateButton(sortPanel, "Button_SortSequence", "획득순", new Vector2(316f, 15f), new Vector2(146f, 54f), new Color(0.18f, 0.22f, 0.26f, 1f));
 
             RectTransform dropTargetRoot = CreatePanel(sortPanel, "Panel_DropTarget", new Color(0.36f, 0.12f, 0.12f, 0.9f));
-            SetRect(dropTargetRoot, new Vector2(1f, 0.5f), new Vector2(170f, 44f), new Vector2(-18f, 0f));
-            Text dropTargetText = CreateText(dropTargetRoot, "Text_DropTarget", "Drop / 버리기", 16, TextAnchor.MiddleCenter);
+            SetRect(dropTargetRoot, new Vector2(1f, 0.5f), new Vector2(230f, 54f), new Vector2(-20f, 0f));
+            Text dropTargetText = CreateText(dropTargetRoot, "Text_DropTarget", "Drop / 버리기", 20, TextAnchor.MiddleCenter);
             SetStretch(dropTargetText.rectTransform, Vector2.zero, Vector2.zero);
             DaniTechInventoryDropTarget dropTarget = dropTargetRoot.gameObject.AddComponent<DaniTechInventoryDropTarget>();
             SetObjectReference(dropTarget, "_backgroundImage", dropTargetRoot.GetComponent<Image>());
@@ -280,14 +468,14 @@ namespace EmeToDia.Editor
         {
             RectTransform slotRoot = CreatePanel(parent, "Slot_Item_" + slotIndex.ToString("00"), new Color(0.08f, 0.10f, 0.12f, 0.82f));
             Button button = slotRoot.gameObject.AddComponent<Button>();
-            Text iconText = CreateText(slotRoot, "Text_Icon", "", 22, TextAnchor.MiddleCenter);
-            SetRect(iconText.rectTransform, new Vector2(0.5f, 1f), new Vector2(104f, 30f), new Vector2(0f, -16f));
-            Text nameText = CreateText(slotRoot, "Text_Name", "", 13, TextAnchor.MiddleCenter);
-            SetRect(nameText.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(112f, 32f), new Vector2(0f, -2f));
-            Text amountText = CreateText(slotRoot, "Text_Amount", "", 14, TextAnchor.LowerRight);
-            SetRect(amountText.rectTransform, new Vector2(1f, 0f), new Vector2(56f, 22f), new Vector2(-8f, 8f));
-            Text cooldownText = CreateText(slotRoot, "Text_Cooldown", "", 13, TextAnchor.LowerLeft);
-            SetRect(cooldownText.rectTransform, new Vector2(0f, 0f), new Vector2(62f, 22f), new Vector2(8f, 8f));
+            Text iconText = CreateText(slotRoot, "Text_Icon", "", 30, TextAnchor.MiddleCenter);
+            SetRect(iconText.rectTransform, new Vector2(0.5f, 1f), new Vector2(136f, 38f), new Vector2(0f, -18f));
+            Text nameText = CreateText(slotRoot, "Text_Name", "", 17, TextAnchor.MiddleCenter);
+            SetRect(nameText.rectTransform, new Vector2(0.5f, 0.5f), new Vector2(148f, 46f), new Vector2(0f, -2f));
+            Text amountText = CreateText(slotRoot, "Text_Amount", "", 18, TextAnchor.LowerRight);
+            SetRect(amountText.rectTransform, new Vector2(1f, 0f), new Vector2(72f, 28f), new Vector2(-10f, 10f));
+            Text cooldownText = CreateText(slotRoot, "Text_Cooldown", "", 17, TextAnchor.LowerLeft);
+            SetRect(cooldownText.rectTransform, new Vector2(0f, 0f), new Vector2(86f, 28f), new Vector2(10f, 10f));
 
             DaniTechInventorySlotView slotView = slotRoot.gameObject.AddComponent<DaniTechInventorySlotView>();
             SetObjectReference(slotView, "_button", button);
@@ -302,7 +490,7 @@ namespace EmeToDia.Editor
         private static void RegisterAddressables()
         {
             AddressableAssetSettings settings = AddressableAssetSettingsDefaultObject.GetSettings(true);
-            settings.ActivePlayerDataBuilderIndex = 0;
+            SetFastAddressablesPlayMode();
             AddressableAssetGroup group = settings.FindGroup(AddressableGroupName);
             if (group == null)
             {
@@ -322,7 +510,28 @@ namespace EmeToDia.Editor
             RegisterAddressable(settings, group, SwiftItemPrefabPath, "DaniTech/Items/SwiftSigil");
             RegisterAddressable(settings, group, UiPrefabPath, "DaniTech/UI/PromotionUI");
             RegisterAddressable(settings, group, UseEffectPrefabPath, "DaniTech/VFX/UseEffect");
+            RegisterAddressableFolderAssets(settings, group, BrooklynImportedFolderPath, "DaniTech/Imported/KB3D_Brooklyn");
+            RegisterAddressableFolderAssets(settings, group, AsteroidImportedFolderPath, "DaniTech/Imported/Asteroid_Crystal_Set_01");
+            RegisterAddressableFolderAssets(settings, group, ReaperImportedFolderPath, "DaniTech/Imported/Heroic_Reaper");
             settings.SetDirty(AddressableAssetSettings.ModificationEvent.BatchModification, null, true);
+        }
+
+        private static int GetDataBuilderIndex<T>(AddressableAssetSettings settings) where T : ScriptableObject
+        {
+            if (settings == null)
+            {
+                return -1;
+            }
+
+            for (int i = 0; i < settings.DataBuilders.Count; i++)
+            {
+                if (settings.DataBuilders[i] is T)
+                {
+                    return i;
+                }
+            }
+
+            return -1;
         }
 
         private static void RegisterSceneForPlay()
@@ -358,37 +567,74 @@ namespace EmeToDia.Editor
             Light sun = sunObject.AddComponent<Light>();
             sun.type = LightType.Directional;
             sun.color = new Color(1f, 0.92f, 0.82f, 1f);
-            sun.intensity = 1.45f;
+            sun.intensity = 1.75f;
             sunObject.transform.rotation = Quaternion.Euler(52f, -38f, 0f);
 
-            CreatePointLight(lightRoot.transform, "PointLight_DiamondGate", new Vector3(0f, 4f, 7f), new Color(0.42f, 0.92f, 1f, 1f), 2.4f, 11f);
-            RenderSettings.ambientLight = new Color(0.22f, 0.25f, 0.28f, 1f);
+            CreatePointLight(lightRoot.transform, "PointLight_DiamondGate", new Vector3(0f, 12f, 22f), new Color(0.42f, 0.92f, 1f, 1f), 4.2f, 48f);
+            RenderSettings.ambientLight = new Color(0.25f, 0.28f, 0.32f, 1f);
+            RenderSettings.fog = true;
+            RenderSettings.fogColor = new Color(0.62f, 0.75f, 0.86f, 1f);
+            RenderSettings.fogMode = FogMode.Linear;
+            RenderSettings.fogStartDistance = 95f;
+            RenderSettings.fogEndDistance = 260f;
         }
 
         private static void CreateEnvironment(Scene scene)
         {
             GameObject environmentRoot = CreateRoot(scene, "Environment_DiamondDistrict");
-            Material groundMaterial = LoadMaterial("MAT_DaniTech_Ground");
-            Material pathMaterial = LoadMaterial("MAT_DaniTech_Path");
+            Material groundMaterial = LoadBrooklynMaterial("KB3D_BRK_FlatAsphaltRoof") ?? LoadMaterial("MAT_DaniTech_Ground");
+            Material pathMaterial = LoadBrooklynMaterial("KB3D_BRK_ConcreteWithExpansionJoints") ?? LoadMaterial("MAT_DaniTech_Path");
             Material diamondMaterial = LoadMaterial("MAT_DaniTech_Diamond");
             Material lightMaterial = LoadMaterial("MAT_DaniTech_Light");
 
-            CreatePrimitive(PrimitiveType.Cube, "Ground_MainPlaza", environmentRoot.transform, new Vector3(0f, -0.08f, 0f), new Vector3(28f, 0.16f, 28f), groundMaterial);
-            CreatePrimitive(PrimitiveType.Cube, "Ground_DiamondPath_North", environmentRoot.transform, new Vector3(0f, 0.02f, 6.4f), new Vector3(4.2f, 0.08f, 13f), pathMaterial);
-            CreatePrimitive(PrimitiveType.Cube, "Ground_DiamondPath_East", environmentRoot.transform, new Vector3(6.4f, 0.03f, 0f), new Vector3(13f, 0.08f, 4.2f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_MainPlaza_240", environmentRoot.transform, new Vector3(0f, -0.08f, 0f), new Vector3(240f, 0.16f, 240f), groundMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_DiamondPath_North", environmentRoot.transform, new Vector3(0f, 0.02f, 40f), new Vector3(18f, 0.08f, 112f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_DiamondPath_East", environmentRoot.transform, new Vector3(40f, 0.03f, 0f), new Vector3(112f, 0.08f, 18f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_DiamondPath_West", environmentRoot.transform, new Vector3(-40f, 0.03f, 0f), new Vector3(112f, 0.08f, 18f), pathMaterial);
 
-            CreateExternalModel("KB3D_BRK_BldgLG_C.fbx", environmentRoot.transform, new Vector3(-11f, 0f, 7f), Quaternion.Euler(0f, 30f, 0f), new Vector3(0.035f, 0.035f, 0.035f));
-            CreateExternalModel("KB3D_BRK_BldgMD_F.fbx", environmentRoot.transform, new Vector3(11f, 0f, 5f), Quaternion.Euler(0f, -30f, 0f), new Vector3(0.04f, 0.04f, 0.04f));
-            CreateExternalModel("KB3D_BRK_WaterTower_A.fbx", environmentRoot.transform, new Vector3(-6f, 0f, -8f), Quaternion.Euler(0f, 12f, 0f), new Vector3(0.08f, 0.08f, 0.08f));
-            CreateExternalModel("KB3D_BRK_RooftopProp_A.fbx", environmentRoot.transform, new Vector3(7f, 0.1f, -8f), Quaternion.identity, new Vector3(0.12f, 0.12f, 0.12f));
+            CreateExternalModel("KB3D_BRK_BldgLG_C.fbx", environmentRoot.transform, new Vector3(-82f, 0f, 48f), Quaternion.Euler(0f, 28f, 0f), new Vector3(0.28f, 0.28f, 0.28f));
+            CreateExternalModel("KB3D_BRK_BldgLG_E.fbx", environmentRoot.transform, new Vector3(86f, 0f, 52f), Quaternion.Euler(0f, -34f, 0f), new Vector3(0.31f, 0.31f, 0.31f));
+            CreateExternalModel("KB3D_BRK_BldgLG_A.fbx", environmentRoot.transform, new Vector3(-88f, 0f, -62f), Quaternion.Euler(0f, 150f, 0f), new Vector3(0.26f, 0.26f, 0.26f));
+            CreateExternalModel("KB3D_BRK_BldgLG_D.fbx", environmentRoot.transform, new Vector3(84f, 0f, -66f), Quaternion.Euler(0f, -146f, 0f), new Vector3(0.27f, 0.27f, 0.27f));
+            CreateExternalModel("KB3D_BRK_BldgMD_F.fbx", environmentRoot.transform, new Vector3(0f, 0f, 98f), Quaternion.Euler(0f, 180f, 0f), new Vector3(0.26f, 0.26f, 0.26f));
+            CreateExternalModel("KB3D_BRK_BldgSM_F.fbx", environmentRoot.transform, new Vector3(-112f, 0f, -8f), Quaternion.Euler(0f, 82f, 0f), new Vector3(0.25f, 0.25f, 0.25f));
+            CreateExternalModel("KB3D_BRK_BldgSM_I.fbx", environmentRoot.transform, new Vector3(112f, 0f, -6f), Quaternion.Euler(0f, -88f, 0f), new Vector3(0.25f, 0.25f, 0.25f));
+            CreateExternalModel("KB3D_BRK_WaterTower_A.fbx", environmentRoot.transform, new Vector3(-48f, 0f, -82f), Quaternion.Euler(0f, 12f, 0f), new Vector3(0.34f, 0.34f, 0.34f));
+            CreateExternalModel("KB3D_BRK_RooftopProp_A.fbx", environmentRoot.transform, new Vector3(50f, 0.1f, -84f), Quaternion.identity, new Vector3(0.48f, 0.48f, 0.48f));
+            CreateExternalModel("KB3D_BRK_FireScape_A.fbx", environmentRoot.transform, new Vector3(-54f, 0.2f, 18f), Quaternion.Euler(0f, 78f, 0f), new Vector3(0.38f, 0.38f, 0.38f));
 
             for (int i = 0; i < 6; i++)
             {
                 float angle = i * 60f;
-                Vector3 position = Quaternion.Euler(0f, angle, 0f) * new Vector3(0f, 0f, 8.8f);
-                CreateDiamond("Gem_Pillar_" + i.ToString("00"), environmentRoot.transform, position + Vector3.up * 1.35f, new Vector3(0.7f, 1.2f, 0.7f), diamondMaterial);
-                CreatePrimitive(PrimitiveType.Cylinder, "Pillar_Base_" + i.ToString("00"), environmentRoot.transform, position + Vector3.up * 0.4f, new Vector3(0.7f, 0.8f, 0.7f), LoadMaterial("MAT_DaniTech_DarkMetal"));
-                CreatePointLight(environmentRoot.transform, "PointLight_Gem_" + i.ToString("00"), position + Vector3.up * 2.4f, lightMaterial.color, 1.1f, 5f);
+                Vector3 position = Quaternion.Euler(0f, angle, 0f) * new Vector3(0f, 0f, 24f);
+                bool hasGemAsset = CreateImportedAssetVisual(
+                    i % 2 == 0 ? CrystalLargeAssetPath : CrystalMediumAssetPath,
+                    "Asset_Gem_Pillar_" + i.ToString("00"),
+                    environmentRoot.transform,
+                    position + Vector3.up * 4.8f,
+                    Quaternion.Euler(0f, angle, 0f),
+                    7.2f,
+                    diamondMaterial);
+                bool hasBaseAsset = CreateImportedAssetVisual(
+                    i % 2 == 0 ? AsteroidSmallAAssetPath : AsteroidSmallBAssetPath,
+                    "Asset_Pillar_Base_" + i.ToString("00"),
+                    environmentRoot.transform,
+                    position + Vector3.up * 0.45f,
+                    Quaternion.Euler(0f, angle, 0f),
+                    2.4f,
+                    LoadMaterial("MAT_DaniTech_DarkMetal"));
+
+                if (hasGemAsset == false)
+                {
+                    CreateDiamond("Fallback_Gem_Pillar_" + i.ToString("00"), environmentRoot.transform, position + Vector3.up * 4.8f, new Vector3(3f, 5.4f, 3f), diamondMaterial);
+                }
+
+                if (hasBaseAsset == false)
+                {
+                    CreatePrimitive(PrimitiveType.Cylinder, "Fallback_Pillar_Base_" + i.ToString("00"), environmentRoot.transform, position + Vector3.up * 1.1f, new Vector3(3f, 2.2f, 3f), LoadMaterial("MAT_DaniTech_DarkMetal"));
+                }
+
+                CreatePointLight(environmentRoot.transform, "PointLight_Gem_" + i.ToString("00"), position + Vector3.up * 8f, lightMaterial.color, 2.1f, 18f);
             }
         }
 
@@ -402,8 +648,9 @@ namespace EmeToDia.Editor
             characterController.radius = 0.32f;
             characterController.center = new Vector3(0f, 0.9f, 0f);
             playerObject.AddComponent<DaniTechPlayerMovement>();
-            playerObject.AddComponent<DaniTechPlayerView>();
+            DaniTechPlayerView playerView = playerObject.AddComponent<DaniTechPlayerView>();
             DaniTechPlayerInteraction interaction = playerObject.AddComponent<DaniTechPlayerInteraction>();
+            Transform playerVisualRoot = CreatePlayerCharacterVisual(playerObject.transform);
 
             GameObject cameraObject = CreateEmpty("Camera_FirstPerson", playerObject.transform, new Vector3(0f, 1.58f, 0f));
             Camera camera = cameraObject.AddComponent<Camera>();
@@ -413,8 +660,35 @@ namespace EmeToDia.Editor
             camera.tag = "MainCamera";
             cameraObject.AddComponent<AudioListener>();
 
+            SetObjectReference(playerView, "_cameraTransform", cameraObject.transform);
+            SetObjectReference(playerView, "_characterVisualRoot", playerVisualRoot);
             SetObjectReference(interaction, "_cameraTransform", cameraObject.transform);
             return playerObject;
+        }
+
+        private static Transform CreatePlayerCharacterVisual(Transform parent)
+        {
+            GameObject characterPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(PlayerCharacterPrefabPath);
+            GameObject visualObject;
+            if (characterPrefab != null)
+            {
+                visualObject = PrefabUtility.InstantiatePrefab(characterPrefab, parent) as GameObject;
+                if (visualObject != null)
+                {
+                    visualObject.name = "Visual_PlayerCharacter_Reaper";
+                    visualObject.transform.localPosition = Vector3.zero;
+                    visualObject.transform.localRotation = Quaternion.identity;
+                    visualObject.transform.localScale = Vector3.one;
+                    ScaleToHeight(visualObject, 1.85f);
+                    ApplyFallbackMaterialToRenderers(visualObject, LoadMaterial("MAT_DaniTech_DarkMetal"));
+                    visualObject.SetActive(false);
+                    return visualObject.transform;
+                }
+            }
+
+            visualObject = CreatePrimitive(PrimitiveType.Capsule, "Fallback_PlayerCharacter", parent, new Vector3(0f, 0.9f, 0f), new Vector3(0.65f, 0.9f, 0.65f), LoadMaterial("MAT_DaniTech_Diamond"));
+            visualObject.SetActive(false);
+            return visualObject.transform;
         }
 
         private static GameObject CreateManagers(Scene scene, GameObject playerObject)
@@ -442,11 +716,11 @@ namespace EmeToDia.Editor
         private static void CreateSpawnPoints(Transform managerGroup)
         {
             Transform spawnRoot = CreateEmpty("SpawnPoints_ItemAddressables", managerGroup, Vector3.zero).transform;
-            CreateSpawnPoint(spawnRoot, "Spawn_EmeraldCore_A", "emerald_core", 2, new Vector3(-3.4f, 0.55f, -0.4f));
-            CreateSpawnPoint(spawnRoot, "Spawn_EmeraldCore_B", "emerald_core", 1, new Vector3(2.2f, 0.55f, -2.6f));
-            CreateSpawnPoint(spawnRoot, "Spawn_DiamondTonic", "diamond_tonic", 1, new Vector3(3.7f, 0.55f, 2.8f));
-            CreateSpawnPoint(spawnRoot, "Spawn_PrismShield", "prism_shield", 1, new Vector3(-4.4f, 0.55f, 3.2f));
-            CreateSpawnPoint(spawnRoot, "Spawn_SwiftSigil", "swift_sigil", 1, new Vector3(0f, 0.55f, 5.4f));
+            CreateSpawnPoint(spawnRoot, "Spawn_EmeraldCore_A", "emerald_core", 2, new Vector3(-14f, 0.8f, -4f));
+            CreateSpawnPoint(spawnRoot, "Spawn_EmeraldCore_B", "emerald_core", 1, new Vector3(18f, 0.8f, -16f));
+            CreateSpawnPoint(spawnRoot, "Spawn_DiamondTonic", "diamond_tonic", 1, new Vector3(22f, 0.8f, 18f));
+            CreateSpawnPoint(spawnRoot, "Spawn_PrismShield", "prism_shield", 1, new Vector3(-26f, 0.8f, 20f));
+            CreateSpawnPoint(spawnRoot, "Spawn_SwiftSigil", "swift_sigil", 1, new Vector3(0f, 0.8f, 34f));
 
             DaniTechAddressableItemSpawner spawner = managerGroup.GetComponentInChildren<DaniTechAddressableItemSpawner>();
             if (spawner != null)
@@ -515,6 +789,11 @@ namespace EmeToDia.Editor
             return AssetDatabase.LoadAssetAtPath<Material>(MaterialFolderPath + "/" + materialName + ".mat");
         }
 
+        private static Material LoadBrooklynMaterial(string materialName)
+        {
+            return AssetDatabase.LoadAssetAtPath<Material>(BrooklynImportedFolderPath + "/Materials/" + materialName + ".mat");
+        }
+
         private static void RegisterAddressable(AddressableAssetSettings settings, AddressableAssetGroup group, string assetPath, string address)
         {
             string guid = AssetDatabase.AssetPathToGUID(assetPath);
@@ -530,9 +809,31 @@ namespace EmeToDia.Editor
             EditorUtility.SetDirty(settings);
         }
 
+        private static void RegisterAddressableFolderAssets(AddressableAssetSettings settings, AddressableAssetGroup group, string folderPath, string addressRoot)
+        {
+            if (AssetDatabase.IsValidFolder(folderPath) == false)
+            {
+                Debug.LogWarning("DaniTechPromotionSceneBuilder: addressable folder missing. " + folderPath);
+                return;
+            }
+
+            string[] guids = AssetDatabase.FindAssets(string.Empty, new[] { folderPath });
+            for (int i = 0; i < guids.Length; i++)
+            {
+                string assetPath = AssetDatabase.GUIDToAssetPath(guids[i]);
+                if (string.IsNullOrEmpty(assetPath) || AssetDatabase.IsValidFolder(assetPath))
+                {
+                    continue;
+                }
+
+                string relativePath = assetPath.Substring(folderPath.Length).TrimStart('/').Replace("\\", "/");
+                RegisterAddressable(settings, group, assetPath, addressRoot + "/" + relativePath);
+            }
+        }
+
         private static void CreateExternalModel(string fileName, Transform parent, Vector3 position, Quaternion rotation, Vector3 scale)
         {
-            string assetPath = ExternalFolderPath + "/KB3D_Brooklyn/" + fileName;
+            string assetPath = BrooklynImportedFolderPath + "/" + fileName;
             GameObject modelPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(assetPath);
             if (modelPrefab == null)
             {
@@ -544,10 +845,40 @@ namespace EmeToDia.Editor
             modelObject.transform.localPosition = position;
             modelObject.transform.localRotation = rotation;
             modelObject.transform.localScale = scale;
-            ApplyMaterialToRenderers(modelObject, LoadMaterial("MAT_DaniTech_DarkMetal"));
+            ApplyFallbackMaterialToRenderers(modelObject, LoadBrooklynMaterial("KB3D_BRK_BrickWallStandard") ?? LoadMaterial("MAT_DaniTech_DarkMetal"));
         }
 
-        private static void ApplyMaterialToRenderers(GameObject targetObject, Material material)
+        private static bool CreateImportedAssetVisual(
+            string assetPath,
+            string objectName,
+            Transform parent,
+            Vector3 position,
+            Quaternion rotation,
+            float targetHeight,
+            Material fallbackMaterial)
+        {
+            GameObject modelPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(assetPath);
+            if (modelPrefab == null)
+            {
+                return false;
+            }
+
+            GameObject modelObject = PrefabUtility.InstantiatePrefab(modelPrefab, parent) as GameObject;
+            if (modelObject == null)
+            {
+                return false;
+            }
+
+            modelObject.name = objectName;
+            modelObject.transform.localPosition = position;
+            modelObject.transform.localRotation = rotation;
+            modelObject.transform.localScale = Vector3.one;
+            ScaleToHeight(modelObject, targetHeight);
+            ApplyFallbackMaterialToRenderers(modelObject, fallbackMaterial);
+            return true;
+        }
+
+        private static void ApplyFallbackMaterialToRenderers(GameObject targetObject, Material material)
         {
             if (targetObject == null || material == null)
             {
@@ -557,8 +888,66 @@ namespace EmeToDia.Editor
             Renderer[] renderers = targetObject.GetComponentsInChildren<Renderer>();
             for (int i = 0; i < renderers.Length; i++)
             {
-                renderers[i].sharedMaterial = material;
+                Material[] sharedMaterials = renderers[i].sharedMaterials;
+                bool hasChanged = false;
+                for (int j = 0; j < sharedMaterials.Length; j++)
+                {
+                    if (ShouldReplaceMaterial(sharedMaterials[j]))
+                    {
+                        sharedMaterials[j] = material;
+                        hasChanged = true;
+                    }
+                }
+
+                if (hasChanged)
+                {
+                    renderers[i].sharedMaterials = sharedMaterials;
+                }
             }
+        }
+
+        private static bool ShouldReplaceMaterial(Material material)
+        {
+            if (material == null)
+            {
+                return true;
+            }
+
+            return material.name.Contains("Default") || material.name.Contains("No Name");
+        }
+
+        private static void ScaleToHeight(GameObject targetObject, float targetHeight)
+        {
+            if (targetObject == null || targetHeight <= 0f)
+            {
+                return;
+            }
+
+            Bounds bounds = CalculateRendererBounds(targetObject);
+            if (bounds.size.y <= 0.001f)
+            {
+                return;
+            }
+
+            float scaleRate = targetHeight / bounds.size.y;
+            targetObject.transform.localScale *= scaleRate;
+        }
+
+        private static Bounds CalculateRendererBounds(GameObject targetObject)
+        {
+            Renderer[] renderers = targetObject.GetComponentsInChildren<Renderer>();
+            if (renderers.Length == 0)
+            {
+                return new Bounds(targetObject.transform.position, Vector3.one);
+            }
+
+            Bounds bounds = renderers[0].bounds;
+            for (int i = 1; i < renderers.Length; i++)
+            {
+                bounds.Encapsulate(renderers[i].bounds);
+            }
+
+            return bounds;
         }
 
         private static RectTransform CreatePanel(Transform parent, string objectName, Color color)
@@ -586,6 +975,8 @@ namespace EmeToDia.Editor
             uiText.alignment = alignment;
             uiText.color = Color.white;
             uiText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            uiText.horizontalOverflow = HorizontalWrapMode.Wrap;
+            uiText.verticalOverflow = VerticalWrapMode.Truncate;
             uiText.raycastTarget = false;
             return uiText;
         }
@@ -603,10 +994,10 @@ namespace EmeToDia.Editor
             return textMesh;
         }
 
-        private static Image CreateBar(RectTransform parent, string objectName, Vector2 anchoredPosition, Color color)
+        private static Image CreateBar(RectTransform parent, string objectName, Vector2 anchoredPosition, Vector2 size, Color color)
         {
             RectTransform background = CreatePanel(parent, objectName + "_Bg", new Color(0f, 0f, 0f, 0.35f));
-            SetRect(background, new Vector2(0f, 1f), new Vector2(386f, 10f), anchoredPosition);
+            SetRect(background, new Vector2(0f, 1f), size, anchoredPosition);
 
             RectTransform fill = CreatePanel(background, objectName + "_Fill", color);
             fill.anchorMin = Vector2.zero;
@@ -626,7 +1017,7 @@ namespace EmeToDia.Editor
             RectTransform buttonRoot = CreatePanel(parent, objectName, color);
             SetRect(buttonRoot, new Vector2(0f, 0f), size, anchoredPosition);
             Button button = buttonRoot.gameObject.AddComponent<Button>();
-            Text labelText = CreateText(buttonRoot, "Text_" + objectName, label, 17, TextAnchor.MiddleCenter);
+            Text labelText = CreateText(buttonRoot, "Text_" + objectName, label, 20, TextAnchor.MiddleCenter);
             SetStretch(labelText.rectTransform, Vector2.zero, Vector2.zero);
             return button;
         }

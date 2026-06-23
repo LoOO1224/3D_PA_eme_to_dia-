@@ -15,8 +15,350 @@ MonoBehaviour:
   m_GroupName: DaniTechPromotion
   m_GUID: 66ff45d15bf43414eaf8615c9a953972
   m_SerializeEntries:
+  - m_GUID: 05b1a3d66ae4ab64fb2c40f6f1372ef6
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Reaper Controller.controller
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07af858ad3e3d69479320cc18776d063
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_BrickWallDark.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09aecc01e6ce60343836a32b57cf4061
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_CLOTHE_LEGACY.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e4eff22358a14c429fe6f642134cc47
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_A_em.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e6b8cb019267174ab762fd9bd24b34e
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scythe2HitComboA.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 124c001f209f8954eae4ba13232c76fa
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_StandingSeamRoofGreen.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 138ac67d0c98068429771fe4ee9077d4
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_MetalBronze.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 143758985ab61d34e96abd9ad278a407
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_LEGACY.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 157240fffe80af64d8687d13c9bcd640
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_SPEC_GLOSS.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16ec806bac971c14d9112bef046d4662
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@floatRight.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1798fed1517f4154b9bf7f788c72b2fe
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_BODY.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1fcfe0f2485183e4ab1af558066e794c
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@death.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22eebfda826763c49bac6b54c4f4ba6e
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteFormed.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24858477878f2f844ad57d6f2509c88e
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_A_em.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 267383ab377ca6b4eb4e6414742d01e0
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_AO.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2773ee0751136224e9d420e9e53d1a8b
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Sml_B_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 277a9bc3159c07a438589921cb1c50ef
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_A_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a3d397de9d27224ebd0b1d737ad7e7f
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scytheAttack3.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b520772e57c96a43a537a0ff7e9d8cb
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@floatBackwards.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 304e738055f8cbd45ae636c480a07e46
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_StoneBlock.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3353d032736191145bf8f4695b0a7fc5
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_Set_01.psd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 35809907d98edca43a6a1649827af774
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_ILLUM.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 370429b351f0c6147b3b465917831b25
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_GEAR_LEGACY.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39533daf89e587842b5cd04c929589c8
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@castSpellA.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b1890dd9e71d7245864262513ce98cc
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_ILLUM_LEGACY.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b9a474fb7b972948b47f1d9b84bc7c2
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_SPEC_GLOSS.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c45e624020bf984e8b358445eb50249
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@floatForward.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d5fcefa347db7a44af83c6be1138c37
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgLG_D.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 402426e3a4648ce4dbeb00053d1698f9
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_WaterTower_A.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40ce36e35863c034bbc7dbb7aa3258b8
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_Lights.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 430f0c35cc3493d4382df8be51ac3ab4
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_BODY_LEGACY.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4602b843794d8e44996c9307eb0d6690
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_B_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 465fd6bd851a7764c9bd9eabfab96311
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/PREFABS/REAPER_PBR.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c3a4514dff1d3b4c8fa8a6255b34f6d
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_BODY_NRM.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4dc58acddc110264492a8c132c87eca0
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@getHit.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f9ea03ec3171f646a2eed1803ce2256
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@castSpellB.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50e94635898b6a94c833b2ff3bbb6bdf
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_CLOTHE.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5333fe85e544c9342bc41921e17b0fe3
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Med_A_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5573ba15999807e40953d87668e41809
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scythe2HitComboB.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55c5efa4ed826f34ea2172bb470250c2
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_A_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5723b111fda11f24da51de22d51d4949
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgSM_I.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 58bec5c5b597bb541bd64d32ca07fb9d
     m_Address: DaniTech/Items/SwiftSigil
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d375a7e1eda8b644a2612caf9a922fa
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_GlassBlack.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5dff7aff9b0473840b20c63524a1dda8
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ACRadiatorFinMetal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60535b08d14291b429dc245f31a35ac8
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Sml_B_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 661051dc0a28ff343b7fc8751c23d602
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgSM_F.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 670eab71f8e9b494e85459f2da9c9f6f
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_FireScape_A.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68aca8e300f85f64dbc97606adaee603
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Materials/Asteroids_A.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a44216be9a1fce47be02bf2d0d65cb8
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteGrey.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f9212eb9ff5b724381ffbee1afb85b9
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_Lamp_A.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70361116fdbb18646b46bc35ab8538ed
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@idleNoScythe.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76db4f9b8245902448db08b69806958e
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GLASS.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7713aacf6f688b444913803eda333c12
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Lrg_B_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7d7251f585d647c41a2a788edc190451
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_FireEscapePaintedMetal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f6ee45aae7af6b4998190443e3a1b3c
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_RooftopProp_A.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 859f23e002b758746acd95cababe1740
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_C_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87842b5508203de44a06f257e25d3acd
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_GEAR.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ba48cb25203aff439003f8696356a6a
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Lrg_A_01.FBX
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -27,8 +369,86 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fa171c9855ae7145a2299ba30e1f30d
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcretePebble.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91b31fbb47104184aa7a7b643ce26b5d
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Sml_A_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 93731d7ae589f1a4d9655264618df5fe
     m_Address: DaniTech/Items/DiamondTonic
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 956a70794bacd44478d19e16eb03243b
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scytheAttack1.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 977c1b11dac6eef47a0dc0a3945d659a
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_WoodPaintedGreen.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 981d9aa1a946c814681ffcf50d92f4dc
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@floatLeft.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99ae4801d38e45c4181cadd95f615d1d
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_GLASS.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b2d57da89ab20c42895e6d0dc9ead42
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_BODY.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b93bdfa4180ff641931dcbcbaf3d7a7
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ModernPanelingWhite.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d738919c3b219340bbf1b9ad10aeea5
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_B_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e5dbadcdd17c834498c6d2b9cda0f32
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE_SPEC_GLOSS.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ecdb32c3fd4ddb418d9c89642f05bc1
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_MetalPaintedBlack.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a044b44896157094ca4c31545241fcf1
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_FauxWoodTilesBrown.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1561b0dc175c05499308a85e4fbc6d4
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Sml_C_01.FBX
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -39,14 +459,302 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a34208711cf473e4e8a4cb009200b0c1
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE_AO.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a3a8716b78d1cf24aa2852ab4142b22a
     m_Address: DaniTech/VFX/UseEffect
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a5cfa7cc6bc306144b7952dfb0430d47
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7c673a362d826f46869cac88c120d91
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_SCYTHE.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a864314109547504bb872929aad79db1
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8bb8c42a77885343ab1b30b6e479352
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_BrickWallStandard.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a974d6228cce6044b9c639829187ca21
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_NRM.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b752a9483ac9e894b866e58ebb19b955
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_pink_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbe62d915e3938146b03798bf572bef2
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_ALBEDO.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bdec45b32cf2c2e4fbafb03ee5c71734
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Materials/Crystal_A.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfcde19801e7cc745a69b9cf6214fd51
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteWithExpansionJoints.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0535b0a57965474896712e2c3591012
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgLG_C.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0c154a0abd08a44ebf4641236b65807
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_BrickWallTan.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c28562467ce43b445bf49c8f875c43a2
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_FlatAsphaltRoof.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c50107d2b61ed974fb0324321ba1f04d
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scythe3HitCombo.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c59875bd18b1f1d49bcc3e081cf75996
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@scytheAttack2.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c67ddd75ffac5b34db3f017d8b95e1d3
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER@idle.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7345da249fd3ac4a9326c612b7f6d8d
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_Set_01.psd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7e997c8ffb728f47b7f87597f794f46
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_BODY_AO.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c96bf68be92fe1345a84fa0f42dfd004
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_CinderBlockWall.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c98d5d8dfdafda042bf0c105058707c8
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_TreeWalnutBark.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca2e81e4ba44b17488d80bed9774f72e
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_SCYTHE_LEGACY.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd273cd0a294f3f49a962017b1aead98
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteBeige.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf199a74b71abb4488ea6958cd6a02aa
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE_LEGACY.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d069fa198ec2c154ca25fd0abf27c0e3
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/Materials/REAPER_GLASS_LEGACY.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d19c3280d821dc1489551827c400ff4a
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/PREFABS/REAPER_LEGACY.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6837906b85a16144920ec59a74b1623
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_ILLUM.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d87aab14ed348b84a8fb5d3da7548609
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_StoneVerticalScore.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d914290144b10c043aa350f9156a94d3
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_TreeWalnutLeaf.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d98f0303034f3384e9c0225b9320147a
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_LEGACY.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da34aa5078429504b819faae8063829c
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/FBX FILES/REAPER.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc6d1589a6bb1024cb8d4ba871a5b1ac
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Med_A_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfdf70ba48543d2499fcc4a88668f908
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_WarmGreyPaintedMetal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0596b19e67349e4da9cec0360562b30
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteCurb.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e1c281d7739297340a90498ec5e7498d
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_CLOTHE_NRM.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e294b0000f7bd0c49987fed2782a2c81
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_SCYTHE_AO.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2aef8c1dfae0b64281cc4926cf27682
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_GEAR_NRM.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5d66cac4e21a5e45b4578f26eddebd2
+    m_Address: DaniTech/Imported/Heroic_Reaper/REAPER/TEXTURES/REAPER_BODY_LEGACY.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e76d28a62e34d00409fb2d0c48393959
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteWarmGrey.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec0f734d1aa2f9d4b90c59ada4127f98
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Sml_A_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f03d84d7824a69d4a8056ef4b9d96a0f
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_GalvanizedMetal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f146925c21545fb438588aee176f3e0f
+    m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Lrg_A_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f15953a13a752c14e8cf261869da3a76
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_MetalPaintedGrey.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f578b74e1538075479c0bf8c1647e782
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgMD_F.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f648433dfefd3844297f5ba1d4b466a8
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgLG_A.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6c6b0d663ef53d46a66ed021a4afc58
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_MetalAluminum.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f6cb1ccc34b807a438616273e874f4c6
     m_Address: DaniTech/UI/PromotionUI
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbc0bcea73f747e4a814117c78ee4a88
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_LeavesBush.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fde7a4d538376714c86c0c8b1ddc0aaf
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_CoolGreyPaintedMetal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ffd755690d6744f4c93df004a9d33b1d
+    m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgLG_E.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion

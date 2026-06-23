@@ -87,7 +87,7 @@ namespace EmeToDia.Gameplay
 
             if (_guideText != null)
             {
-                _guideText.text = "WASD 이동 / E 획득 / Tab 인벤토리 / T 사용 / G 버리기 / R 정렬";
+                _guideText.text = "WASD 이동 / 우클릭 드래그 시점 / 휠 줌 / E 획득 / Tab 인벤토리 / T 사용 / G 버리기";
             }
         }
 

@@ -6,8 +6,8 @@ namespace EmeToDia.Gameplay
     // 아이템 사용으로 생기는 속도 증가는 DaniTechPlayerModel에서 읽어 적용합니다.
     public sealed class DaniTechPlayerMovement : MonoBehaviour
     {
-        [SerializeField] private float _moveSpeed = 5f;
-        [SerializeField] private float _runSpeed = 8f;
+        [SerializeField] private float _moveSpeed = 10f;
+        [SerializeField] private float _runSpeed = 18f;
         [SerializeField] private float _gravity = -20f;
         [SerializeField] private float _groundStickVelocity = -2f;
 
