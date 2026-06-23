@@ -733,13 +733,23 @@ namespace EmeToDia.Editor
             Button sortTypeButton = CreateButton(sortPanel, "Button_SortType", "Type", new Vector2(168f, 15f), new Vector2(130f, 54f), new Color(0.35f, 0.23f, 0.13f, 1f));
             Button sortSequenceButton = CreateButton(sortPanel, "Button_SortSequence", "Recent", new Vector2(316f, 15f), new Vector2(146f, 54f), new Color(0.35f, 0.23f, 0.13f, 1f));
 
+            RectTransform useTargetRoot = CreatePanel(sortPanel, "Panel_UseTarget", new Color(0.18f, 0.36f, 0.16f, 0.92f));
+            SetRect(useTargetRoot, new Vector2(0f, 0.5f), new Vector2(132f, 54f), new Vector2(486f, 0f));
+            Text useTargetText = CreateText(useTargetRoot, "Text_UseTarget", "Drag To Use", 18, TextAnchor.MiddleCenter);
+            SetStretch(useTargetText.rectTransform, Vector2.zero, Vector2.zero);
+            DaniTechInventoryDropTarget useTarget = useTargetRoot.gameObject.AddComponent<DaniTechInventoryDropTarget>();
+            SetObjectReference(useTarget, "_backgroundImage", useTargetRoot.GetComponent<Image>());
+            SetObjectReference(useTarget, "_labelText", useTargetText);
+            SetInt(useTarget, "_targetAction", (int)DaniTechInventoryDropTargetAction.Use);
+
             RectTransform dropTargetRoot = CreatePanel(sortPanel, "Panel_DropTarget", new Color(0.42f, 0.16f, 0.10f, 0.92f));
-            SetRect(dropTargetRoot, new Vector2(1f, 0.5f), new Vector2(230f, 54f), new Vector2(-20f, 0f));
-            Text dropTargetText = CreateText(dropTargetRoot, "Text_DropTarget", "Drag Here To Drop", 20, TextAnchor.MiddleCenter);
+            SetRect(dropTargetRoot, new Vector2(0f, 0.5f), new Vector2(132f, 54f), new Vector2(636f, 0f));
+            Text dropTargetText = CreateText(dropTargetRoot, "Text_DropTarget", "Drag To Drop", 18, TextAnchor.MiddleCenter);
             SetStretch(dropTargetText.rectTransform, Vector2.zero, Vector2.zero);
             DaniTechInventoryDropTarget dropTarget = dropTargetRoot.gameObject.AddComponent<DaniTechInventoryDropTarget>();
             SetObjectReference(dropTarget, "_backgroundImage", dropTargetRoot.GetComponent<Image>());
             SetObjectReference(dropTarget, "_labelText", dropTargetText);
+            SetInt(dropTarget, "_targetAction", (int)DaniTechInventoryDropTargetAction.Drop);
 
             SetObjectReference(inventoryUI, "_titleText", titleText);
             SetObjectReference(inventoryUI, "_messageText", messageText);
@@ -751,6 +761,7 @@ namespace EmeToDia.Editor
             SetObjectReference(inventoryUI, "_sortTypeButton", sortTypeButton);
             SetObjectReference(inventoryUI, "_sortSequenceButton", sortSequenceButton);
             SetObjectReference(inventoryUI, "_closeButton", closeButton);
+            SetObjectReference(inventoryUI, "_useTarget", useTarget);
             SetObjectReference(inventoryUI, "_dropTarget", dropTarget);
             SetObjectArray(inventoryUI, "_slotViews", slotViews);
         }

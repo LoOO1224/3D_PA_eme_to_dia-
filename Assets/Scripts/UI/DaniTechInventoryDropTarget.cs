@@ -4,11 +4,18 @@ using UnityEngine.UI;
 
 namespace EmeToDia.Gameplay
 {
-    // 드래그한 아이템을 놓으면 버리기를 실행하는 DropTarget입니다.
+    public enum DaniTechInventoryDropTargetAction
+    {
+        Drop,
+        Use
+    }
+
+    // Dragged inventory slots tell the inventory UI which action area received them.
     public sealed class DaniTechInventoryDropTarget : MonoBehaviour, IDropHandler
     {
         [SerializeField] private Image _backgroundImage;
         [SerializeField] private Text _labelText;
+        [SerializeField] private DaniTechInventoryDropTargetAction _targetAction;
 
         private DaniTechInventoryUI _inventoryUI;
 
@@ -25,20 +32,40 @@ namespace EmeToDia.Gameplay
                 return;
             }
 
-            _inventoryUI.DropDraggingSlot();
+            _inventoryUI.ApplyDraggingSlot(_targetAction);
         }
 
         private void RefreshView()
         {
             if (_backgroundImage != null)
             {
-                _backgroundImage.color = new Color(0.36f, 0.12f, 0.12f, 0.9f);
+                _backgroundImage.color = GetTargetColor();
             }
 
             if (_labelText != null)
             {
-                _labelText.text = "Drop / 버리기";
+                _labelText.text = GetTargetLabel();
             }
+        }
+
+        private Color GetTargetColor()
+        {
+            if (_targetAction == DaniTechInventoryDropTargetAction.Use)
+            {
+                return new Color(0.18f, 0.36f, 0.16f, 0.92f);
+            }
+
+            return new Color(0.36f, 0.12f, 0.12f, 0.9f);
+        }
+
+        private string GetTargetLabel()
+        {
+            if (_targetAction == DaniTechInventoryDropTargetAction.Use)
+            {
+                return "Drag To Use";
+            }
+
+            return "Drag To Drop";
         }
     }
 }

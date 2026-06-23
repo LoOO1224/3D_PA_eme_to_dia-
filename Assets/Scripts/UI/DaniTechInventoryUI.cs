@@ -26,6 +26,7 @@ namespace EmeToDia.Gameplay
 
         [Header("Slot Views")]
         [SerializeField] private DaniTechInventorySlotView[] _slotViews;
+        [SerializeField] private DaniTechInventoryDropTarget _useTarget;
         [SerializeField] private DaniTechInventoryDropTarget _dropTarget;
 
         private DaniTechPromotionManager _promotionManager;
@@ -95,7 +96,7 @@ namespace EmeToDia.Gameplay
         public void BeginDragSlot(DaniTechInventorySlotView slotView)
         {
             _draggingSlotView = slotView;
-            RefreshMessage("Drag to the drop area to remove one selected item.");
+            RefreshMessage("Drag to Use or Drop area to apply the selected item.");
         }
 
         public void EndDragSlot()
@@ -105,17 +106,18 @@ namespace EmeToDia.Gameplay
 
         public void DropDraggingSlot()
         {
+            ApplyDraggingSlot(DaniTechInventoryDropTargetAction.Drop);
+        }
+
+        public void ApplyDraggingSlot(DaniTechInventoryDropTargetAction targetAction)
+        {
             if (_draggingSlotView == null)
             {
                 return;
             }
 
             SelectSlot(_draggingSlotView.SlotIndex);
-            if (_promotionManager != null)
-            {
-                _promotionManager.DropSelectedItem();
-            }
-
+            ApplyTargetAction(targetAction);
             _draggingSlotView = null;
         }
 
@@ -186,10 +188,31 @@ namespace EmeToDia.Gameplay
                 }
             }
 
+            if (_useTarget != null)
+            {
+                _useTarget.Initialize(this);
+            }
+
             if (_dropTarget != null)
             {
                 _dropTarget.Initialize(this);
             }
+        }
+
+        private void ApplyTargetAction(DaniTechInventoryDropTargetAction targetAction)
+        {
+            if (_promotionManager == null)
+            {
+                return;
+            }
+
+            if (targetAction == DaniTechInventoryDropTargetAction.Use)
+            {
+                _promotionManager.UseSelectedItem();
+                return;
+            }
+
+            _promotionManager.DropSelectedItem();
         }
 
         private void UseSelectedItem()
