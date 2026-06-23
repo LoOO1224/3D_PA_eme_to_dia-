@@ -15,8 +15,66 @@ MonoBehaviour:
   m_GroupName: DaniTechPromotion
   m_GUID: 66ff45d15bf43414eaf8615c9a953972
   m_SerializeEntries:
+  - m_GUID: 006b42f801f2459419e7272e1c582e90
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Soil
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 007e0be6842d3bf4c9973dba5e9b248f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Plantlet
+      02/Plantlet 02_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01004a4afbd91a24794adfea429426fb
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/Editor/MaterialTilingOffset.cs
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 010dd68491d1d4a1692a6d2272e5cb69
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01a7bc73373864398befa5c72ebb094c
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Gold.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01e2e79109e4ed04180f814f9b6eceec
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      06.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 01f4eb1c73693428d923f1520032e7f9
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0264465325ebb45239163258479c2a60
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0297bfc4b5cb3c84fa04bbd3d5893937
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Rock_3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0374e0e45d8026c4c861f82d5bb71827
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      09/Grass 09_BaseColor.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -27,9 +85,71 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0468860729b2fe14c9a78483064120cb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Soil
+      01.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04869052f46ba428caebe862513e3b5d
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 049c3108de4b6c4468b06822282cf059
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      05/Grass 05_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0553f8a3364794948a9a3e6be3e765da
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      04/Grass 04_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05759ecf9f6046c408b5322a0b7becea
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      01.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05b74ef838810e74ba553c6c7fb9251a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      08.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 068715bcccacfc744bdc98b6a81f6543
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Asphalt
+      01/Asphalt 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 068bee26e4c162e4480e5871390247a0
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
       Ground/Grass_1/FHE_Grass_1_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07889a82b4eaf4945847c9efa62bb476
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Leaves
+      02/Leaves 02_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 07934483f9d08ac41b96ae11ab97ab9f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      02.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -46,14 +166,78 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 081930da5e255e348940373200bbeaca
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RunForward.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 08617fc45461fba4085f0b508a42651a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Moon
+      01/Moon Sand 01_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 091e3a612f5eec445b4b0abbab49cbec
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Soil
+      01/Soil 01_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09a49980217d9e446b1a4252d3a5772d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      09/Grass 09_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0a14fe38c7afb3f49a133ee30de21907
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Color.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0abdc8a2040ce29488f0fc004ad94beb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      01.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0acfc71c325c54b92add0b07097b6c57
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b29808cfe8e0446eb1cdc1105c409b2
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b5345cf23ab840779a8cbf1b89f355a
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0be65d982eb824e48b7f55855e1639d8
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Rock_2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c96697ef1fc74d8d90d3e2f7345366d
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset__Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ccd1239645f54012a6ea72739d04982
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -65,8 +249,55 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d6f66e478ce1c541956cdcbb10657ae
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      04/Gravel 04_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dabfa37dbfe2c049b138c92443295b6
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Scrubs
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0dd4cb370914a8f449749ea2b837bf5f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      02/Sand 02_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e012d7bda12e8444a7fec2ec04e8a2a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      02/Gravel 02_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 0e4eff22358a14c429fe6f642134cc47
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_A_em.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ec77e506658168428e174ef6ddb4abe
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Materials_Humans/Hair.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ec9ff21ed5b4824abe9be9908139f39
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Sand
+      02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 10399581d9d41a44bb8984ec628263dd
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Meshes_Humans/ArmorMeshes_Humans/PlateSet1_HumanMale.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -77,8 +308,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 10fa50c59af8fd440a0348904414802a
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Gathering/MiningLoop.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 123d264d9fafdd84084056b94b4a1e1b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 02/Wood Chips 02_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 124c001f209f8954eae4ba13232c76fa
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_StandingSeamRoofGreen.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1335a09887b1e0c4c951d3c7175eba8d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Wood
+      Chips 03.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13868b4eb0d3b8a49a77cc4989b9a3de
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RunBackward.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -89,8 +346,29 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13f6c0024f25cef49958e30315e4cbbf
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Leaves
+      01/Leaves 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13f6e5eed33d84c76979f1ec06b5e48c
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet
+      Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 13ff02f5d24c9cb4c99ba5bd6c233ca8
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Billboard_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 143091bfc5104e1409c4198b1e4449eb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Moon
+      02.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -101,14 +379,162 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14fb782eb8eb6034497d404cac3bde6b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15e9b8b6685e80447b1d34f9c99c59d3
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 02/Wood Chips 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16c87f3a92b1407438d2c5feed54bd91
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      01/Sand 01_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1777d993e68a46a4ab9e7d61f7f022bb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Documentation/Terrain
+      Textures.pdf
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 18080374475b07a45a69e49c5d7d4a92
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/FHE_Bush_2_LOD0.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 18d0a738e9ae48e4db24e8fb3bf12dd8
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      04.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 196d6e243c8556049bd243c17fd9dbf4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      01.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19b21776ca5b1984096558e38bb4ca77
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 03/Wood Chips 03_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a8b9f8756ac1554184b0a35aa92837b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      03/Gravel 03_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b6e3f434f63e394ebdcd493c4aebda0
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      08/Grass 08_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1c644735340068d44b6f803b1c55339b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      02/Sand 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1cc88c8485b9128409d37651cbe433cc
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Gravel
+      06.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1d924399aa96d4378b9c507b7669a4f4
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1f225a337fa434ec1b937d9c8b70a667
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20349140a3cb83e4d883e1456c7783d5
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/Buff.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 20476cbaaaabd614a8675cf32aaf2d5f
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Bush_2.st
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20b0821f81a758248b9b2da16063c87b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      06/Grass 06_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20e87790833ed7745a23f9f28c2fe1c0
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21279999280a7b347b0a27c21280f282
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      08.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 212bc52a4b9cdc2498c134dd46c48fb3
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Plantlet
+      02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 213ae241f43b44b3f961dd8739080120
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2205730f1fb9dba4cb0359769d1df6f4
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/rock.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22e09ae71055f494e8fc6ef96a88d12b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      04/Grass 04_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22e7fb49e2b49e0418ef97b61b1c8db5
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Materials_Humans/Armor.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -131,8 +557,41 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2429085135ee66846a7d8f6d01722b4d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Snow
+      01/Snow 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 248146b68218df34c9ed1a14ba7a443b
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/IdleCombat.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 24858477878f2f844ad57d6f2509c88e
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_A_em.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 258cb4865d37b4292be3195af50aaa8c
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Center.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25b16ec876cc2384ba781c3f13dfebad
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      08.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26d2a47b8d126ea4ea187927097350a1
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Sand
+      01.terrainlayer
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -149,8 +608,86 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 283d1e8523f858a40b92c696b73bb67d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Wood
+      Chips 02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28673ec8420b8493e9588ddb0b4ed7b5
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29a1e2464b4de2646992a2dd16aa0896
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      06/Gravel 06_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29e08b937780a7e4ca4d681cdd894cf8
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2a0862d89c83ee74e9616a594a99326d
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/FHE_Bush_2_LOD1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b201733d2df84602b3020984df58790
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night__Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c8650f6f0379a749b42fa6bcb99488b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      04/Grass 04_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2cdf58b8dcc3aa34398dad362a6864db
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      02/Grass 02_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d796ced94d61438fbab81b194038162
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d9bff9d58024db42a8b5f2f9634b091
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/Landscape.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e27da24166ce9748ab7997390b93f6b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      03/Grass 03_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2e38ed7c39e8e4314930da8a86ae7a88
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f31f4440de60444b8dd94d4d64b3c00
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_TreeLeaves.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -161,8 +698,33 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30795c4c7d28549fc98ea24071c47626
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky_Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30d83a83fcc484f9d8b0d2915bb839b3
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanetSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 323693a8c82cb594ea90486547e2fa38
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/Bark_LOD2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 32897540bc73941088749c21da202563
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33230baef4dda4cf4bd25fcb15d0d06f
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -173,14 +735,74 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 337a802e1a50ad746827a890f372c41e
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/MeleeAttack_TwoHanded.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33cbefefe2c7f4e77ac959c74eef5d4d
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33dc9d88f32144697ba9777ee1aaae7b
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 34137fb5869423944b00bbf97b8d8543
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Rock_4.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34a763168147f4182a21b9fd004d67de
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst
+      Equirect.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3524f13633f195443bc5603d4aa40415
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Scrubs
+      02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 358464109459e554baa502d6c56e7b4e
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      01/Sand 01_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 358b09b0352c80044ada8aa2639651ab
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      05/Gravel 05_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3635a6dadbfe9b841a2d9d90e184f016
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 365f2f99cda90c34bb3896cba22c46df
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Gravel
+      02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 36a9adfd1b4dcaf499e340da24d14c03
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Wood
+      Chips 01.terrainlayer
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -197,8 +819,75 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 379150b0e6ec89f47b941d66948130c0
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Moon
+      02/Moon Sand 02_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3873e4e19034c0045a2c1a52bd82631c
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Billboard_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 393dd4c82e2a04ec08ef9f57528230c6
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet
+      Equirect.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39a6ee106203046469782f4caa9a24ad
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 39bb55399f5b4324bb544e59e8a1c708
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Soil
+      01/Soil 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a639720a92414f45b72b16d6db788ce
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a6db933fef1d4c759bf21220420505f
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3aa922ca8577f4f66b8810ab41310933
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c3a0f0dfbb56d04ca929b198922914b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Scrubs
+      02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ca2c2ce56b9e44f598f5de419ce4e8a
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ca8872ca1cfd854d948428d81c51a00
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Leaves
+      01/Leaves 01_MaskMap.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -209,8 +898,46 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d6928c404a7c46c3991bb1b73521d66
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night__Cam_4_Up+Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d7c10dfb76b352458c6ee3cf1acd54f
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/MeleeAttack_OneHanded.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3d8f3e4c4758e7640b2ac80783df813c
     m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/Standard Assets/Prototyping/Models/FloorPrototype64x01x64.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3dafa7d5e5789394b97154e45e22dcca
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      02/Gravel 02_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e1c1042c332d4444bfe47799ff3e0d3
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e33a38e2349f447d9fb9ae62269009c
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e71f3c68760e7d439971407599c79e3
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Snow
+      01.terrainlayer
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -221,14 +948,94 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ee7f34143fe8764c9a9db85928660cc
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Leaves
+      02.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f5317968f62ecf4da1dc82a6e55a85d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Scrubs
+      02/Scrubs 02_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 402426e3a4648ce4dbeb00053d1698f9
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_WaterTower_A.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 402fe3aa91fba453f92dd3bbe820dbd9
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40410fc378bae8346b028aefeb2eb79c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      03/Sand 03_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40af7173f2b2d4f9283c3832d0ebcb31
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon Burst.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40cd83628508d406497f3b21ff220644
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 40ce36e35863c034bbc7dbb7aa3258b8
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_Lights.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4164b771c2b784c2da3cbe10847a182e
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41dfa0af9886dcd4a8994424a87d4db7
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Gravel
+      03.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 426dd22423bce4345a07397cc573e7d8
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Plantlet
+      01/Plantlet 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43944a090937d5a4db741460c442aff0
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Asphalt
+      02/Asphalt 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43cfca39c84755749b8b0fb20f7ad559
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Asphalt
+      02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43def387a1e26bc4cb02ccf4910294fb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      09/Grass 09_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -245,8 +1052,28 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47551dad0d90646a9a5dac436076f38a
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk__Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 475abc994fb1db143b82c16c94398c15
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      07/Grass 07_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 478e0c226ff56e04f851f0793ceccef6
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/Bark_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 492ca9d2654cf4b4d9ef147fc3208b18
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Moon
+      01.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -257,14 +1084,73 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a76a52de65845542b69445649540156
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Moon
+      01.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ab08fa016185554e94945dc3092cca1
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Scrubs
+      02/Scrubs 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b922104744dc4f5ab309b556a7677da
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c119b81b42684c39873d7738564bcdd
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c7fe8e1a3919c549a79a706afefd1ce
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/Demo_FREE_LowPolyCharacter/LowPolyHumanAnimator.controller
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4c9c56676b287ea4f811bc439ed99ca4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Leaves
+      02/Leaves 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4d0cc01b11467ea4aa941b4771ce54b0
     m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/FBX/Materials/MagesTexture2.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d1eacfe512a12845b2943bb58c7aa1f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Soil
+      01.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d242aeeb575b0541b10dab0211a0689
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Soil
+      01/Soil 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 4d5473110d5c8ea469bc55242552088b
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_1/Bark_LOD1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d66907684f47e542ab56147b39501fa
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RunBackwardRight.fbx
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -281,6 +1167,63 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ecd3f24879b0402c92f21617e3db5e1
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Building.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4efb8fd75703d43cab6f01b240a7c945
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50da7e689cf6e8540a558bd77202f0e8
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      06/Gravel 06_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50e0d5f0490eb5a45b0b5952db236f7d
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RollRight.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5120a970404f418419c83af871d9a022
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RunRight.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 519e05b7b3cd14409b4a22d07660cfc8
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk__Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 51b74d7bad397457d883c5940f7664d8
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst
+      Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52cac2af27d2ae043bb51df5047728c1
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Sand
+      03.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 52d55542834f2465eb9aed460fd370de
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_TreeTrunk.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5333fe85e544c9342bc41921e17b0fe3
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Med_A_01.FBX
     m_ReadOnly: 0
@@ -289,6 +1232,32 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 534b06f215c2f3547b60f6b425434783
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Subsurface.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 535086496a3599a46ad89493ebbe5d1d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Moon
+      01/Moon Sand 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 540adc0b3730fb84fb81595f4144b7d0
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Leaves
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 544d3cf87e24a464fa433d08257479d1
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54fe2f000ad8f424fb63cc3ea0ae2bb2
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -305,8 +1274,21 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55c04ce684cb542debc357409498bc4e
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/AdditiveSprite.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 55c5efa4ed826f34ea2172bb470250c2
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_A_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 562f61365e6860a49b9eb2dd14f00b1a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Moon
+      01/Moon Sand 01_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -317,8 +1299,21 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57d50d7ecb0231244b77aacf40cacf29
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RollBackward.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 58bec5c5b597bb541bd64d32ca07fb9d
     m_Address: DaniTech/Items/SwiftSigil
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 58fc259be36ee3d4a96abc5a3f779448
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Plantlet
+      02/Plantlet 02_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -347,8 +1342,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cd44424375bd4ad69191a50c41ec04d
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky_Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5cf2d5ca2357a4d4fb98ebc5b6034e72
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5d375a7e1eda8b644a2612caf9a922fa
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_GlassBlack.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d6a31542c4b5409faf229e819f55341
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5dcd2d2ebd5c7684594b2abdbca9d65f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      03.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -365,8 +1386,40 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e2aba0844c5a4c2ca77ba49a1ea08d5
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk__Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5eeab13281c2b0447bda4a7424a06d91
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Asphalt
+      01.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 5f12065b6133d104a856c669b2f0d415
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5fad9ecdaa1678b408a01f37c5ca69e8
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RollForward.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5fced76a273b0ed419a446eec5e77f58
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 03/Wood Chips 03_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5fdaaa9d974104e6d8f9e575170a0c70
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk__Cam_0_Front+Z.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -377,8 +1430,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 604360d8d756e374dbe9ea8896e270c2
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      05.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 604c8e250817f485c97f85e8237f7524
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 60535b08d14291b429dc245f31a35ac8
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Sml_B_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60770bdb4dc667c45bea53db0339dc05
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Prefabs_Humans/HumanMale_Character_FREE.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60b422db44185f644b2df4cedf015f1e
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      03.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -391,6 +1470,13 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 612fc4dbac8b54048800432b6b792e02
     m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/FBX/Materials/MagesTexture.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62bba6fabf675a549bf1a4e416bfdece
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Wood
+      Chips 02.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -408,8 +1494,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6434e8ecca0a27e408cf5e7bcf47b115
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      02/Grass 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 644169a48f02ae04aa26de46e0c7c7f4
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Extra.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6458ffa0dcd6b4ea5b30ac5085d8c68a
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64b04a6e3187c8247b209aac6c56b9fe
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Materials_Humans/Eyes.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65503fab6ce438e42bed9729a7156c48
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      07/Grass 07_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -420,8 +1532,27 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 656058fe318eb48558d21d66d1a79a2b
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 65b1e73c81a1db6469c76f31973be6a6
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Plantlet
+      01/Plantlet 01_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 661051dc0a28ff343b7fc8751c23d602
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgSM_F.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66e51860485ae4048a30f7e029e65af7
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk Equirect.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -438,6 +1569,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 67181ecb975783544ac9ec2202f76b35
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      01/Sand 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 67652054dc88fa947b271728a4ea0c18
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      06.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6774108631deb4532b5f7df6e4f779a7
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset__Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 689228fde573240fcb33862ad7a03930
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep DuskSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 68aca8e300f85f64dbc97606adaee603
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Materials/Asteroids_A.mat
     m_ReadOnly: 0
@@ -450,8 +1607,29 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69090bcf98b624e77a2f519630debe54
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky_Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69402807b35d57c4b95bac4ba9b065ed
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Plantlet
+      01.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 69a7263751240be40a22141928bba9c1
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/FHE_Tree_1_LOD2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 69b07371b64711a448a34a3f93649215
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      03/Sand 03_MaskMap.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -474,8 +1652,55 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b23c868778ba4e4398535899046bb97
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Asphalt
+      01/Asphalt 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6b8f010ba933d4f01bdedec2c1a8a025
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c6a2ac491c532845877aa54e3aa54a9
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Gravel
+      04.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d52bebd6885c7344b5a76e4e0c5115b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      02/Gravel 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d63f48bf2bc2e64a9295d5b1a4b44bf
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/Death.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6d7ed94381887d34fbafe1b13ba7d985
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6e12033db5ccf594b9b894053eb78dde
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Tree_1.st
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e99cecb5361f2a4a88aa4a11a3588fd
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      04.terrainlayer
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -486,14 +1711,93 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6fa3f446deee84c52aec507bd0aca28c
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset Equirect.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6faf329ad7f5a4920bd3e23e4b000057
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7034c3e350a86564aafe067ff484e464
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      03/Grass 03_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7053f80cc85968240a8b8cefb47b128a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Asphalt
+      02/Asphalt 02_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 713926c66853ad14198c86cdd29bb32b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      06/Grass 06_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7177251f0e1f08546b656875551afe28
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/StrafeLeft.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71d381e8db65cb547964e023373b98fe
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/StrafeRight.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71e5bcd3d1ac6a34ebd71825911fa49e
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Soil
+      01/Soil 01_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 71ea4ca1c6ffd3841adfcd7acac91f2a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      09.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 732911a6b2f0dbc48a66b71ab1989957
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/Bark_LOD0.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73324b55f67f54c7bbf43204788b8bbe
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing
+      Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 733321016244d7f4194a2c5d66849afd
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Billboard_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7416536dbe0334cfd888dd1beb75a9fb
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 741ae3c32da2a574e8ef967827beedfc
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      03/Sand 03_BaseColor.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -510,6 +1814,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7593128404f726548964f394a5d15132
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RollLeft.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75db70689c5584a4bab53b10648d368e
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      09.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7659947706e294d97a22faa1d4011724
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky Equirect.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 771300e956150427f8e4740c74cdd67e
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7713aacf6f688b444913803eda333c12
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Lrg_B_01.FBX
     m_ReadOnly: 0
@@ -518,6 +1848,53 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 773c0936566326646830aebc6cefc8ae
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Rock_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 773d57e6c8bbfe0418a5ce276cfc907c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      04/Gravel 04_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7762c13a42647d340a3aabcf924665f8
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Scrubs
+      01.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 77b131decc7b844ddbe504ff94c11c56
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/AllSky_Overcast4_LowSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78b9b8cc2e94ce842abfa953e6f73705
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      06/Grass 06_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 795edbdb07774ed45a56ddf8853f9b3c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Asphalt
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a03001a6d7c746a2a2467b3b3f51660
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night__Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a3d0fbe14f3ab8438bcafbe24098310
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      03/Gravel 03_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -534,6 +1911,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b373da39b21e413f975bcf005681963
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSkySettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7bf088a02622662489e52bb11ad821f2
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      05/Grass 05_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c16d2aeeb63d7d4a94854b52b2374eb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 01/Wood Chips 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7cb2eeb667a7afd4291920d42d6674f9
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Moon
+      02/Moon Sand 02_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7d074cfde9e92a04c9a29047ee51ada8
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/Bark_LOD1.mat
     m_ReadOnly: 0
@@ -546,8 +1951,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f10f6ce81a34824a9cd2746ad0b82ff
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/JumpWhileRunning.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f66bbe09d1d8b64fab1a28afd42a2ed
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Textures_Humans/LowPolyCharacterTexture.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 7f6ee45aae7af6b4998190443e3a1b3c
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_RooftopProp_A.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7ff3ae4a8bc03b342a531f79039f6fc9
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Leaves
+      01.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8012ba8f45abba645ba64687c66675b6
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Sand
+      03.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -591,6 +2022,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83b3c7e0d58305e4698d3ae5b65f4c4c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      06.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83b517ef19daa8e4ba38bce3e0ca3fe9
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/TreeLeaves.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83e28e7ec15604e4e936c71d31a7ebad
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/GetHit.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 841f557d7348bf54da3e504ffe4b2a01
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Snow
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 84a9ca3c43f9fcb489db05ecc092d6a2
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Billboard_Extra.png
     m_ReadOnly: 0
@@ -622,8 +2079,33 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8768f1cd68ca0ab4cb19e830e96fecf4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Snow
+      01/Snow 01_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87dff0577f22146db9255e2cf270d6ee
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8827b9c249f09e445a5d0a1a7d9e1569
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/FHE_Bush_2_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88710d7f2a0fa4bfeacbf7045be893fc
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88d61e4b5bb195a4da585dd9c8d8ea4d
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/Demo_FREE_LowPolyCharacter/DEMO_FREE_LowPolyHumans/LightingData.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -634,8 +2116,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89a4c69dcdb16f943bc363e45ca3c9df
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Snow
+      01/Snow 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 89b53c5436efe3049bd2e3ce8d875a32
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a293ce833d584fc98516e0e74f495a4
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_EquiRect.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b490294f4e679e47b19d8c32e4983e9
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Moon
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b7dd0809c7c6498789fa32a61eaa6cb
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -652,8 +2160,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c3b866041309064fa5061384fe096aa
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      02/Grass 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8c58bc4f8b9ff0446aa18316d7088a2d
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_1/FHE_Tree_1_Billboard_LOD3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c6f0d7d2a576443a92d35db4d83c4da
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8c78f88c1240ff641827a74064bdfe68
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Gravel
+      01.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cab6aa3331da40e68754e2214ce08fa
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night__Cam_5_Down-Y.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -665,8 +2199,46 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cdd8f4b067436549aa983e788946da4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      01/Grass 01_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8db10f414e5614f4bad830446841036c
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold SunsetSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e462a9bf0b1941148e4318e741d7b09
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e64a72f2cb9c45bba4b11d98489b11f
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e7251cff63ea413db367d2893f57bf6
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8e9242d856bec8049b98522b30c75fb0
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Bush_2/Bark_2_LOD2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e9ca9c11677f9147b2eacc314e03ebb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      01/Gravel 01_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -683,14 +2255,67 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f078fad2b062c24eb8a0c2a1eff210f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Leaves
+      02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8f14b178abed61340a869d7e4ed50641
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Ground/FHE_Mud_2.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f6438f89037699488f2543a29073db2
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Scrubs
+      01/Scrubs 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f760fa0100eb634b937fa931744496e
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/StunnedLoop.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8fa171c9855ae7145a2299ba30e1f30d
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcretePebble.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90d6a70760a72254182c326fdd7b8c41
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      04.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90f2cda124414f04a8c496ebd81c9242
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Moon
+      02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 912bf47cb4f5f4c6ea43b7a8bd2eb0e5
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9147f9d9a28a72f4d9ad93466c09892d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Leaves
+      01.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9163188be3bb9490e87152da256a628e
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_NothingSettings.lighting
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -707,8 +2332,53 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9340734bb106c3b47a2fadbb65221aeb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Sand
+      01.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 93731d7ae589f1a4d9655264618df5fe
     m_Address: DaniTech/Items/DiamondTonic
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 938f8444195114ab791cdba8f627e3e7
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 93ce6277acd7243f685c04cc3c1d0cc4
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95fcf9331ca635c459a201f2c56f44dc
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Materials_Humans/Body.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 967f1c495d6ebc44794929bc771c8c01
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 03/Wood Chips 03_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97259d0c0ea9f491692be825da27978a
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night Equirect.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9725d5f74c26faa4e87882b2cc7f674d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      03/Gravel 03_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -732,6 +2402,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 988fefd40c70c4243ac399fce021190a
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/FallingLoop.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 98d0c42f3f7f01f43b3a87eb51e8b542
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      05/Grass 05_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 994548c60a93ebe448b4b82a0f7dd5a7
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      04/Gravel 04_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9af23ba5fa5364ff598888460e0e2759
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9b9240ee93cb95b46af27a34e129703b
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/Bark_LOD2.mat
     m_ReadOnly: 0
@@ -744,14 +2440,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9beaee85d3201054091e77725ba9f28f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      03/Sand 03_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9c5ffe9a5cb49ea4dacb30a3fb31f81c
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Billboard_Subsurface.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9cbb2a4d135c31e4cbeadac255ba4ecb
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/BowShot.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9d738919c3b219340bbf1b9ad10aeea5
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_B_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e1a83fbb6ab97f4187b02d1be9d64e3
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Asphalt
+      01.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -768,8 +2484,29 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fa7449030fcc684ebb2db7262eb9beb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 02/Wood Chips 02_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9fb8b76413faee64bb0b7081e0dfbfae
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Tree_2.st
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fbfa6c944b836e44bd2ba2ebb9b8a9f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      05/Gravel 05_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9fec7fb5a5af1bc428667db786c6c0fe
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      01/Gravel 01_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -780,14 +2517,56 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0d85858a250e1f44b7f12a4429f00c7
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Asphalt
+      02.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a1561b0dc175c05499308a85e4fbc6d4
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Crystal_Sml_C_01.FBX
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a18a58fa7f9aa5348af2132c08e26cd9
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Snow
+      01.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1aaab63c93e82a4cb7323d017ec2e26
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      03.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a1d635e0fae730a469d6223a51df0eb0
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 03/Wood Chips 03_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a28ed9815e9ce134fade5d03ccdaf53e
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Leaves
+      02/Leaves 02_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a2e8dfd11e1a9594eb264958e20e3e48
     m_Address: DaniTech/Items/EmeraldCore
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a39c32cfddaefb74ebbe18cb99f3dd0f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      09.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -804,6 +2583,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a4b2d58786ff57340bda9f447806dec3
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Wood
+      Chips 03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a64538513abb4d34696f8611e5740283
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      01/Grass 01_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6ac75420f93c4fa99b35113a21e4eff
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6e9f4ff100a94264a812ad74e17416c
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a6f3b4a163751f24ba682bc2b9d8d4a8
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Billboard_Normal.png
     m_ReadOnly: 0
@@ -816,14 +2621,128 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7f347c28bd9b174882f166e64a6453a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      01/Grass 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a8bb8c42a77885343ab1b30b6e479352
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_BrickWallStandard.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a8bd4d740daa72c46bbff25e229c4ad2
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/BlockingLoop.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9647377d45a29a4dbafa39488201210
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Snow
+      01/Snow 01_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa78c8d403a8547fe86d1f74239e6b03
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aad737df2517bbd41865ed1f70cff252
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      05/Grass 05_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aad96e1c2baf24d3499e2ea1426ab824
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night__Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab54d1b34370dbe4d896efebb96535ef
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/Jumps.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae59a54a837b0734bb6ae53f3f88aa53
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 02/Wood Chips 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aeb9348851adba3438b59788d8cd5f51
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      07.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af9be61d70a712d41a740c34018a1dbf
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Plantlet
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afaab7866ab0c9945a33782748d36c26
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Scrubs
+      01/Scrubs 01_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afb2e0e8e5b867f49ad94f4e813c3570
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/SpellCast.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: affe22d82e9bb1940b6fd63ab36c4b62
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Gravel
+      05.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0371986e6e5e9741b2a302b817fddfb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Moon
+      02/Moon Sand 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b12718859f9384946a789d0de8445f74
     m_Address: DaniTech/Imported/TownConstructor2/19ThTownPack/Props/StreetLight2.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1aaa3a1d651288408fa6a33789dfc57
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      06/Gravel 06_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b214e0937b6c61847872304d9f25e1e2
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      01/Gravel 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b2377c5920b3a8b4f9e683b0edbfa8f0
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Textures_Humans/LowPolyArmorTexture.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -846,8 +2765,26 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4002c553459e4873859bae63980d866
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold NightSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b42e37d1d8ccfec49979b39ac911c4d8
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_2/FHE_Tree_2_Billboard_Subsurface.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4ed12fcea5716a4b88a664cf716cfc6
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/PunchRight.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4f152e0498484391a9f0d5a1facf03b
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -870,8 +2807,55 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b684e678f065e2745b1ab8b0a6f2b6b2
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Sand
+      02.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6ac0aba9cc73244bb778dc867499b8b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/package.json
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b752a9483ac9e894b866e58ebb19b955
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Crystal_pink_df.tga
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b782635fe9e6da24ba5ac5d6aee5efb4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Plantlet
+      02.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7ec9cbcb3e9ab542a93e6f8a008ab1c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      05.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8b3f8b3cd1b7904cb7a901e1ca176e3
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/MVETerrainTextureCollection.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8be38fd98cb68d47aeabc2da6f8a799
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Wood
+      Chips 02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b8c77935115cf6e4a9d383fd1696ab4d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Plantlet
+      02.prefab
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -882,8 +2866,36 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba00c355de9c5224abbad21b007bf7f4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      05.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: baee46fd4fc8d4898864f4963bb39f34
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky_Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bb2a803d899e8ab4abfd792ac0abf854
     m_Address: DaniTech/Imported/Stylized_Mages/Models/Characters/Fantasy/Mages/Textures/MagesTexture.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb6a07829414cf145b9a7d4b3360aa16
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Sand
+      02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bbb14d9698951fa40bfeb1f4b4c872c0
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 01/Wood Chips 01_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -919,8 +2931,29 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be24e96f4cc59cd45a25a9ddf3acd5bb
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      01/Grass 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: be331d82932bde94a88faefdea59b3d1
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_4_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bee5c5d0a14c4af428179923480362f4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Sand
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bf44a4858762fef4594d6f6c21812137
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Asphalt
+      02/Asphalt 02_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -937,6 +2970,32 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bfe0cbb8b308b4a40a8f309f516eede2
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_Rock.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c028274b839f6e5409b073fd7f0d6140
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c02c9c6eb9476a7498231431e526a4ad
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Asphalt
+      02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c035446abf3fb47a4b49159462271fa6
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPinkSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c0535b0a57965474896712e2c3591012
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgLG_C.fbx
     m_ReadOnly: 0
@@ -945,6 +3004,12 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c0c154a0abd08a44ebf4641236b65807
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_BrickWallTan.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c227f157df13b418c8ebb9e0b483e121
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -961,8 +3026,47 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2d91454d30ec8e4eb5ef7305d77b337
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Leaves
+      02/Leaves 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c34184578d7910148809e3475726ddc9
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Prefabs/FHE_Tree_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c346a9e2503cda64ba4698db6aa5e707
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/Idle.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c35d875303c454b9a8acaae0f7800313
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c38af066ce03902469898b1c66bca8cd
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Plantlet
+      02/Plantlet 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3ab199559e8ea146ad6132e72d7169e
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Sand
+      03.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c3e1d31cf8ef742ad8aed75a1fdaff49
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_4_Up+Y.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -973,8 +3077,119 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c494c335823f54b52b2e87e1b7a63a23
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon Burst.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4ac93a9f488344c29ac272cddb55dda
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4d022f7555aac94b99e987eced054ca
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/TreeTrunk.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c56e28e54cac24b04ae3dd957d214534
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5ffe17e4a948d5438a7be58729f972b
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      03/Grass 03_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c674b2fff8cad2646877f2710705fb80
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      02/Grass 02_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c709f8237f86e064d8879732a31a3f51
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      08/Grass 08_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c7345da249fd3ac4a9326c612b7f6d8d
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Textures/Asteroid_Set_01.psd
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7bd28319e6d8ce47962dd26238cfd04
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      01/Gravel 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c82a334cf5a5e47978749c210cee72a7
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c848d493ca041e943bcad1e2ef48f105
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      01/Sand 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c85456b3d347275418b843637a3d7b26
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Moon
+      02/Moon Sand 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c85a861fbad8f45169567bbfa332ecf8
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8a48d1a6bbea47e981602e288f19742
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8f21f62fdb3e43c5b32917c84683698
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c923004015ec9ac4b99bd372c73d8c08
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Moon
+      02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c94c36934e6cf3e468ea8a910b0b7c9a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      02.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c9658c52dbf374bf6aeeb26310f71145
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -997,8 +3212,41 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca9af6b5ce9284592aabb781392ff61e
+    m_Address: DaniTech/AssetStore/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: caf14562da1a14d45b0db10817e31df5
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/FHE_Bush_1_Color.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cbb57a6c24c90c94fb989228294cce1c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      02/Gravel 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cbbb9b52199d1c6489a58b6be0092878
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      03/Gravel 03_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cbdb0c81375e549b1bae3506c1863a68
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_1_Back-Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc878f079763f2049af38680587211e6
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      09/Grass 09_MaskMap.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1015,8 +3263,34 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd23ac145eb058642972cd7888e69800
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Wood
+      Chips 03.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cd273cd0a294f3f49a962017b1aead98
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteBeige.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cdbb40e11399e4a17882ada20a1b896a
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce026dfecbc694085a1d87a22f3bb49d
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset__Cam_2_Left+X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce49e22468199984c8e272931bdd7e68
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      06/Grass 06_MaskMap.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1027,8 +3301,35 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cecb75504fd1a344595d5cfd00257b19
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Asphalt
+      02/Asphalt 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: cf11e487d39eef342b40228c7c7ae597
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Rocks/FHE_Rock_3_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf2649d8410aacf43860f9496d8804f2
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/Demo_FREE_LowPolyCharacter/PPProfile.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf56779b008289f4197e96fe2bda7d13
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Scrubs
+      01/Scrubs 01_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf6774b9adc11d14f9b74cc1de277859
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      05.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1040,8 +3341,75 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d01d94f2c60739b4c8cc5dd91301c818
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      05/Gravel 05_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d0c8e2f27985640438cc023ad57831b1
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Demo/Demo.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1269c625ff051640a2a9c1411b71040
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Scrubs
+      02.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d193a764e528253418a9c8161269688c
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/PunchLeft.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1cfe5a209293db4091143f158861f77
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      02.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2d63726104cf684ca41229dc6cc3bf9
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Scrubs
+      01.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d2ed079aae514ce4ba9437ac0a96adb4
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Models/FHE_Rock_3.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d39831f88933e204baae3c2465c51d05
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 01/Wood Chips 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d39db14985d54124e96f84d25560117d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      07.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d3b809c8b33ff46faa4245f0bca7e6fe
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d400f51cb65f3764db32eff33a57290f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Plantlet
+      01.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1052,14 +3420,52 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d4c8dc343ae5d4673b7720ffdb1ddf00
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d4e2bc026a4df1c448b67929c4bbdb5f
     m_Address: DaniTech/Terrain/Terrain_DaniTech_HeroValley.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d5d4808c02e744f44b972c94c88444bc
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d644900a74ae54d4094552e2e58ceb44
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Tree_1/FHE_Tree_1_Billboard_Subsurface.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6557ad5f7261ce4c8fe9f8f67c9d4cd
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Combat/CastingLoop.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6efad16563c1446d86a121dbb004300
+    m_Address: DaniTech/AssetStore/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d731d71c2b8e94c18b5ef8be277e6773
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8144633fec3342d9b7d9388377fb2a6
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky_Cam_4_Up+Y.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1082,8 +3488,80 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d97b425c42fb94bd6b9c9ed101dc4078
+    m_Address: DaniTech/AssetStore/AllSkyFree/Night MoonBurst/Night Moon BurstSettings.lighting
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9ad0f74d68824711bc800186cf63d22
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment_Light.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da9050eeeb23f1f4bb8f757b2b1b7c6d
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Scrubs
+      02/Scrubs 02_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: daa4717f7feba654fa515a15b2aec669
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      03.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db5f8c8abcac64c42a93cdc02c03dd94
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      03/Grass 03_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dc6d1589a6bb1024cb8d4ba871a5b1ac
     m_Address: DaniTech/Imported/Asteroid_Crystal_Set_01/Models/Asteroid_Med_A_01.FBX
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dcacd08f98af5794db5b56a6a66048e7
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/Sprint.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dced9bc1a176eff409a772ed334bca9f
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Grass
+      04.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de0b7914553f4c541a55e2b7f89a240f
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RunBackwardLeft.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de13a7420582ded45a8d7d3f96889aca
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Meshes_Humans/HumanMale_Character.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de2e51d118294bd45b622cf0cc624428
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Plantlet
+      01/Plantlet 01_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de3735c31454f3341ac987e53025b55c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Plantlet
+      01/Plantlet 01_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1106,8 +3584,63 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e05e169589151f7408d261d9529dedc0
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Asphalt
+      01/Asphalt 01_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e0cd9805ba0480b4bacb485ce830f5e7
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_2/Bark_2_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0ef80b76f3871c42ae36afb9a259db8
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      08/Grass 08_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2147947d8b07014db5aaab3fbbc4803
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Scrubs
+      02/Scrubs 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e23c4e30896d34af5beb066fcf2790c7
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cartoon Base NightSky/Cartoon Base
+      NightSky_Cam_5_Down-Y.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2402d4ef4fe747ae9ad59bdccad4556
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSkyFreeDemoEnvironment.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e32a0ad76d3ecc0439ef950508f0275e
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      04/Grass 04_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e352d3f3c0be23b4a8d4f7b4a21b9a20
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e42f78c442f77f249b03a728a36f9f1c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      06/Gravel 06_BaseColor.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1137,8 +3670,60 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e71fc492f440446b99875b8e1df890ba
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_EquiRect_flat.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e76d28a62e34d00409fb2d0c48393959
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_ConcreteWarmGrey.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7d8763d70cf63946a0819b76fbcd625
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Moon
+      01/Moon Sand 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e87512b69b78be84c91c6df3977d8383
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/Demo_FREE_LowPolyCharacter/DEMO_FREE_LowPolyHumans.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8a701df9e76f0540b5266ebf1dd8c87
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      07/Grass 07_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e8f07670fb0274e35a65e6e98594a930
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/AllSky_DemoEnvironment02.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e99ee6d37bba2234eaf52f156567cef4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Scrubs
+      01/Scrubs 01_BaseColor.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eac2ef371405749e0bd050b4c3272f16
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Night/Cold Night Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ebb6342ac21cfc84ea1aca14672d3da4
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Grass
+      07.terrainlayer
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1162,6 +3747,46 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec6812e6eba73934b926f2eacae04b50
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Demo/Demo
+      Terrain.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec9e3baffae98364184b756e4aefc18a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      07/Grass 07_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ecec9226167ad6a449f4f1b112b740b3
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Meshes_Humans/ArmorMeshes_Humans/StarterArmor_HumanMale.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed33d4bc4ef7b804599a813953db2ab7
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      04/Gravel 04_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: edc3e0fcf177de540acc403d51eb4396
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      02/Sand 02_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eee239821c2dee4429fa8125a1fd6023
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Movement/RunLeft.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: eff436c8482d76443b6c1754f83586f2
     m_Address: DaniTech/Terrain/TL_DaniTech_Grass.asset
     m_ReadOnly: 0
@@ -1170,6 +3795,13 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f03d84d7824a69d4a8056ef4b9d96a0f
     m_Address: DaniTech/Imported/KB3D_Brooklyn/Materials/KB3D_BRK_GalvanizedMetal.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f127761f9ee01814e8ccc9d958d58357
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Leaves
+      01/Leaves 01_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1186,9 +3818,29 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1f2be257c30cd4499e7060dc6d9a0de
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Gravel
+      06.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2b5f3f20933f434e850db1b710542fd
+    m_Address: DaniTech/AssetStore/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f4931e1b13010f04bb2d1fef659db166
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Terrain
       Ground/Rocks_2/FHE_Rocks_2_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5204078f99702d419e49cb80b74c03a
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Grass
+      08/Grass 08_Height.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1201,6 +3853,13 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f578b74e1538075479c0bf8c1647e782
     m_Address: DaniTech/Imported/KB3D_Brooklyn/KB3D_BRK_BldgMD_F.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5df002d4465d5e42a10bc0ce9a4d307
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Sand
+      02/Sand 02_BaseColor.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1235,8 +3894,67 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6f10bad0f589486893b6f1b8f9fdeb4
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFree_Documentation.pdf
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f756de1da367769438b63b19b3dfc612
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Plantlet
+      02/Plantlet 02_MaskMap.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f7b4379a8ce1d3c47a45a986d2c1dacf
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Textures/Trees/Bush_1/Bark_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f82f17a6cd128314cb9043b707315fbd
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Wood
+      Chips 01.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f87b863005c8d4abcb743cad9f6566a7
+    m_Address: DaniTech/AssetStore/AllSkyFree/Cold Sunset/Cold Sunset.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9233d9fe58972244aa48151329f7f47
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Layers/Leaves
+      02.terrainlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f946b4c12eb389240af2e7476c0a67a5
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Animations/Animations_Starter_Pack/Gathering/Gathering.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f99343e82941e0049b05ccba5ad21a34
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Leaves
+      01/Leaves 01_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9f0db735bdff5a4a8262819a1d41a1c
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Wood
+      Chips 01/Wood Chips 01_Height.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fbac7c1722f262145b9ed0c0e940864d
+    m_Address: DaniTech/AssetStore/Blink_LowPolyHuman/Art/Characters/LowPoly/FREE_HumanLowPoly/Materials_Humans/Underwear.mat
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion
@@ -1253,8 +3971,42 @@ MonoBehaviour:
     m_SerializedLabels:
     - DaniTechPromotion
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe15da56b92c6a24d8401b99c4a29765
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Asphalt
+      01/Asphalt 01_Normal.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe4e130f9947345a2b213cb5038851a2
+    m_Address: DaniTech/AssetStore/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink
+      Equirect.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe77c7788f1c9574cb35f66fcf962365
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Content/Prefabs/Texture/Wood
+      Chips 01.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fea40c505deb6a44593ceb462bf86b9b
     m_Address: DaniTech/Imported/ForestHouseEnvironment/Forest House Environment/Materials/Trees/Tree_2/FHE_Tree_2_Billboard_LOD3.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff33c7fce672541f095331a057da80f0
+    m_Address: DaniTech/AssetStore/AllSkyFree/_AllSkyFreeDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - DaniTechPromotion
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff52fe44f49217545884ef34940813a9
+    m_Address: DaniTech/AssetStore/TerrainTexturesFree/Terrain Textures/Textures/Gravel
+      05/Gravel 05_Normal.png
     m_ReadOnly: 0
     m_SerializedLabels:
     - DaniTechPromotion

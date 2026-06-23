@@ -12,12 +12,12 @@ namespace EmeToDia.Gameplay
         [SerializeField] private float _keyboardRotateSpeed = 95f;
         [SerializeField] private float _zoomSpeed = 4f;
         [SerializeField] private float _keyboardZoomSpeed = 6f;
-        [SerializeField] private float _maxZoomDistance = 10.5f;
-        [SerializeField] private float _initialZoomDistance = 8.2f;
-        [SerializeField] private float _firstPersonHideDistance = 0.85f;
+        [SerializeField] private float _maxZoomDistance = 13f;
+        [SerializeField] private float _initialZoomDistance = 11f;
+        [SerializeField] private float _firstPersonHideDistance = 0.15f;
         [SerializeField] private Vector3 _firstPersonCameraPosition = new Vector3(0f, 1.58f, 0f);
-        [SerializeField] private Vector3 _thirdPersonCameraOffset = new Vector3(0f, 2.95f, -8.6f);
-        [SerializeField] private Vector3 _thirdPersonLookAtOffset = new Vector3(0f, 1.18f, 0f);
+        [SerializeField] private Vector3 _thirdPersonCameraOffset = new Vector3(0f, 3.35f, -10.8f);
+        [SerializeField] private Vector3 _thirdPersonLookAtOffset = new Vector3(0f, 1.26f, 0f);
 
         private float _xRotation;
         private float _zoomDistance;

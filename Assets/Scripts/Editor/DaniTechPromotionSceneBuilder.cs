@@ -75,6 +75,14 @@ namespace EmeToDia.Editor
         private const string ForestRockTwoPrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Rock_2.prefab";
         private const string ForestRockThreePrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Rock_3.prefab";
         private const string ForestRockFourPrefabPath = ForestHouseImportedFolderPath + "/Forest House Environment/Prefabs/FHE_Rock_4.prefab";
+        private const string AssetStoreHumanPrefabPath = "Assets/Blink/Art/Characters/LowPoly/FREE_HumanLowPoly/Prefabs_Humans/HumanMale_Character_FREE.prefab";
+        private const string AllSkyBlueSkyMaterialPath = "Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat";
+        private const string MicroVerseGrassAlbedoPath = "Assets/MicroVerse-Extras/Terrain Textures/Textures/Grass 04/Grass 04_BaseColor.png";
+        private const string MicroVerseGrassNormalPath = "Assets/MicroVerse-Extras/Terrain Textures/Textures/Grass 04/Grass 04_Normal.png";
+        private const string MicroVerseGravelAlbedoPath = "Assets/MicroVerse-Extras/Terrain Textures/Textures/Gravel 03/Gravel 03_BaseColor.png";
+        private const string MicroVerseGravelNormalPath = "Assets/MicroVerse-Extras/Terrain Textures/Textures/Gravel 03/Gravel 03_Normal.png";
+        private const string MicroVerseAsphaltAlbedoPath = "Assets/MicroVerse-Extras/Terrain Textures/Textures/Asphalt 01/Asphalt 01_BaseColor.png";
+        private const string MicroVerseAsphaltNormalPath = "Assets/MicroVerse-Extras/Terrain Textures/Textures/Asphalt 01/Asphalt 01_Normal.png";
         private const string TerrainDataPath = TerrainFolderPath + "/Terrain_DaniTech_HeroValley.asset";
         private const string GrassTerrainLayerPath = TerrainFolderPath + "/TL_DaniTech_Grass.asset";
         private const string MudTerrainLayerPath = TerrainFolderPath + "/TL_DaniTech_Mud.asset";
@@ -486,6 +494,12 @@ namespace EmeToDia.Editor
             ConfigureTextureImporter(ForestMudNormalPath, TextureImporterType.NormalMap, false);
             ConfigureTextureImporter(ForestRockAlbedoPath, TextureImporterType.Default, true);
             ConfigureTextureImporter(ForestRockNormalPath, TextureImporterType.NormalMap, false);
+            ConfigureTextureImporter(MicroVerseGrassAlbedoPath, TextureImporterType.Default, true);
+            ConfigureTextureImporter(MicroVerseGrassNormalPath, TextureImporterType.NormalMap, false);
+            ConfigureTextureImporter(MicroVerseGravelAlbedoPath, TextureImporterType.Default, true);
+            ConfigureTextureImporter(MicroVerseGravelNormalPath, TextureImporterType.NormalMap, false);
+            ConfigureTextureImporter(MicroVerseAsphaltAlbedoPath, TextureImporterType.Default, true);
+            ConfigureTextureImporter(MicroVerseAsphaltNormalPath, TextureImporterType.NormalMap, false);
             AssetDatabase.Refresh();
         }
 
@@ -514,8 +528,8 @@ namespace EmeToDia.Editor
             GetOrCreateMaterial("MAT_DaniTech_Swift", new Color(1f, 0.62f, 0.18f, 1f), 0.25f);
             GetOrCreateMaterial("MAT_DaniTech_DarkMetal", new Color(0.08f, 0.09f, 0.11f, 1f), 0.05f);
             GetOrCreateMaterial("MAT_DaniTech_Light", new Color(1f, 0.84f, 0.36f, 1f), 0.7f);
-            GetOrCreateMaterial("MAT_DaniTech_Asphalt", new Color(0.055f, 0.06f, 0.065f, 1f), 0f);
-            GetOrCreateMaterial("MAT_DaniTech_Concrete", new Color(0.31f, 0.33f, 0.32f, 1f), 0f);
+            GetOrCreateTexturedMaterial("MAT_DaniTech_Asphalt", MicroVerseAsphaltAlbedoPath, MicroVerseAsphaltNormalPath, new Color(0.055f, 0.06f, 0.065f, 1f), 0.18f, new Vector2(22f, 22f));
+            GetOrCreateTexturedMaterial("MAT_DaniTech_Concrete", MicroVerseGravelAlbedoPath, MicroVerseGravelNormalPath, new Color(0.31f, 0.33f, 0.32f, 1f), 0.24f, new Vector2(20f, 20f));
             GetOrCreateMaterial("MAT_DaniTech_Brick", new Color(0.30f, 0.17f, 0.13f, 1f), 0f);
             GetOrCreateMaterial("MAT_DaniTech_Window", new Color(0.08f, 0.20f, 0.25f, 1f), 0.12f);
             GetOrCreateMaterial("MAT_DaniTech_Bronze", new Color(0.42f, 0.27f, 0.13f, 1f), 0.03f);
@@ -526,10 +540,10 @@ namespace EmeToDia.Editor
             GetOrCreateMaterial("MAT_DaniTech_HeroSkin", new Color(0.82f, 0.58f, 0.42f, 1f), 0f);
             GetOrCreateMaterial("MAT_DaniTech_Leather", new Color(0.28f, 0.16f, 0.08f, 1f), 0f);
             GetOrCreateMaterial("MAT_DaniTech_LeatherDark", new Color(0.15f, 0.08f, 0.04f, 1f), 0f);
-            GetOrCreateTexturedMaterial("MAT_DaniTech_PlaySurface", ForestGrassAlbedoPath, ForestGrassNormalPath, new Color(0.31f, 0.48f, 0.36f, 1f), 0.18f);
-            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestGrass", ForestGrassAlbedoPath, ForestGrassNormalPath, new Color(0.62f, 0.78f, 0.48f, 1f), 0.22f);
-            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestMud", ForestMudAlbedoPath, ForestMudNormalPath, new Color(0.42f, 0.29f, 0.18f, 1f), 0.12f);
-            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestRock", ForestRockAlbedoPath, ForestRockNormalPath, new Color(0.48f, 0.52f, 0.56f, 1f), 0.2f);
+            GetOrCreateTexturedMaterial("MAT_DaniTech_PlaySurface", MicroVerseGrassAlbedoPath, MicroVerseGrassNormalPath, new Color(0.34f, 0.46f, 0.34f, 1f), 0.2f, new Vector2(34f, 34f));
+            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestGrass", ForestGrassAlbedoPath, ForestGrassNormalPath, new Color(0.62f, 0.78f, 0.48f, 1f), 0.22f, new Vector2(12f, 12f));
+            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestMud", ForestMudAlbedoPath, ForestMudNormalPath, new Color(0.42f, 0.29f, 0.18f, 1f), 0.12f, new Vector2(10f, 10f));
+            GetOrCreateTexturedMaterial("MAT_DaniTech_ForestRock", ForestRockAlbedoPath, ForestRockNormalPath, new Color(0.48f, 0.52f, 0.56f, 1f), 0.2f, new Vector2(10f, 10f));
             GetOrCreateMaterial("MAT_DaniTech_ForestFoliage", new Color(0.20f, 0.43f, 0.25f, 1f), 0f);
             GetOrCreateMaterial("MAT_DaniTech_ForestBark", new Color(0.27f, 0.17f, 0.10f, 1f), 0f);
         }
@@ -820,6 +834,9 @@ namespace EmeToDia.Editor
             RegisterAddressableFolderAssets(settings, group, MageImportedFolderPath, "DaniTech/Imported/Stylized_Mages");
             RegisterAddressableFolderAssets(settings, group, TownImportedFolderPath, "DaniTech/Imported/TownConstructor2");
             RegisterAddressableFolderAssets(settings, group, ForestHouseImportedFolderPath, "DaniTech/Imported/ForestHouseEnvironment");
+            RegisterAddressableFolderAssets(settings, group, "Assets/Blink", "DaniTech/AssetStore/Blink_LowPolyHuman");
+            RegisterAddressableFolderAssets(settings, group, "Assets/MicroVerse-Extras", "DaniTech/AssetStore/TerrainTexturesFree");
+            RegisterAddressableFolderAssets(settings, group, "Assets/AllSkyFree", "DaniTech/AssetStore/AllSkyFree");
             RegisterAddressableFolderAssets(settings, group, TerrainFolderPath, "DaniTech/Terrain");
             settings.SetDirty(AddressableAssetSettings.ModificationEvent.BatchModification, null, true);
         }
@@ -1338,30 +1355,35 @@ namespace EmeToDia.Editor
 
         private static Transform CreatePlayerCharacterVisual(Transform parent)
         {
-            GameObject characterPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(PlayerCharacterPrefabPath);
-            GameObject visualObject;
-            if (characterPrefab != null)
+            GameObject visualRoot = CreateEmpty("Visual_PlayerCharacter_HumanRoot", parent, Vector3.zero);
+            GameObject humanPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(AssetStoreHumanPrefabPath);
+            bool hasHumanAsset = false;
+
+            if (humanPrefab != null)
             {
-                visualObject = PrefabUtility.InstantiatePrefab(characterPrefab, parent) as GameObject;
-                if (visualObject != null)
+                GameObject humanObject = PrefabUtility.InstantiatePrefab(humanPrefab, visualRoot.transform) as GameObject;
+                if (humanObject != null)
                 {
-                    visualObject.name = "Visual_PlayerCharacter_HeroMage";
-                    visualObject.transform.localPosition = Vector3.zero;
-                    visualObject.transform.localRotation = Quaternion.identity;
-                    visualObject.transform.localScale = Vector3.one;
-                    ScaleToHeight(visualObject, 2.0f);
-                    ApplyFallbackMaterialToRenderers(visualObject, LoadMaterial("MAT_DaniTech_HeroBlue"));
-                    AttachPlayerStaffVisual(visualObject.transform);
-                    RemoveCollidersFromChildren(visualObject);
-                    visualObject.SetActive(true);
-                    return visualObject.transform;
+                    humanObject.name = "Visual_PlayerCharacter_ImportedHuman";
+                    humanObject.transform.localPosition = Vector3.zero;
+                    humanObject.transform.localRotation = Quaternion.identity;
+                    humanObject.transform.localScale = Vector3.one;
+                    ScaleToHeight(humanObject, 2.25f);
+                    ApplyFallbackMaterialToRenderers(humanObject, LoadMaterial("MAT_DaniTech_HeroBlue"));
+                    RemoveCollidersFromChildren(humanObject);
+                    hasHumanAsset = HasVisibleRenderer(humanObject);
                 }
             }
 
-            visualObject = CreateFallbackHeroCharacter(parent);
-            RemoveCollidersFromChildren(visualObject);
-            visualObject.SetActive(true);
-            return visualObject.transform;
+            if (hasHumanAsset == false)
+            {
+                GameObject fallbackObject = CreateFallbackHeroCharacter(visualRoot.transform);
+                fallbackObject.name = "Visual_PlayerCharacter_GuaranteedHuman";
+            }
+
+            RemoveCollidersFromChildren(visualRoot);
+            visualRoot.SetActive(true);
+            return visualRoot.transform;
         }
 
         private static void AttachPlayerStaffVisual(Transform characterRoot)
@@ -1397,6 +1419,25 @@ namespace EmeToDia.Editor
             CreatePrimitive(PrimitiveType.Capsule, "RightLeg", heroRoot.transform, new Vector3(0.18f, 0.34f, 0f), new Vector3(0.18f, 0.46f, 0.18f), LoadMaterial("MAT_DaniTech_LeatherDark"));
             CreatePrimitive(PrimitiveType.Cube, "Cape", heroRoot.transform, new Vector3(0f, 1.08f, -0.24f), new Vector3(0.78f, 1.04f, 0.08f), LoadMaterial("MAT_DaniTech_Leather"));
             return heroRoot;
+        }
+
+        private static bool HasVisibleRenderer(GameObject targetObject)
+        {
+            if (targetObject == null)
+            {
+                return false;
+            }
+
+            Renderer[] renderers = targetObject.GetComponentsInChildren<Renderer>(true);
+            for (int i = 0; i < renderers.Length; i++)
+            {
+                if (renderers[i] != null && renderers[i].enabled)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         private static void RemoveCollidersFromChildren(GameObject targetObject)
@@ -1439,11 +1480,62 @@ namespace EmeToDia.Editor
         private static void CreateSpawnPoints(Transform managerGroup)
         {
             Transform spawnRoot = CreateEmpty("SpawnPoints_ItemAddressables", managerGroup, Vector3.zero).transform;
-            CreateSpawnPoint(spawnRoot, "Spawn_EmeraldCore_A", "emerald_core", 2, new Vector3(-14f, 0.8f, -4f));
-            CreateSpawnPoint(spawnRoot, "Spawn_EmeraldCore_B", "emerald_core", 1, new Vector3(18f, 0.8f, -16f));
-            CreateSpawnPoint(spawnRoot, "Spawn_DiamondTonic", "diamond_tonic", 1, new Vector3(22f, 0.8f, 18f));
-            CreateSpawnPoint(spawnRoot, "Spawn_PrismShield", "prism_shield", 1, new Vector3(-26f, 0.8f, 20f));
-            CreateSpawnPoint(spawnRoot, "Spawn_SwiftSigil", "swift_sigil", 1, new Vector3(0f, 0.8f, 34f));
+            string[] itemIds =
+            {
+                "emerald_core", "diamond_tonic", "prism_shield", "swift_sigil",
+                "emerald_core", "diamond_tonic", "prism_shield", "swift_sigil",
+                "emerald_core", "diamond_tonic", "prism_shield", "swift_sigil",
+                "emerald_core", "diamond_tonic", "prism_shield", "swift_sigil",
+                "emerald_core", "diamond_tonic", "prism_shield", "swift_sigil",
+                "emerald_core", "diamond_tonic", "prism_shield", "swift_sigil",
+                "emerald_core", "diamond_tonic", "prism_shield", "swift_sigil"
+            };
+            int[] amounts =
+            {
+                2, 1, 1, 1,
+                1, 1, 1, 2,
+                2, 1, 1, 1,
+                1, 2, 1, 1,
+                1, 1, 2, 1,
+                2, 1, 1, 2,
+                1, 2, 1, 1
+            };
+            Vector3[] positions =
+            {
+                new Vector3(-14f, 0.8f, -4f),
+                new Vector3(18f, 0.8f, -16f),
+                new Vector3(22f, 0.8f, 18f),
+                new Vector3(-26f, 0.8f, 20f),
+                new Vector3(0f, 0.8f, 34f),
+                new Vector3(-34f, 0.8f, -22f),
+                new Vector3(34f, 0.8f, -28f),
+                new Vector3(42f, 0.8f, 8f),
+                new Vector3(-44f, 0.8f, 6f),
+                new Vector3(-8f, 0.8f, 48f),
+                new Vector3(14f, 0.8f, 54f),
+                new Vector3(-18f, 0.8f, -48f),
+                new Vector3(18f, 0.8f, -54f),
+                new Vector3(58f, 0.8f, -12f),
+                new Vector3(-58f, 0.8f, -12f),
+                new Vector3(58f, 0.8f, 28f),
+                new Vector3(-58f, 0.8f, 30f),
+                new Vector3(6f, 0.8f, -68f),
+                new Vector3(-10f, 0.8f, -74f),
+                new Vector3(0f, 0.8f, 78f),
+                new Vector3(28f, 0.8f, 74f),
+                new Vector3(-30f, 0.8f, 72f),
+                new Vector3(78f, 0.8f, 0f),
+                new Vector3(-78f, 0.8f, 0f),
+                new Vector3(84f, 0.8f, 44f),
+                new Vector3(-84f, 0.8f, 44f),
+                new Vector3(84f, 0.8f, -44f),
+                new Vector3(-84f, 0.8f, -44f)
+            };
+
+            for (int i = 0; i < positions.Length; i++)
+            {
+                CreateSpawnPoint(spawnRoot, "Spawn_Item_" + i.ToString("00"), itemIds[i], amounts[i], positions[i]);
+            }
 
             DaniTechAddressableItemSpawner spawner = managerGroup.GetComponentInChildren<DaniTechAddressableItemSpawner>();
             if (spawner != null)
@@ -1549,6 +1641,23 @@ namespace EmeToDia.Editor
             Color fallbackColor,
             float smoothness)
         {
+            return GetOrCreateTexturedMaterial(
+                materialName,
+                albedoTexturePath,
+                normalTexturePath,
+                fallbackColor,
+                smoothness,
+                Vector2.one);
+        }
+
+        private static Material GetOrCreateTexturedMaterial(
+            string materialName,
+            string albedoTexturePath,
+            string normalTexturePath,
+            Color fallbackColor,
+            float smoothness,
+            Vector2 textureScale)
+        {
             Material material = GetOrCreateMaterial(materialName, fallbackColor, 0f);
             Texture2D albedoTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(albedoTexturePath);
             Texture2D normalTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(normalTexturePath);
@@ -1557,7 +1666,7 @@ namespace EmeToDia.Editor
             {
                 material.mainTexture = albedoTexture;
                 material.SetTexture("_MainTex", albedoTexture);
-                material.SetTextureScale("_MainTex", new Vector2(0.22f, 0.22f));
+                material.SetTextureScale("_MainTex", textureScale);
             }
 
             if (normalTexture != null)
@@ -1578,6 +1687,12 @@ namespace EmeToDia.Editor
 
         private static Material GetOrCreateSkyboxMaterial()
         {
+            Material importedSkybox = AssetDatabase.LoadAssetAtPath<Material>(AllSkyBlueSkyMaterialPath);
+            if (importedSkybox != null && ShouldReplaceMaterial(importedSkybox) == false)
+            {
+                return importedSkybox;
+            }
+
             Material material = AssetDatabase.LoadAssetAtPath<Material>(SkyboxMaterialPath);
             Shader shader = Shader.Find("Skybox/Procedural");
             if (shader == null || shader.isSupported == false)
