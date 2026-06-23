@@ -114,7 +114,7 @@ namespace EmeToDia.Gameplay
 
             if (_guideText != null)
             {
-                _guideText.text = "Right drag: look  /  Q,C: turn  /  Wheel: zoom  /  Tab/I: bag";
+                _guideText.text = "Right drag: look  /  Q,C: turn  /  Wheel,V: camera  /  Tab/I: bag";
             }
 
             RefreshTooltipText();

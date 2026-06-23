@@ -52,6 +52,7 @@ namespace EmeToDia.Editor
         private const string AsteroidSmallAAssetPath = AsteroidImportedFolderPath + "/Models/Asteroid_Sml_A_01.FBX";
         private const string AsteroidSmallBAssetPath = AsteroidImportedFolderPath + "/Models/Asteroid_Sml_B_01.FBX";
         private const string PlayerCharacterPrefabPath = MageImportedFolderPath + "/Models/Characters/Fantasy/Mages/MageBlue.prefab";
+        private const string PlayerStaffPrefabPath = MageImportedFolderPath + "/Models/Characters/Fantasy/Mages/Weapons/StaffBlue.prefab";
         private const string TownFloorAssetPath = TownImportedFolderPath + "/19ThTownPack/Standard Assets/Prototyping/Models/FloorPrototype64x01x64.fbx";
         private const string TownRoadAssetPath = TownImportedFolderPath + "/19ThTownPack/ModularParts/Roads/Road.fbx";
         private const string TownSideWalkAssetPath = TownImportedFolderPath + "/19ThTownPack/ModularParts/Roads/SideWalk.fbx";
@@ -525,6 +526,7 @@ namespace EmeToDia.Editor
             GetOrCreateMaterial("MAT_DaniTech_HeroSkin", new Color(0.82f, 0.58f, 0.42f, 1f), 0f);
             GetOrCreateMaterial("MAT_DaniTech_Leather", new Color(0.28f, 0.16f, 0.08f, 1f), 0f);
             GetOrCreateMaterial("MAT_DaniTech_LeatherDark", new Color(0.15f, 0.08f, 0.04f, 1f), 0f);
+            GetOrCreateTexturedMaterial("MAT_DaniTech_PlaySurface", ForestGrassAlbedoPath, ForestGrassNormalPath, new Color(0.31f, 0.48f, 0.36f, 1f), 0.18f);
             GetOrCreateTexturedMaterial("MAT_DaniTech_ForestGrass", ForestGrassAlbedoPath, ForestGrassNormalPath, new Color(0.62f, 0.78f, 0.48f, 1f), 0.22f);
             GetOrCreateTexturedMaterial("MAT_DaniTech_ForestMud", ForestMudAlbedoPath, ForestMudNormalPath, new Color(0.42f, 0.29f, 0.18f, 1f), 0.12f);
             GetOrCreateTexturedMaterial("MAT_DaniTech_ForestRock", ForestRockAlbedoPath, ForestRockNormalPath, new Color(0.48f, 0.52f, 0.56f, 1f), 0.2f);
@@ -663,7 +665,7 @@ namespace EmeToDia.Editor
             SetRect(tooltipText.rectTransform, new Vector2(0f, 1f), new Vector2(620f, 38f), new Vector2(24f, -254f));
             Text inventorySummaryText = CreateText(hudRoot, "Text_InventorySummary", "BAG 0/12  Tab/I\nEmpty\nPick up items with E", 22, TextAnchor.UpperLeft);
             SetRect(inventorySummaryText.rectTransform, new Vector2(0f, 1f), new Vector2(620f, 112f), new Vector2(24f, -302f));
-            Text guideText = CreateText(hudRoot, "Text_Guide", "Right drag: look  /  Q,C: turn  /  Wheel: zoom  /  Tab/I: bag", 19, TextAnchor.LowerLeft);
+            Text guideText = CreateText(hudRoot, "Text_Guide", "Right drag: look  /  Q,C: turn  /  Wheel,V: camera  /  Tab/I: bag", 19, TextAnchor.LowerLeft);
             SetRect(guideText.rectTransform, new Vector2(0f, 0f), new Vector2(590f, 34f), new Vector2(24f, 16f));
             SetObjectReference(playerHUD, "_statusText", statusText);
             SetObjectReference(playerHUD, "_guideText", guideText);
@@ -902,18 +904,13 @@ namespace EmeToDia.Editor
         private static void CreateEnvironment(Scene scene)
         {
             GameObject environmentRoot = CreateRoot(scene, "Environment_HeroPlaza");
-            Material groundMaterial = LoadMaterial("MAT_DaniTech_Asphalt");
             Material pathMaterial = LoadMaterial("MAT_DaniTech_Concrete");
             Material diamondMaterial = LoadMaterial("MAT_DaniTech_CrystalCyan");
             Material lightMaterial = LoadMaterial("MAT_DaniTech_Light");
 
             CreateTerrainGround(environmentRoot.transform);
-            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_North", environmentRoot.transform, new Vector3(0f, 0.02f, 40f), new Vector3(18f, 0.08f, 112f), pathMaterial);
-            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_East", environmentRoot.transform, new Vector3(40f, 0.03f, 0f), new Vector3(112f, 0.08f, 18f), pathMaterial);
-            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_West", environmentRoot.transform, new Vector3(-40f, 0.03f, 0f), new Vector3(112f, 0.08f, 18f), pathMaterial);
-
-            CreateTownFloorTiles(environmentRoot.transform, groundMaterial);
-            CreateTownRoadNetwork(environmentRoot.transform, pathMaterial, LoadMaterial("MAT_DaniTech_Bronze"));
+            CreateStablePlaySurface(environmentRoot.transform);
+            CreateStablePathNetwork(environmentRoot.transform, pathMaterial);
 
             CreateExternalModel("KB3D_BRK_BldgLG_C.fbx", environmentRoot.transform, new Vector3(-82f, 0f, 48f), Quaternion.Euler(0f, 28f, 0f), new Vector3(0.28f, 0.28f, 0.28f));
             CreateExternalModel("KB3D_BRK_BldgLG_E.fbx", environmentRoot.transform, new Vector3(86f, 0f, 52f), Quaternion.Euler(0f, -34f, 0f), new Vector3(0.31f, 0.31f, 0.31f));
@@ -976,11 +973,40 @@ namespace EmeToDia.Editor
             Terrain terrain = terrainObject.GetComponent<Terrain>();
             if (terrain != null)
             {
+                terrain.drawHeightmap = false;
+                terrain.drawTreesAndFoliage = false;
                 terrain.materialTemplate = null;
                 terrain.heightmapPixelError = 3f;
                 terrain.basemapDistance = 1200f;
                 terrain.treeDistance = 420f;
             }
+
+            TerrainCollider terrainCollider = terrainObject.GetComponent<TerrainCollider>();
+            if (terrainCollider != null)
+            {
+                terrainCollider.enabled = false;
+            }
+        }
+
+        private static void CreateStablePlaySurface(Transform environmentRoot)
+        {
+            GameObject surfaceObject = CreatePrimitive(
+                PrimitiveType.Cube,
+                "Ground_StablePlaySurface_320",
+                environmentRoot,
+                new Vector3(0f, -0.08f, 0f),
+                new Vector3(320f, 0.16f, 320f),
+                LoadMaterial("MAT_DaniTech_PlaySurface"));
+            surfaceObject.isStatic = true;
+        }
+
+        private static void CreateStablePathNetwork(Transform environmentRoot, Material pathMaterial)
+        {
+            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPlaza_Stable", environmentRoot, new Vector3(0f, 0.035f, 0f), new Vector3(42f, 0.07f, 42f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_North", environmentRoot, new Vector3(0f, 0.045f, 58f), new Vector3(16f, 0.08f, 150f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_East", environmentRoot, new Vector3(58f, 0.05f, 0f), new Vector3(150f, 0.08f, 16f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_West", environmentRoot, new Vector3(-58f, 0.05f, 0f), new Vector3(150f, 0.08f, 16f), pathMaterial);
+            CreatePrimitive(PrimitiveType.Cube, "Ground_HeroPath_South", environmentRoot, new Vector3(0f, 0.045f, -58f), new Vector3(16f, 0.08f, 150f), pathMaterial);
         }
 
         private static TerrainData CreateHeroTerrainData()
@@ -1131,7 +1157,7 @@ namespace EmeToDia.Editor
                 float angle = i * 8.2f + (i % 5) * 3.1f;
                 float radius = 92f + (i % 4) * 10f;
                 Vector3 position = GetRingPosition(angle, radius);
-                position.y = GetHeroTerrainWorldHeight(position.x, position.z) - 0.05f;
+                position.y = 0f;
                 string assetPath = treeAssetPaths[i % treeAssetPaths.Length];
                 float scale = assetPath.Contains("Bush") ? 5.2f + (i % 3) * 1.1f : 8.5f + (i % 5) * 1.35f;
                 CreateForestAsset(
@@ -1157,7 +1183,7 @@ namespace EmeToDia.Editor
                 float angle = i * 12.85f + 6f;
                 float radius = 68f + (i % 5) * 11f;
                 Vector3 position = GetRingPosition(angle, radius);
-                position.y = GetHeroTerrainWorldHeight(position.x, position.z) + 0.08f;
+                position.y = 0.08f;
                 CreateForestAsset(
                     rockAssetPaths[i % rockAssetPaths.Length],
                     "Asset_ForestRock_" + i.ToString("00"),
@@ -1299,6 +1325,8 @@ namespace EmeToDia.Editor
             camera.fieldOfView = 70f;
             camera.nearClipPlane = 0.05f;
             camera.farClipPlane = 600f;
+            camera.clearFlags = CameraClearFlags.Skybox;
+            camera.backgroundColor = new Color(0.68f, 0.82f, 0.96f, 1f);
             camera.tag = "MainCamera";
             cameraObject.AddComponent<AudioListener>();
 
@@ -1321,21 +1349,68 @@ namespace EmeToDia.Editor
                     visualObject.transform.localPosition = Vector3.zero;
                     visualObject.transform.localRotation = Quaternion.identity;
                     visualObject.transform.localScale = Vector3.one;
-                    ScaleToHeight(visualObject, 1.85f);
-                    ApplyMaterialPaletteToRenderers(
-                        visualObject,
-                        LoadMaterial("MAT_DaniTech_HeroBlue"),
-                        LoadMaterial("MAT_DaniTech_HeroGold"),
-                        LoadMaterial("MAT_DaniTech_HeroSkin"),
-                        LoadMaterial("MAT_DaniTech_DarkMetal"));
-                    visualObject.SetActive(false);
+                    ScaleToHeight(visualObject, 2.0f);
+                    ApplyFallbackMaterialToRenderers(visualObject, LoadMaterial("MAT_DaniTech_HeroBlue"));
+                    AttachPlayerStaffVisual(visualObject.transform);
+                    RemoveCollidersFromChildren(visualObject);
+                    visualObject.SetActive(true);
                     return visualObject.transform;
                 }
             }
 
-            visualObject = CreatePrimitive(PrimitiveType.Capsule, "Fallback_PlayerCharacter", parent, new Vector3(0f, 0.9f, 0f), new Vector3(0.65f, 0.9f, 0.65f), LoadMaterial("MAT_DaniTech_HeroBlue"));
-            visualObject.SetActive(false);
+            visualObject = CreateFallbackHeroCharacter(parent);
+            RemoveCollidersFromChildren(visualObject);
+            visualObject.SetActive(true);
             return visualObject.transform;
+        }
+
+        private static void AttachPlayerStaffVisual(Transform characterRoot)
+        {
+            GameObject staffPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(PlayerStaffPrefabPath);
+            if (staffPrefab == null || characterRoot == null)
+            {
+                return;
+            }
+
+            GameObject staffObject = PrefabUtility.InstantiatePrefab(staffPrefab, characterRoot) as GameObject;
+            if (staffObject == null)
+            {
+                return;
+            }
+
+            staffObject.name = "Visual_PlayerHeroStaff";
+            staffObject.transform.localPosition = new Vector3(0.44f, 1.02f, 0.10f);
+            staffObject.transform.localRotation = Quaternion.Euler(8f, 12f, -28f);
+            staffObject.transform.localScale = Vector3.one * 0.95f;
+            ApplyFallbackMaterialToRenderers(staffObject, LoadMaterial("MAT_DaniTech_HeroGold"));
+            RemoveCollidersFromChildren(staffObject);
+        }
+
+        private static GameObject CreateFallbackHeroCharacter(Transform parent)
+        {
+            GameObject heroRoot = CreateEmpty("Fallback_PlayerCharacterHero", parent, Vector3.zero);
+            CreatePrimitive(PrimitiveType.Capsule, "Body", heroRoot.transform, new Vector3(0f, 0.95f, 0f), new Vector3(0.56f, 0.92f, 0.42f), LoadMaterial("MAT_DaniTech_HeroBlue"));
+            CreatePrimitive(PrimitiveType.Sphere, "Head", heroRoot.transform, new Vector3(0f, 1.82f, 0.02f), new Vector3(0.34f, 0.34f, 0.34f), LoadMaterial("MAT_DaniTech_HeroSkin"));
+            CreatePrimitive(PrimitiveType.Capsule, "LeftArm", heroRoot.transform, new Vector3(-0.46f, 1.08f, 0.04f), new Vector3(0.16f, 0.52f, 0.16f), LoadMaterial("MAT_DaniTech_HeroGold"));
+            CreatePrimitive(PrimitiveType.Capsule, "RightArm", heroRoot.transform, new Vector3(0.46f, 1.08f, 0.04f), new Vector3(0.16f, 0.52f, 0.16f), LoadMaterial("MAT_DaniTech_HeroGold"));
+            CreatePrimitive(PrimitiveType.Capsule, "LeftLeg", heroRoot.transform, new Vector3(-0.18f, 0.34f, 0f), new Vector3(0.18f, 0.46f, 0.18f), LoadMaterial("MAT_DaniTech_LeatherDark"));
+            CreatePrimitive(PrimitiveType.Capsule, "RightLeg", heroRoot.transform, new Vector3(0.18f, 0.34f, 0f), new Vector3(0.18f, 0.46f, 0.18f), LoadMaterial("MAT_DaniTech_LeatherDark"));
+            CreatePrimitive(PrimitiveType.Cube, "Cape", heroRoot.transform, new Vector3(0f, 1.08f, -0.24f), new Vector3(0.78f, 1.04f, 0.08f), LoadMaterial("MAT_DaniTech_Leather"));
+            return heroRoot;
+        }
+
+        private static void RemoveCollidersFromChildren(GameObject targetObject)
+        {
+            if (targetObject == null)
+            {
+                return;
+            }
+
+            Collider[] colliders = targetObject.GetComponentsInChildren<Collider>(true);
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                Object.DestroyImmediate(colliders[i]);
+            }
         }
 
         private static GameObject CreateManagers(Scene scene, GameObject playerObject)
@@ -1414,11 +1489,15 @@ namespace EmeToDia.Editor
         {
             string materialPath = MaterialFolderPath + "/" + materialName + ".mat";
             Material material = AssetDatabase.LoadAssetAtPath<Material>(materialPath);
+            Shader shader = Shader.Find("Standard");
             if (material == null)
             {
-                Shader shader = Shader.Find("Standard");
                 material = new Material(shader);
                 AssetDatabase.CreateAsset(material, materialPath);
+            }
+            else if (shader != null && shader.isSupported && material.shader != shader)
+            {
+                material.shader = shader;
             }
 
             material.color = color;
@@ -1427,15 +1506,36 @@ namespace EmeToDia.Editor
                 material.SetColor("_Color", color);
             }
 
+            if (material.HasProperty("_Mode"))
+            {
+                material.SetFloat("_Mode", 0f);
+            }
+
+            if (material.HasProperty("_Metallic"))
+            {
+                material.SetFloat("_Metallic", 0f);
+            }
+
+            if (material.HasProperty("_Glossiness"))
+            {
+                material.SetFloat("_Glossiness", 0.28f);
+            }
+
             if (emission > 0f)
             {
                 material.EnableKeyword("_EMISSION");
-                material.SetColor("_EmissionColor", color * emission);
+                if (material.HasProperty("_EmissionColor"))
+                {
+                    material.SetColor("_EmissionColor", color * emission);
+                }
             }
             else
             {
                 material.DisableKeyword("_EMISSION");
-                material.SetColor("_EmissionColor", Color.black);
+                if (material.HasProperty("_EmissionColor"))
+                {
+                    material.SetColor("_EmissionColor", Color.black);
+                }
             }
 
             EditorUtility.SetDirty(material);
@@ -1479,31 +1579,45 @@ namespace EmeToDia.Editor
         private static Material GetOrCreateSkyboxMaterial()
         {
             Material material = AssetDatabase.LoadAssetAtPath<Material>(SkyboxMaterialPath);
+            Shader shader = Shader.Find("Skybox/Procedural");
+            if (shader == null || shader.isSupported == false)
+            {
+                return null;
+            }
+
             if (material == null)
             {
-                Shader shader = Shader.Find("Skybox/Procedural");
                 material = new Material(shader);
                 AssetDatabase.CreateAsset(material, SkyboxMaterialPath);
+            }
+            else if (material.shader != shader)
+            {
+                material.shader = shader;
+            }
+
+            if (material.HasProperty("_SunDisk"))
+            {
+                material.SetFloat("_SunDisk", 0f);
             }
 
             if (material.HasProperty("_SkyTint"))
             {
-                material.SetColor("_SkyTint", new Color(0.52f, 0.68f, 0.96f, 1f));
+                material.SetColor("_SkyTint", new Color(0.68f, 0.80f, 1f, 1f));
             }
 
             if (material.HasProperty("_GroundColor"))
             {
-                material.SetColor("_GroundColor", new Color(0.50f, 0.63f, 0.74f, 1f));
+                material.SetColor("_GroundColor", new Color(0.56f, 0.68f, 0.82f, 1f));
             }
 
             if (material.HasProperty("_Exposure"))
             {
-                material.SetFloat("_Exposure", 1.18f);
+                material.SetFloat("_Exposure", 0.96f);
             }
 
             if (material.HasProperty("_AtmosphereThickness"))
             {
-                material.SetFloat("_AtmosphereThickness", 1.46f);
+                material.SetFloat("_AtmosphereThickness", 0.82f);
             }
 
             EditorUtility.SetDirty(material);
@@ -1709,6 +1823,17 @@ namespace EmeToDia.Editor
         private static bool ShouldReplaceMaterial(Material material)
         {
             if (material == null)
+            {
+                return true;
+            }
+
+            if (material.shader == null)
+            {
+                return true;
+            }
+
+            string shaderName = material.shader.name;
+            if (shaderName.Contains("InternalErrorShader") || shaderName.Contains("Hidden/InternalErrorShader"))
             {
                 return true;
             }

@@ -11,11 +11,13 @@ namespace EmeToDia.Gameplay
         [SerializeField] private float _mouseSensitivity = 0.18f;
         [SerializeField] private float _keyboardRotateSpeed = 95f;
         [SerializeField] private float _zoomSpeed = 4f;
-        [SerializeField] private float _maxZoomDistance = 7f;
-        [SerializeField] private float _initialZoomDistance = 4.8f;
-        [SerializeField] private float _firstPersonHideDistance = 0.25f;
+        [SerializeField] private float _keyboardZoomSpeed = 6f;
+        [SerializeField] private float _maxZoomDistance = 10.5f;
+        [SerializeField] private float _initialZoomDistance = 8.2f;
+        [SerializeField] private float _firstPersonHideDistance = 0.85f;
         [SerializeField] private Vector3 _firstPersonCameraPosition = new Vector3(0f, 1.58f, 0f);
-        [SerializeField] private Vector3 _thirdPersonCameraOffset = new Vector3(0f, 2.45f, -7f);
+        [SerializeField] private Vector3 _thirdPersonCameraOffset = new Vector3(0f, 2.95f, -8.6f);
+        [SerializeField] private Vector3 _thirdPersonLookAtOffset = new Vector3(0f, 1.18f, 0f);
 
         private float _xRotation;
         private float _zoomDistance;
@@ -63,12 +65,34 @@ namespace EmeToDia.Gameplay
         private void ZoomCamera()
         {
             float scrollValue = Input.mouseScrollDelta.y;
-            if (Mathf.Abs(scrollValue) <= 0.001f)
+            if (Input.GetKeyDown(KeyCode.V))
+            {
+                ToggleCameraDistance();
+                return;
+            }
+
+            float keyboardZoom = 0f;
+            if (Input.GetKey(KeyCode.PageDown) || Input.GetKey(KeyCode.Equals))
+            {
+                keyboardZoom += _keyboardZoomSpeed * Time.deltaTime;
+            }
+
+            if (Input.GetKey(KeyCode.PageUp) || Input.GetKey(KeyCode.Minus))
+            {
+                keyboardZoom -= _keyboardZoomSpeed * Time.deltaTime;
+            }
+
+            if (Mathf.Abs(scrollValue) > 0.001f)
+            {
+                keyboardZoom -= scrollValue * _zoomSpeed;
+            }
+
+            if (Mathf.Abs(keyboardZoom) <= 0.001f)
             {
                 return;
             }
 
-            _zoomDistance -= scrollValue * _zoomSpeed;
+            _zoomDistance += keyboardZoom;
             _zoomDistance = Mathf.Clamp(_zoomDistance, 0f, _maxZoomDistance);
         }
 
@@ -140,8 +164,23 @@ namespace EmeToDia.Gameplay
             }
 
             float zoomRate = GameUtil.GetRate(_zoomDistance, _maxZoomDistance);
-            _cameraTransform.localPosition = Vector3.Lerp(_firstPersonCameraPosition, _thirdPersonCameraOffset, zoomRate);
-            _cameraTransform.localRotation = Quaternion.Euler(_xRotation + zoomRate * 10f, 0f, 0f);
+            if (_zoomDistance <= _firstPersonHideDistance)
+            {
+                _cameraTransform.localPosition = _firstPersonCameraPosition;
+                _cameraTransform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
+                return;
+            }
+
+            Vector3 cameraPosition = Vector3.Lerp(_firstPersonCameraPosition, _thirdPersonCameraOffset, zoomRate);
+            Vector3 lookTarget = _thirdPersonLookAtOffset + Vector3.up * (_xRotation * 0.025f);
+            Vector3 lookDirection = lookTarget - cameraPosition;
+            if (lookDirection.sqrMagnitude <= 0.001f)
+            {
+                lookDirection = Vector3.forward;
+            }
+
+            _cameraTransform.localPosition = cameraPosition;
+            _cameraTransform.localRotation = Quaternion.LookRotation(lookDirection.normalized, Vector3.up);
         }
 
         private void RefreshCharacterVisibility()
@@ -158,6 +197,17 @@ namespace EmeToDia.Gameplay
             }
 
             _characterVisualRoot.gameObject.SetActive(isVisible);
+        }
+
+        private void ToggleCameraDistance()
+        {
+            if (_zoomDistance <= _firstPersonHideDistance)
+            {
+                _zoomDistance = _maxZoomDistance;
+                return;
+            }
+
+            _zoomDistance = 0f;
         }
     }
 }
