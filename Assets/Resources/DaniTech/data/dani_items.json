@@ -1,0 +1,60 @@
+{
+    "Items": [
+        {
+            "_id": "emerald_core",
+            "_displayName": "에메랄드 코어",
+            "_itemType": "재료",
+            "_iconText": "EME",
+            "_description": "다이아 승급 장치에 필요한 녹색 마력 결정입니다. 인벤토리 수량 관리와 정렬 확인용 아이템입니다.",
+            "_addressableKey": "DaniTech/Items/EmeraldCore",
+            "_effectType": "Stamina",
+            "_useConditionType": "None",
+            "_maxStackCount": 5,
+            "_effectValue": 18,
+            "_durationSeconds": 0,
+            "_cooldownSeconds": 1.5
+        },
+        {
+            "_id": "diamond_tonic",
+            "_displayName": "다이아 회복제",
+            "_itemType": "소모품",
+            "_iconText": "DIA",
+            "_description": "사용 즉시 HP를 회복합니다. HP가 가득 차 있으면 사용 조건 때문에 실패합니다.",
+            "_addressableKey": "DaniTech/Items/DiamondTonic",
+            "_effectType": "Heal",
+            "_useConditionType": "HealthBelowMax",
+            "_maxStackCount": 3,
+            "_effectValue": 32,
+            "_durationSeconds": 0,
+            "_cooldownSeconds": 4
+        },
+        {
+            "_id": "prism_shield",
+            "_displayName": "프리즘 보호막",
+            "_itemType": "장비형 소모품",
+            "_iconText": "SHD",
+            "_description": "사용 즉시 보호막을 얻습니다. 보호막이 최대치면 사용할 수 없습니다.",
+            "_addressableKey": "DaniTech/Items/PrismShield",
+            "_effectType": "Shield",
+            "_useConditionType": "ShieldBelowMax",
+            "_maxStackCount": 2,
+            "_effectValue": 28,
+            "_durationSeconds": 0,
+            "_cooldownSeconds": 3
+        },
+        {
+            "_id": "swift_sigil",
+            "_displayName": "신속의 인장",
+            "_itemType": "버프",
+            "_iconText": "SPD",
+            "_description": "잠시 동안 이동 속도가 증가합니다. 남은 시간은 HUD에서 확인할 수 있습니다.",
+            "_addressableKey": "DaniTech/Items/SwiftSigil",
+            "_effectType": "SpeedBoost",
+            "_useConditionType": "None",
+            "_maxStackCount": 2,
+            "_effectValue": 1.45,
+            "_durationSeconds": 8,
+            "_cooldownSeconds": 6
+        }
+    ]
+}
